@@ -62,6 +62,7 @@ from common import CpuConfig
 from common import MemConfig
 from common.Caches import *
 from common.cpu2000 import *
+from common.cpu2006 import *
 
 # Check if KVM support has been enabled, we might need to do VM
 # configuration if that's the case.
@@ -142,19 +143,20 @@ if options.bench:
     if len(apps) != options.num_cpus:
         print "number of benchmarks not equal to set num_cpus!"
         sys.exit(1)
-
+    p_id = 0
     for app in apps:
         try:
-            if buildEnv['TARGET_ISA'] == 'alpha':
-                exec("workload = %s('alpha', 'tru64', '%s')" % (
+            # if buildEnv['TARGET_ISA'] == 'alpha':
+            #     exec("workload = %s('alpha', 'tru64', '%s')" % (
+            #             app, options.spec_input))
+            # elif buildEnv['TARGET_ISA'] == 'arm':
+            #     exec("workload = %s('arm_%s', 'linux', '%s')" % (
+            #             app, options.arm_iset, options.spec_input))
+            # else:
+            exec("workload = %s(buildEnv['TARGET_ISA'], 'linux', '%s')" % (
                         app, options.spec_input))
-            elif buildEnv['TARGET_ISA'] == 'arm':
-                exec("workload = %s('arm_%s', 'linux', '%s')" % (
-                        app, options.arm_iset, options.spec_input))
-            else:
-                exec("workload = %s(buildEnv['TARGET_ISA', 'linux', '%s')" % (
-                        app, options.spec_input))
-            multiprocesses.append(workload.makeProcess())
+            multiprocesses.append(workload.makeProcess(pid = 100 + p_id))
+            p_id += 1
         except:
             print >>sys.stderr, "Unable to find workload for %s: %s" % (
                     buildEnv['TARGET_ISA'], app)
