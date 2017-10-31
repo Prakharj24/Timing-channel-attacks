@@ -1,0 +1,4375 @@
+[3J[H[2Jgem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Nov  1 2017 13:00:35
+gem5 started Nov  1 2017 13:05:17
+gem5 executing on cse-HP-ProDesk-600-G3-SFF, pid 23865
+command line: ./build/X86/gem5.opt --stats-file=mcf-hmmer_bta.txt ./configs/example/se.py -n 2 --caches --l2cache --mem-size=4GB --mem-channels=1 --mem-ranks=8 --cpu-type=DerivO3CPU -F 25000 -I 25000 --bench mcf-hmmer
+
+executable= /home/prakhar/SPEC2006_X86/binaries/mcf 
+inputs_dir = /home/prakhar/SPEC2006_X86/data/mcf/ref/input 
+outputs_dir = /home/prakhar/SPEC2006_X86/data/mcf/ref/output 
+executable= /home/prakhar/SPEC2006_X86/binaries/hmmer 
+inputs_dir = /home/prakhar/SPEC2006_X86/data/hmmer/ref/input 
+outputs_dir = /home/prakhar/SPEC2006_X86/data/hmmer/ref/output 
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (4096 Mbytes)
+0: system.remote_gdb.listener: listening for remote gdb #0 on port 7000
+0: system.remote_gdb.listener: listening for remote gdb #1 on port 7001
+Switch at instruction count:25000
+info: Entering event queue @ 0.  Starting simulation...
+info: Increasing stack size by one page.
+hmmcalibrate -- calibrate HMM search statistics
+HMMER 2.3 (May 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /home/prakhar/SPEC2006_X86/data/hmmer/ref/input/retro.hmm
+Length distribution mean: 500
+Switched CPUS @ tick 28843000
+switching cpus
+info: Entering event queue @ 28843000.  Starting simulation...
+**** REAL SIMULATION ****
+info: Entering event queue @ 28844500.  Starting simulation...
+info: Epoch start = 28886010, turn = 0, subTurn = 1
+info: Processing req at 28886010
+info: nextReqEvent scheduled@28911010
+info: no packet
+info: Epoch start = 28936010, turn = 0, subTurn = 2
+info: Processing req at 28936010
+info: no packet
+info: nextReqEvent scheduled@28961010
+info: no packet
+info: Epoch start = 28986010, turn = 0, subTurn = 0
+info: Processing req at 28986010
+info: Timing access to addr 263104, rank/bank/row 4 0 0
+info: Activate at tick 28986010
+info: Precharging bank 0, rank 4 at tick 29021010, now got 0 active
+info: nextReqEvent scheduled@29011010
+info: Timing access to addr 1572096, rank/bank/row 7 7 2
+info: Epoch start = 29036010, turn = 0, subTurn = 1
+info: Processing req at 29036010
+info: Timing access to addr 42944, rank/bank/row 0 5 0
+info: Activate at tick 29036010
+info: Precharging bank 5, rank 0 at tick 29071010, now got 0 active
+info: nextReqEvent scheduled@29061010
+info: Timing access to addr 1537728, rank/bank/row 7 3 2
+info: Epoch start = 29086010, turn = 0, subTurn = 2
+info: Processing req at 29086010
+info: Timing access to addr 628480, rank/bank/row 1 4 1
+info: Activate at tick 29086010
+info: Precharging bank 4, rank 1 at tick 29121010, now got 0 active
+info: nextReqEvent scheduled@29111010
+info: no packet
+info: Epoch start = 29136010, turn = 0, subTurn = 0
+info: Processing req at 29136010
+info: Timing access to addr 264384, rank/bank/row 4 0 0
+info: Activate at tick 29136010
+info: Precharging bank 0, rank 4 at tick 29171010, now got 0 active
+info: nextReqEvent scheduled@29161010
+info: no packet
+info: Epoch start = 29186010, turn = 0, subTurn = 1
+info: Processing req at 29186010
+info: no packet
+info: nextReqEvent scheduled@29211010
+info: Timing access to addr 1538752, rank/bank/row 7 3 2
+info: Epoch start = 29236010, turn = 0, subTurn = 2
+info: Processing req at 29236010
+info: no packet
+info: nextReqEvent scheduled@29261010
+info: no packet
+info: Epoch start = 29286010, turn = 0, subTurn = 0
+info: Processing req at 29286010
+info: Timing access to addr 264960, rank/bank/row 4 0 0
+info: Activate at tick 29286010
+info: Precharging bank 0, rank 4 at tick 29321010, now got 0 active
+info: nextReqEvent scheduled@29311010
+info: no packet
+info: Epoch start = 29336010, turn = 0, subTurn = 1
+info: Processing req at 29336010
+info: Timing access to addr 281536, rank/bank/row 4 2 0
+info: Activate at tick 29336010
+info: Precharging bank 2, rank 4 at tick 29371010, now got 0 active
+info: nextReqEvent scheduled@29361010
+info: Timing access to addr 1579008, rank/bank/row 0 0 3
+info: Epoch start = 29386010, turn = 0, subTurn = 2
+info: Processing req at 29386010
+info: no packet
+info: nextReqEvent scheduled@29411010
+info: no packet
+info: Epoch start = 29436010, turn = 0, subTurn = 0
+info: Processing req at 29436010
+info: Timing access to addr 265664, rank/bank/row 4 0 0
+info: Activate at tick 29436010
+info: Precharging bank 0, rank 4 at tick 29471010, now got 0 active
+info: nextReqEvent scheduled@29461010
+info: no packet
+info: Epoch start = 29486010, turn = 0, subTurn = 1
+info: Processing req at 29486010
+info: Timing access to addr 281984, rank/bank/row 4 2 0
+info: Activate at tick 29486010
+info: Precharging bank 2, rank 4 at tick 29521010, now got 0 active
+info: nextReqEvent scheduled@29511010
+info: Timing access to addr 1573312, rank/bank/row 0 0 3
+info: Epoch start = 29536010, turn = 0, subTurn = 2
+info: Processing req at 29536010
+info: no packet
+info: nextReqEvent scheduled@29561010
+info: no packet
+info: Epoch start = 29586010, turn = 0, subTurn = 0
+info: Processing req at 29586010
+info: Timing access to addr 267584, rank/bank/row 4 0 0
+info: Activate at tick 29586010
+info: Precharging bank 0, rank 4 at tick 29621010, now got 0 active
+info: nextReqEvent scheduled@29611010
+info: no packet
+info: Epoch start = 29636010, turn = 0, subTurn = 1
+info: Processing req at 29636010
+info: Timing access to addr 216384, rank/bank/row 3 2 0
+info: Activate at tick 29636010
+info: Precharging bank 2, rank 3 at tick 29671010, now got 0 active
+info: nextReqEvent scheduled@29661010
+info: Timing access to addr 1576960, rank/bank/row 0 0 3
+info: Epoch start = 29686010, turn = 0, subTurn = 2
+info: Processing req at 29686010
+info: no packet
+info: nextReqEvent scheduled@29711010
+info: no packet
+info: Epoch start = 29736010, turn = 0, subTurn = 0
+info: Processing req at 29736010
+info: Timing access to addr 269376, rank/bank/row 4 0 0
+info: Activate at tick 29736011
+info: Precharging bank 0, rank 4 at tick 29771011, now got 0 active
+info: nextReqEvent scheduled@29761010
+info: no packet
+info: Epoch start = 29786010, turn = 0, subTurn = 1
+info: Processing req at 29786010
+info: Timing access to addr 217088, rank/bank/row 3 2 0
+info: Activate at tick 29786010
+info: Precharging bank 2, rank 3 at tick 29821010, now got 0 active
+info: nextReqEvent scheduled@29811010
+info: Timing access to addr 1578240, rank/bank/row 0 0 3
+info: Epoch start = 29836010, turn = 0, subTurn = 2
+info: Processing req at 29836010
+info: no packet
+info: nextReqEvent scheduled@29861010
+info: no packet
+info: Epoch start = 29886010, turn = 0, subTurn = 0
+info: Processing req at 29886010
+info: Timing access to addr 263296, rank/bank/row 4 0 0
+info: Activate at tick 29886010
+info: Precharging bank 0, rank 4 at tick 29921010, now got 0 active
+info: nextReqEvent scheduled@29911010
+info: no packet
+info: Epoch start = 29936010, turn = 0, subTurn = 1
+info: Processing req at 29936010
+info: no packet
+info: nextReqEvent scheduled@29961010
+info: Timing access to addr 1577152, rank/bank/row 0 0 3
+info: Epoch start = 29986010, turn = 0, subTurn = 2
+info: Processing req at 29986010
+info: no packet
+info: nextReqEvent scheduled@30011010
+info: no packet
+info: Epoch start = 30036010, turn = 0, subTurn = 0
+info: Processing req at 30036010
+info: Timing access to addr 264512, rank/bank/row 4 0 0
+info: Activate at tick 30036010
+info: Precharging bank 0, rank 4 at tick 30071010, now got 0 active
+info: nextReqEvent scheduled@30061010
+info: no packet
+info: Epoch start = 30086010, turn = 0, subTurn = 1
+info: Processing req at 30086010
+info: no packet
+info: nextReqEvent scheduled@30111010
+info: Timing access to addr 1573504, rank/bank/row 0 0 3
+info: Epoch start = 30136010, turn = 0, subTurn = 2
+info: Processing req at 30136010
+info: no packet
+info: nextReqEvent scheduled@30161010
+info: Timing access to addr 1682176, rank/bank/row 1 5 3
+info: Epoch start = 30186010, turn = 0, subTurn = 0
+info: Processing req at 30186010
+info: Timing access to addr 265728, rank/bank/row 4 0 0
+info: Activate at tick 30186010
+info: Precharging bank 0, rank 4 at tick 30221010, now got 0 active
+info: nextReqEvent scheduled@30211010
+info: no packet
+info: Epoch start = 30236010, turn = 0, subTurn = 1
+info: Processing req at 30236010
+info: Timing access to addr 217152, rank/bank/row 3 2 0
+info: Activate at tick 30236011
+info: Precharging bank 2, rank 3 at tick 30271011, now got 0 active
+info: nextReqEvent scheduled@30261010
+info: Timing access to addr 1573632, rank/bank/row 0 0 3
+info: Epoch start = 30286010, turn = 0, subTurn = 2
+info: Processing req at 30286010
+info: Timing access to addr 5240960, rank/bank/row 7 7 9
+info: Activate at tick 30286011
+info: Precharging bank 7, rank 7 at tick 30321011, now got 0 active
+info: nextReqEvent scheduled@30311010
+info: no packet
+info: Epoch start = 30336010, turn = 0, subTurn = 0
+info: Processing req at 30336010
+info: Timing access to addr 267648, rank/bank/row 4 0 0
+info: Activate at tick 30336010
+info: Precharging bank 0, rank 4 at tick 30371010, now got 0 active
+info: nextReqEvent scheduled@30361010
+info: Timing access to addr 1569920, rank/bank/row 7 7 2
+info: Epoch start = 30386010, turn = 0, subTurn = 1
+info: Processing req at 30386010
+info: no packet
+info: nextReqEvent scheduled@30411010
+info: Timing access to addr 1574016, rank/bank/row 0 0 3
+info: Epoch start = 30436010, turn = 0, subTurn = 2
+info: Processing req at 30436010
+info: no packet
+info: nextReqEvent scheduled@30461010
+info: no packet
+info: Epoch start = 30486010, turn = 0, subTurn = 0
+info: Processing req at 30486010
+info: Timing access to addr 7744, rank/bank/row 0 0 0
+info: Activate at tick 30486010
+info: Precharging bank 0, rank 0 at tick 30521010, now got 0 active
+info: nextReqEvent scheduled@30511010
+info: Epoch start = 30536010, turn = 0, subTurn = 1
+info: Processing req at 30536010
+info: nextReqEvent scheduled@30561010
+info: Epoch start = 30586010, turn = 0, subTurn = 2
+info: Processing req at 30586010
+info: nextReqEvent scheduled@30611010
+info: Timing access to addr 1682240, rank/bank/row 1 5 3
+info: Epoch start = 30636010, turn = 0, subTurn = 0
+info: Processing req at 30636010
+info: Timing access to addr 2626752, rank/bank/row 0 0 5
+info: Activate at tick 30636010
+info: Precharging bank 0, rank 0 at tick 30671010, now got 0 active
+info: nextReqEvent scheduled@30661010
+info: no packet
+info: Epoch start = 30686010, turn = 0, subTurn = 1
+info: Processing req at 30686010
+info: no packet
+info: nextReqEvent scheduled@30711010
+info: Timing access to addr 1574080, rank/bank/row 0 0 3
+info: Epoch start = 30736010, turn = 0, subTurn = 2
+info: Processing req at 30736010
+info: Timing access to addr 5241024, rank/bank/row 7 7 9
+info: Activate at tick 30736011
+info: Precharging bank 7, rank 7 at tick 30771011, now got 0 active
+info: nextReqEvent scheduled@30761010
+info: no packet
+info: Epoch start = 30786010, turn = 0, subTurn = 0
+info: Processing req at 30786010
+info: no packet
+info: nextReqEvent scheduled@30811010
+info: no packet
+info: Epoch start = 30836010, turn = 0, subTurn = 1
+info: Processing req at 30836010
+info: no packet
+info: nextReqEvent scheduled@30861010
+info: Timing access to addr 1576256, rank/bank/row 0 0 3
+info: Epoch start = 30886010, turn = 0, subTurn = 2
+info: Processing req at 30886010
+info: no packet
+info: nextReqEvent scheduled@30911010
+info: no packet
+info: Epoch start = 30936010, turn = 0, subTurn = 0
+info: Processing req at 30936010
+info: Timing access to addr 11077568, rank/bank/row 1 0 21
+info: Activate at tick 30936011
+info: Precharging bank 0, rank 1 at tick 30971011, now got 0 active
+info: nextReqEvent scheduled@30961010
+info: no packet
+info: Epoch start = 30986010, turn = 0, subTurn = 1
+info: Processing req at 30986010
+info: no packet
+info: nextReqEvent scheduled@31011010
+info: Timing access to addr 1576384, rank/bank/row 0 0 3
+info: Epoch start = 31036010, turn = 0, subTurn = 2
+info: Processing req at 31036010
+info: no packet
+info: nextReqEvent scheduled@31061010
+info: no packet
+info: Epoch start = 31086010, turn = 0, subTurn = 0
+info: Processing req at 31086010
+info: Timing access to addr 11077632, rank/bank/row 1 0 21
+info: Activate at tick 31086011
+info: Precharging bank 0, rank 1 at tick 31121011, now got 0 active
+info: nextReqEvent scheduled@31111010
+info: no packet
+info: Epoch start = 31136010, turn = 0, subTurn = 1
+info: Processing req at 31136010
+info: no packet
+info: nextReqEvent scheduled@31161010
+info: Timing access to addr 1574272, rank/bank/row 0 0 3
+info: Epoch start = 31186010, turn = 0, subTurn = 2
+info: Processing req at 31186010
+info: Timing access to addr 80576, rank/bank/row 1 1 0
+info: Activate at tick 31186010
+info: Precharging bank 1, rank 1 at tick 31221010, now got 0 active
+info: nextReqEvent scheduled@31211010
+info: no packet
+info: Epoch start = 31236010, turn = 0, subTurn = 0
+info: Processing req at 31236010
+info: Timing access to addr 11077696, rank/bank/row 1 0 21
+info: Activate at tick 31236010
+info: Precharging bank 0, rank 1 at tick 31271010, now got 0 active
+info: nextReqEvent scheduled@31261010
+info: no packet
+info: Epoch start = 31286010, turn = 0, subTurn = 1
+info: Processing req at 31286010
+info: Timing access to addr 19648, rank/bank/row 0 2 0
+info: Activate at tick 31286010
+info: Precharging bank 2, rank 0 at tick 31321010, now got 0 active
+info: nextReqEvent scheduled@31311010
+info: Timing access to addr 1574592, rank/bank/row 0 0 3
+info: Epoch start = 31336010, turn = 0, subTurn = 2
+info: Processing req at 31336010
+info: no packet
+info: nextReqEvent scheduled@31361010
+info: no packet
+info: Epoch start = 31386010, turn = 0, subTurn = 0
+info: Processing req at 31386010
+info: no packet
+info: nextReqEvent scheduled@31411010
+info: no packet
+info: Epoch start = 31436010, turn = 0, subTurn = 1
+info: Processing req at 31436010
+info: Timing access to addr 89216, rank/bank/row 1 2 0
+info: Activate at tick 31436010
+info: Precharging bank 2, rank 1 at tick 31471010, now got 0 active
+info: nextReqEvent scheduled@31461010
+info: Timing access to addr 1574784, rank/bank/row 0 0 3
+info: Epoch start = 31486010, turn = 0, subTurn = 2
+info: Processing req at 31486010
+info: no packet
+info: nextReqEvent scheduled@31511010
+info: no packet
+info: Epoch start = 31536010, turn = 0, subTurn = 0
+info: Processing req at 31536010
+info: Timing access to addr 896, rank/bank/row 0 0 0
+info: Activate at tick 31536010
+info: Precharging bank 0, rank 0 at tick 31571010, now got 0 active
+info: nextReqEvent scheduled@31561010
+info: no packet
+info: Epoch start = 31586010, turn = 0, subTurn = 1
+info: Processing req at 31586010
+info: Timing access to addr 48448, rank/bank/row 0 5 0
+info: Activate at tick 31586010
+info: Precharging bank 5, rank 0 at tick 31621010, now got 0 active
+info: nextReqEvent scheduled@31611010
+info: Timing access to addr 2212928, rank/bank/row 1 6 4
+info: Epoch start = 31636010, turn = 0, subTurn = 2
+info: Processing req at 31636010
+info: no packet
+info: nextReqEvent scheduled@31661010
+info: no packet
+info: Epoch start = 31686010, turn = 0, subTurn = 0
+info: Processing req at 31686010
+info: Timing access to addr 264576, rank/bank/row 4 0 0
+info: Activate at tick 31686011
+info: Precharging bank 0, rank 4 at tick 31721011, now got 0 active
+info: nextReqEvent scheduled@31711010
+info: no packet
+info: Epoch start = 31736010, turn = 0, subTurn = 1
+info: Processing req at 31736010
+info: no packet
+info: nextReqEvent scheduled@31761010
+info: Timing access to addr 1575360, rank/bank/row 0 0 3
+info: Epoch start = 31786010, turn = 0, subTurn = 2
+info: Processing req at 31786010
+info: no packet
+info: nextReqEvent scheduled@31811010
+info: no packet
+info: Epoch start = 31836010, turn = 0, subTurn = 0
+info: Processing req at 31836010
+info: Timing access to addr 267712, rank/bank/row 4 0 0
+info: Activate at tick 31836010
+info: Precharging bank 0, rank 4 at tick 31871010, now got 0 active
+info: nextReqEvent scheduled@31861010
+info: no packet
+info: Epoch start = 31886010, turn = 0, subTurn = 1
+info: Processing req at 31886010
+info: no packet
+info: nextReqEvent scheduled@31911010
+info: Timing access to addr 1577216, rank/bank/row 0 0 3
+info: Epoch start = 31936010, turn = 0, subTurn = 2
+info: Processing req at 31936010
+info: no packet
+info: nextReqEvent scheduled@31961010
+info: no packet
+info: Epoch start = 31986010, turn = 0, subTurn = 0
+info: Processing req at 31986010
+info: no packet
+info: nextReqEvent scheduled@32011010
+info: no packet
+info: Epoch start = 32036010, turn = 0, subTurn = 1
+info: Processing req at 32036010
+info: no packet
+info: nextReqEvent scheduled@32061010
+info: Timing access to addr 1575872, rank/bank/row 0 0 3
+info: Epoch start = 32086010, turn = 0, subTurn = 2
+info: Processing req at 32086010
+info: no packet
+info: nextReqEvent scheduled@32111010
+info: Timing access to addr 1555328, rank/bank/row 7 5 2
+info: Epoch start = 32136010, turn = 0, subTurn = 0
+info: Processing req at 32136010
+info: Timing access to addr 837504, rank/bank/row 4 6 1
+info: Activate at tick 32136011
+info: Precharging bank 6, rank 4 at tick 32171011, now got 0 active
+info: nextReqEvent scheduled@32161010
+info: Timing access to addr 1802560, rank/bank/row 3 4 3
+info: Epoch start = 32186010, turn = 0, subTurn = 1
+info: Processing req at 32186010
+info: no packet
+info: nextReqEvent scheduled@32211010
+info: Timing access to addr 1537792, rank/bank/row 7 3 2
+info: Epoch start = 32236010, turn = 0, subTurn = 2
+info: Processing req at 32236010
+info: Timing access to addr 5241088, rank/bank/row 7 7 9
+info: Activate at tick 32236010
+info: Precharging bank 7, rank 7 at tick 32271010, now got 0 active
+info: nextReqEvent scheduled@32261010
+info: Timing access to addr 1760116864, rank/bank/row 1 2 3357
+Length distribution s.d.: 350
+info: Epoch start = 32286010, turn = 0, subTurn = 0
+info: Processing req at 32286010
+info: Timing access to addr 837632, rank/bank/row 4 6 1
+info: Activate at tick 32286010
+info: Precharging bank 6, rank 4 at tick 32321010, now got 0 active
+info: nextReqEvent scheduled@32311010
+info: Timing access to addr 1217664, rank/bank/row 2 4 2
+info: Epoch start = 32336010, turn = 0, subTurn = 1
+info: Processing req at 32336010
+info: no packet
+info: nextReqEvent scheduled@32361010
+info: Timing access to addr 1558080, rank/bank/row 7 6 2
+info: Epoch start = 32386010, turn = 0, subTurn = 2
+info: Processing req at 32386010
+info: no packet
+info: nextReqEvent scheduled@32411010
+info: Timing access to addr 1224448, rank/bank/row 2 5 2
+info: Epoch start = 32436010, turn = 0, subTurn = 0
+info: Processing req at 32436010
+info: Timing access to addr 2626816, rank/bank/row 0 0 5
+info: Activate at tick 32436010
+info: Precharging bank 0, rank 0 at tick 32471010, now got 0 active
+info: nextReqEvent scheduled@32461010
+info: no packet
+info: Epoch start = 32486010, turn = 0, subTurn = 1
+info: Processing req at 32486010
+info: no packet
+info: nextReqEvent scheduled@32511010
+info: Timing access to addr 1578304, rank/bank/row 0 0 3
+info: Epoch start = 32536010, turn = 0, subTurn = 2
+info: Processing req at 32536010
+info: no packet
+info: nextReqEvent scheduled@32561010
+info: Timing access to addr 1555392, rank/bank/row 7 5 2
+info: Epoch start = 32586010, turn = 0, subTurn = 0
+info: Processing req at 32586010
+info: Timing access to addr 2626880, rank/bank/row 0 0 5
+info: Activate at tick 32586010
+info: Precharging bank 0, rank 0 at tick 32621010, now got 0 active
+info: nextReqEvent scheduled@32611010
+info: Timing access to addr 1257856, rank/bank/row 3 1 2
+info: Epoch start = 32636010, turn = 0, subTurn = 1
+info: Processing req at 32636010
+info: nextReqEvent scheduled@32661010
+info: Epoch start = 32686010, turn = 0, subTurn = 2
+info: Processing req at 32686010
+info: no packet
+info: nextReqEvent scheduled@32711010
+info: Timing access to addr 1549504, rank/bank/row 7 5 2
+info: Epoch start = 32736010, turn = 0, subTurn = 0
+info: Processing req at 32736010
+info: Timing access to addr 11077760, rank/bank/row 1 0 21
+info: Activate at tick 32736011
+info: Precharging bank 0, rank 1 at tick 32771011, now got 0 active
+info: nextReqEvent scheduled@32761010
+info: no packet
+info: Epoch start = 32786010, turn = 0, subTurn = 1
+info: Processing req at 32786010
+info: no packet
+info: nextReqEvent scheduled@32811010
+info: Timing access to addr 948928, rank/bank/row 6 3 1
+info: Epoch start = 32836010, turn = 0, subTurn = 2
+info: Processing req at 32836010
+info: no packet
+info: nextReqEvent scheduled@32861010
+info: no packet
+info: Epoch start = 32886010, turn = 0, subTurn = 0
+info: Processing req at 32886010
+info: Timing access to addr 11077824, rank/bank/row 1 0 21
+info: Activate at tick 32886011
+info: Precharging bank 0, rank 1 at tick 32921011, now got 0 active
+info: nextReqEvent scheduled@32911010
+info: Epoch start = 32936010, turn = 0, subTurn = 1
+info: Processing req at 32936010
+info: nextReqEvent scheduled@32961010
+info: Epoch start = 32986010, turn = 0, subTurn = 2
+info: Processing req at 32986010
+info: nextReqEvent scheduled@33011010
+info: no packet
+info: Epoch start = 33036010, turn = 0, subTurn = 0
+info: Processing req at 33036010
+info: Timing access to addr 11077888, rank/bank/row 1 0 21
+info: Activate at tick 33036011
+info: Precharging bank 0, rank 1 at tick 33071011, now got 0 active
+info: nextReqEvent scheduled@33061010
+info: no packet
+info: Epoch start = 33086010, turn = 0, subTurn = 1
+info: Processing req at 33086010
+info: Timing access to addr 19712, rank/bank/row 0 2 0
+info: Activate at tick 33086011
+info: Precharging bank 2, rank 0 at tick 33121011, now got 0 active
+info: nextReqEvent scheduled@33111010
+info: Timing access to addr 947264, rank/bank/row 6 3 1
+info: Epoch start = 33136010, turn = 0, subTurn = 2
+info: Processing req at 33136010
+info: no packet
+info: nextReqEvent scheduled@33161010
+info: Timing access to addr 1548928, rank/bank/row 7 5 2
+info: Epoch start = 33186010, turn = 0, subTurn = 0
+info: Processing req at 33186010
+info: nextReqEvent scheduled@33211010
+info: Epoch start = 33236010, turn = 0, subTurn = 1
+info: Processing req at 33236010
+info: nextReqEvent scheduled@33261010
+info: Epoch start = 33286010, turn = 0, subTurn = 2
+info: Processing req at 33286010
+info: Epoch start = 33336010, turn = 0, subTurn = 0
+info: Epoch start = 33386010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@33411010
+info: Epoch start = 33436010, turn = 0, subTurn = 2
+info: Processing req at 33436010
+info: nextReqEvent scheduled@33461010
+info: Epoch start = 33486010, turn = 0, subTurn = 0
+info: Processing req at 33486010
+info: Activate at tick 33486011
+info: Precharging bank 0, rank 2 at tick 33521011, now got 0 active
+info: nextReqEvent scheduled@33511010
+info: Epoch start = 33536010, turn = 0, subTurn = 1
+info: Epoch start = 33586010, turn = 0, subTurn = 2
+info: Epoch start = 33636010, turn = 0, subTurn = 0
+info: Epoch start = 33686010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@33711010
+info: no packet
+info: Epoch start = 33736010, turn = 0, subTurn = 2
+info: Processing req at 33736010
+info: Timing access to addr 845824, rank/bank/row 4 7 1
+info: Activate at tick 33736011
+info: Precharging bank 7, rank 4 at tick 33771011, now got 0 active
+info: nextReqEvent scheduled@33761010
+info: Timing access to addr 1549568, rank/bank/row 7 5 2
+info: Epoch start = 33786010, turn = 0, subTurn = 0
+info: Processing req at 33786010
+info: Timing access to addr 837696, rank/bank/row 4 6 1
+info: Activate at tick 33786010
+info: Precharging bank 6, rank 4 at tick 33821010, now got 0 active
+info: nextReqEvent scheduled@33811010
+info: no packet
+info: Epoch start = 33836010, turn = 0, subTurn = 1
+info: Processing req at 33836010
+info: no packet
+info: nextReqEvent scheduled@33861010
+info: Timing access to addr 2087808, rank/bank/row 7 6 3
+info: Epoch start = 33886010, turn = 0, subTurn = 2
+info: Processing req at 33886010
+info: Timing access to addr 845952, rank/bank/row 4 7 1
+info: Activate at tick 33886010
+info: Precharging bank 7, rank 4 at tick 33921010, now got 0 active
+info: nextReqEvent scheduled@33911010
+info: Timing access to addr 1549632, rank/bank/row 7 5 2
+info: Epoch start = 33936010, turn = 0, subTurn = 0
+info: Processing req at 33936010
+info: Timing access to addr 2626944, rank/bank/row 0 0 5
+info: Activate at tick 33936011
+info: Precharging bank 0, rank 0 at tick 33971011, now got 0 active
+info: nextReqEvent scheduled@33961010
+info: no packet
+info: Epoch start = 33986010, turn = 0, subTurn = 1
+info: Processing req at 33986010
+info: no packet
+info: nextReqEvent scheduled@34011010
+info: Timing access to addr 1760106496, rank/bank/row 1 0 3357
+info: Epoch start = 34036010, turn = 0, subTurn = 2
+info: Processing req at 34036010
+info: Timing access to addr 845888, rank/bank/row 4 7 1
+info: Activate at tick 34036010
+info: Precharging bank 7, rank 4 at tick 34071010, now got 0 active
+info: nextReqEvent scheduled@34061010
+info: Timing access to addr 1551488, rank/bank/row 7 5 2
+info: Epoch start = 34086010, turn = 0, subTurn = 0
+info: Processing req at 34086010
+info: no packet
+info: nextReqEvent scheduled@34111010
+info: no packet
+info: Epoch start = 34136010, turn = 0, subTurn = 1
+info: Processing req at 34136010
+info: no packet
+info: nextReqEvent scheduled@34161010
+info: Timing access to addr 1562688, rank/bank/row 7 6 2
+info: Epoch start = 34186010, turn = 0, subTurn = 2
+info: Processing req at 34186010
+info: Timing access to addr 5241152, rank/bank/row 7 7 9
+info: Activate at tick 34186010
+info: Precharging bank 7, rank 7 at tick 34221010, now got 0 active
+info: nextReqEvent scheduled@34211010
+info: Epoch start = 34236010, turn = 0, subTurn = 0
+info: Processing req at 34236010
+info: nextReqEvent scheduled@34261010
+info: no packet
+info: Epoch start = 34286010, turn = 0, subTurn = 1
+info: Processing req at 34286010
+info: no packet
+info: nextReqEvent scheduled@34311010
+info: Timing access to addr 1562752, rank/bank/row 7 6 2
+info: Epoch start = 34336010, turn = 0, subTurn = 2
+info: Processing req at 34336010
+info: Activate at tick 34336010
+info: Precharging bank 7, rank 7 at tick 34371010, now got 0 active
+info: nextReqEvent scheduled@34361010
+info: Epoch start = 34386010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@34411010
+info: Epoch start = 34436010, turn = 0, subTurn = 1
+info: Processing req at 34436010
+info: no packet
+info: nextReqEvent scheduled@34461010
+info: Timing access to addr 1562816, rank/bank/row 7 6 2
+info: Epoch start = 34486010, turn = 0, subTurn = 2
+info: Processing req at 34486010
+info: nextReqEvent scheduled@34511010
+info: Epoch start = 34536010, turn = 0, subTurn = 0
+info: Processing req at 34536010
+info: Activate at tick 34536011
+info: Precharging bank 0, rank 1 at tick 34571011, now got 0 active
+info: nextReqEvent scheduled@34561010
+info: Epoch start = 34586010, turn = 0, subTurn = 1
+info: Processing req at 34586010
+info: nextReqEvent scheduled@34611010
+info: Epoch start = 34636010, turn = 0, subTurn = 2
+info: Processing req at 34636010
+info: nextReqEvent scheduled@34661010
+info: Epoch start = 34686010, turn = 0, subTurn = 0
+info: Processing req at 34686010
+info: Activate at tick 34686011
+info: Precharging bank 0, rank 1 at tick 34721011, now got 0 active
+info: nextReqEvent scheduled@34711010
+info: no packet
+info: Epoch start = 34736010, turn = 0, subTurn = 1
+info: Processing req at 34736010
+info: no packet
+info: nextReqEvent scheduled@34761010
+info: Timing access to addr 1562944, rank/bank/row 7 6 2
+info: Epoch start = 34786010, turn = 0, subTurn = 2
+info: Processing req at 34786010
+info: no packet
+info: nextReqEvent scheduled@34811010
+info: no packet
+info: Epoch start = 34836010, turn = 0, subTurn = 0
+info: Processing req at 34836010
+info: Timing access to addr 11078080, rank/bank/row 1 0 21
+info: Activate at tick 34836011
+info: Precharging bank 0, rank 1 at tick 34871011, now got 0 active
+info: nextReqEvent scheduled@34861010
+info: Epoch start = 34886010, turn = 0, subTurn = 1
+info: Processing req at 34886010
+info: nextReqEvent scheduled@34911010
+info: Epoch start = 34936010, turn = 0, subTurn = 2
+info: Processing req at 34936010
+info: Epoch start = 34986010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@35011010
+info: Epoch start = 35036010, turn = 0, subTurn = 1
+info: Processing req at 35036010
+info: nextReqEvent scheduled@35061010
+info: Epoch start = 35086010, turn = 0, subTurn = 2
+info: Processing req at 35086010
+info: Epoch start = 35136010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@35161010
+info: Epoch start = 35186010, turn = 0, subTurn = 1
+info: Processing req at 35186010
+info: no packet
+info: nextReqEvent scheduled@35211010
+info: Timing access to addr 1563136, rank/bank/row 7 6 2
+info: Epoch start = 35236010, turn = 0, subTurn = 2
+info: Processing req at 35236010
+info: no packet
+info: nextReqEvent scheduled@35261010
+info: Timing access to addr 1555456, rank/bank/row 7 5 2
+info: Epoch start = 35286010, turn = 0, subTurn = 0
+info: Processing req at 35286010
+info: nextReqEvent scheduled@35311010
+info: Epoch start = 35336010, turn = 0, subTurn = 1
+info: Processing req at 35336010
+info: nextReqEvent scheduled@35361010
+info: Epoch start = 35386010, turn = 0, subTurn = 2
+info: Processing req at 35386010
+info: no packet
+info: nextReqEvent scheduled@35411010
+info: Timing access to addr 1556160, rank/bank/row 7 5 2
+info: Epoch start = 35436010, turn = 0, subTurn = 0
+info: Processing req at 35436010
+info: Timing access to addr 2627072, rank/bank/row 0 0 5
+info: Activate at tick 35436011
+info: Precharging bank 0, rank 0 at tick 35471011, now got 0 active
+info: nextReqEvent scheduled@35461010
+info: no packet
+info: Epoch start = 35486010, turn = 0, subTurn = 1
+info: Processing req at 35486010
+info: no packet
+info: nextReqEvent scheduled@35511010
+info: no packet
+info: Epoch start = 35536010, turn = 0, subTurn = 2
+info: Processing req at 35536010
+info: Timing access to addr 5241280, rank/bank/row 7 7 9
+info: Activate at tick 35536010
+info: Precharging bank 7, rank 7 at tick 35571010, now got 0 active
+info: nextReqEvent scheduled@35561010
+info: Timing access to addr 1556224, rank/bank/row 7 5 2
+info: Epoch start = 35586010, turn = 0, subTurn = 0
+info: Processing req at 35586010
+info: Timing access to addr 2627008, rank/bank/row 0 0 5
+info: Activate at tick 35586010
+info: Precharging bank 0, rank 0 at tick 35621010, now got 0 active
+info: nextReqEvent scheduled@35611010
+info: Epoch start = 35636010, turn = 0, subTurn = 1
+info: Processing req at 35636010
+info: nextReqEvent scheduled@35661010
+info: no packet
+info: Epoch start = 35686010, turn = 0, subTurn = 2
+info: Processing req at 35686010
+info: Timing access to addr 5241344, rank/bank/row 7 7 9
+info: Activate at tick 35686010
+info: Precharging bank 7, rank 7 at tick 35721010, now got 0 active
+info: nextReqEvent scheduled@35711010
+info: Timing access to addr 1556288, rank/bank/row 7 5 2
+info: Epoch start = 35736010, turn = 0, subTurn = 0
+info: Processing req at 35736010
+info: nextReqEvent scheduled@35761010
+info: Epoch start = 35786010, turn = 0, subTurn = 1
+info: Processing req at 35786010
+info: nextReqEvent scheduled@35811010
+info: Epoch start = 35836010, turn = 0, subTurn = 2
+info: Processing req at 35836010
+info: nextReqEvent scheduled@35861010
+info: no packet
+info: Epoch start = 35886010, turn = 0, subTurn = 0
+info: Processing req at 35886010
+info: Timing access to addr 11078144, rank/bank/row 1 0 21
+info: Activate at tick 35886011
+info: Precharging bank 0, rank 1 at tick 35921011, now got 0 active
+info: nextReqEvent scheduled@35911010
+info: Epoch start = 35936010, turn = 0, subTurn = 1
+info: Processing req at 35936010
+info: Epoch start = 35986010, turn = 0, subTurn = 2
+info: Processing req at 35986010
+info: Timing access to addr 2617536, rank/bank/row 7 7 4
+info: Activate at tick 35986011
+info: Precharging bank 7, rank 7 at tick 36021011, now got 0 active
+info: nextReqEvent scheduled@36011010
+info: no packet
+info: Epoch start = 36036010, turn = 0, subTurn = 0
+info: Processing req at 36036010
+info: Timing access to addr 11078208, rank/bank/row 1 0 21
+info: Activate at tick 36036011
+info: Precharging bank 0, rank 1 at tick 36071011, now got 0 active
+info: nextReqEvent scheduled@36061010
+info: Timing access to addr 1547392, rank/bank/row 7 4 2
+info: Epoch start = 36086010, turn = 0, subTurn = 1
+info: Processing req at 36086010
+info: no packet
+info: nextReqEvent scheduled@36111010
+info: no packet
+info: Epoch start = 36136010, turn = 0, subTurn = 2
+info: Processing req at 36136010
+info: Timing access to addr 80640, rank/bank/row 1 1 0
+info: Activate at tick 36136010
+info: Precharging bank 1, rank 1 at tick 36171010, now got 0 active
+info: nextReqEvent scheduled@36161010
+info: no packet
+info: Epoch start = 36186010, turn = 0, subTurn = 0
+info: Processing req at 36186010
+info: Timing access to addr 11078272, rank/bank/row 1 0 21
+info: Activate at tick 36186010
+info: Precharging bank 0, rank 1 at tick 36221010, now got 0 active
+info: nextReqEvent scheduled@36211010
+info: no packet
+info: Epoch start = 36236010, turn = 0, subTurn = 1
+info: Processing req at 36236010
+info: no packet
+info: nextReqEvent scheduled@36261010
+info: Timing access to addr 2087232, rank/bank/row 7 6 3
+info: Epoch start = 36286010, turn = 0, subTurn = 2
+info: Processing req at 36286010
+info: Timing access to addr 2617600, rank/bank/row 7 7 4
+info: Activate at tick 36286010
+info: Precharging bank 7, rank 7 at tick 36321010, now got 0 active
+info: nextReqEvent scheduled@36311010
+info: Epoch start = 36336010, turn = 0, subTurn = 0
+info: Processing req at 36336010
+info: Epoch start = 36386010, turn = 0, subTurn = 1
+info: Processing req at 36386010
+info: nextReqEvent scheduled@36411010
+info: Timing access to addr 1575936, rank/bank/row 0 0 3
+info: Epoch start = 36436010, turn = 0, subTurn = 2
+info: Processing req at 36436010
+info: no packet
+info: nextReqEvent scheduled@36461010
+info: Timing access to addr 1556416, rank/bank/row 7 5 2
+info: Epoch start = 36486010, turn = 0, subTurn = 0
+info: Processing req at 36486010
+info: no packet
+info: nextReqEvent scheduled@36511010
+info: no packet
+info: Epoch start = 36536010, turn = 0, subTurn = 1
+info: Processing req at 36536010
+info: no packet
+info: nextReqEvent scheduled@36561010
+info: Timing access to addr 853632, rank/bank/row 5 0 1
+info: Epoch start = 36586010, turn = 0, subTurn = 2
+info: Processing req at 36586010
+info: nextReqEvent scheduled@36611010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 3393, Bank: 2
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 1053, Bank: 5
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 3233, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 4793, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 5753, Bank: 0
+info: Epoch start = 36636010, turn = 0, subTurn = 0
+info: Processing req at 36636010
+info: nextReqEvent scheduled@36661010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 4493, Bank: 6
+info: Epoch start = 36686010, turn = 0, subTurn = 1
+info: Processing req at 36686010
+info: nextReqEvent scheduled@36711010
+info: Epoch start = 36736010, turn = 0, subTurn = 2
+info: Processing req at 36736010
+info: nextReqEvent scheduled@36761010
+info: Epoch start = 36786010, turn = 0, subTurn = 0
+info: Processing req at 36786010
+info: nextReqEvent scheduled@36811010
+info: Epoch start = 36836010, turn = 0, subTurn = 1
+info: Processing req at 36836010
+info: nextReqEvent scheduled@36861010
+info: Epoch start = 36886010, turn = 0, subTurn = 2
+info: Processing req at 36886010
+info: nextReqEvent scheduled@36911010
+info: no packet
+info: Epoch start = 36936010, turn = 0, subTurn = 0
+info: Processing req at 36936010
+info: Timing access to addr 2627136, rank/bank/row 0 0 5
+info: Activate at tick 36936011
+info: Precharging bank 0, rank 0 at tick 36971011, now got 0 active
+info: nextReqEvent scheduled@36961010
+info: no packet
+info: Epoch start = 36986010, turn = 0, subTurn = 1
+info: Processing req at 36986010
+info: no packet
+info: nextReqEvent scheduled@37011010
+info: no packet
+info: Epoch start = 37036010, turn = 0, subTurn = 2
+info: Processing req at 37036010
+info: Timing access to addr 5241408, rank/bank/row 7 7 9
+info: Activate at tick 37036010
+info: Precharging bank 7, rank 7 at tick 37071010, now got 0 active
+info: nextReqEvent scheduled@37061010
+info: Timing access to addr 1555584, rank/bank/row 7 5 2
+info: Epoch start = 37086010, turn = 0, subTurn = 0
+info: Processing req at 37086010
+info: Activate at tick 37086011
+info: Precharging bank 0, rank 0 at tick 37121011, now got 0 active
+info: nextReqEvent scheduled@37111010
+info: Epoch start = 37136010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@37161010
+info: Epoch start = 37186010, turn = 0, subTurn = 2
+info: Processing req at 37186010
+info: no packet
+info: nextReqEvent scheduled@37211010
+info: Timing access to addr 1555648, rank/bank/row 7 5 2
+info: Epoch start = 37236010, turn = 0, subTurn = 0
+info: Processing req at 37236010
+info: nextReqEvent scheduled@37261010
+info: Epoch start = 37286010, turn = 0, subTurn = 1
+info: Processing req at 37286010
+info: nextReqEvent scheduled@37311010
+info: no packet
+info: Epoch start = 37336010, turn = 0, subTurn = 2
+info: Processing req at 37336010
+info: no packet
+info: nextReqEvent scheduled@37361010
+info: Timing access to addr 1555712, rank/bank/row 7 5 2
+info: Epoch start = 37386010, turn = 0, subTurn = 0
+info: Processing req at 37386010
+info: nextReqEvent scheduled@37411010
+info: Epoch start = 37436010, turn = 0, subTurn = 1
+info: Processing req at 37436010
+info: nextReqEvent scheduled@37461010
+info: Timing access to addr 1557056, rank/bank/row 7 6 2
+info: Epoch start = 37486010, turn = 0, subTurn = 2
+info: Processing req at 37486010
+info: no packet
+info: nextReqEvent scheduled@37511010
+info: Timing access to addr 1555776, rank/bank/row 7 5 2
+info: Epoch start = 37536010, turn = 0, subTurn = 0
+info: Processing req at 37536010
+info: Activate at tick 37536010
+info: Precharging bank 0, rank 1 at tick 37571010, now got 0 active
+info: nextReqEvent scheduled@37561010
+info: no packet
+info: Epoch start = 37586010, turn = 0, subTurn = 1
+info: Processing req at 37586010
+info: no packet
+info: nextReqEvent scheduled@37611010
+info: Timing access to addr 1557120, rank/bank/row 7 6 2
+info: Epoch start = 37636010, turn = 0, subTurn = 2
+info: Processing req at 37636010
+info: no packet
+info: nextReqEvent scheduled@37661010
+info: no packet
+info: Epoch start = 37686010, turn = 0, subTurn = 0
+info: Processing req at 37686010
+info: Timing access to addr 11078400, rank/bank/row 1 0 21
+info: Activate at tick 37686011
+info: Precharging bank 0, rank 1 at tick 37721011, now got 0 active
+info: nextReqEvent scheduled@37711010
+info: Epoch start = 37736010, turn = 0, subTurn = 1
+info: Processing req at 37736010
+info: nextReqEvent scheduled@37761010
+info: Epoch start = 37786010, turn = 0, subTurn = 2
+info: Processing req at 37786010
+info: nextReqEvent scheduled@37811010
+info: Epoch start = 37836010, turn = 0, subTurn = 0
+info: Processing req at 37836010
+info: Activate at tick 37836011
+info: Precharging bank 0, rank 1 at tick 37871011, now got 0 active
+info: nextReqEvent scheduled@37861010
+info: no packet
+info: Epoch start = 37886010, turn = 0, subTurn = 1
+info: Processing req at 37886010
+info: no packet
+info: nextReqEvent scheduled@37911010
+info: Timing access to addr 1557376, rank/bank/row 7 6 2
+info: Epoch start = 37936010, turn = 0, subTurn = 2
+info: Processing req at 37936010
+info: no packet
+info: nextReqEvent scheduled@37961010
+info: Timing access to addr 1555840, rank/bank/row 7 5 2
+info: Epoch start = 37986010, turn = 0, subTurn = 0
+info: Processing req at 37986010
+info: nextReqEvent scheduled@38011010
+info: Epoch start = 38036010, turn = 0, subTurn = 1
+info: Processing req at 38036010
+info: nextReqEvent scheduled@38061010
+info: Epoch start = 38086010, turn = 0, subTurn = 2
+info: Processing req at 38086010
+info: Epoch start = 38136010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@38161010
+info: Epoch start = 38186010, turn = 0, subTurn = 1
+info: Processing req at 38186010
+info: nextReqEvent scheduled@38211010
+info: Epoch start = 38236010, turn = 0, subTurn = 2
+info: Processing req at 38236010
+info: Epoch start = 38286010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@38311010
+info: no packet
+info: Epoch start = 38336010, turn = 0, subTurn = 1
+info: Processing req at 38336010
+info: no packet
+info: nextReqEvent scheduled@38361010
+info: Timing access to addr 1557248, rank/bank/row 7 6 2
+info: Epoch start = 38386010, turn = 0, subTurn = 2
+info: Processing req at 38386010
+info: Timing access to addr 5241472, rank/bank/row 7 7 9
+info: Activate at tick 38386010
+info: Precharging bank 7, rank 7 at tick 38421010, now got 0 active
+info: nextReqEvent scheduled@38411010
+info: Timing access to addr 1555904, rank/bank/row 7 5 2
+info: Epoch start = 38436010, turn = 0, subTurn = 0
+info: Processing req at 38436010
+info: Timing access to addr 2627264, rank/bank/row 0 0 5
+info: Activate at tick 38436011
+info: Precharging bank 0, rank 0 at tick 38471011, now got 0 active
+info: nextReqEvent scheduled@38461010
+info: Epoch start = 38486010, turn = 0, subTurn = 1
+info: Processing req at 38486010
+info: nextReqEvent scheduled@38511010
+info: no packet
+info: Epoch start = 38536010, turn = 0, subTurn = 2
+info: Processing req at 38536010
+info: Timing access to addr 5241536, rank/bank/row 7 7 9
+info: Activate at tick 38536011
+info: Precharging bank 7, rank 7 at tick 38571011, now got 0 active
+info: nextReqEvent scheduled@38561010
+info: Timing access to addr 1616192, rank/bank/row 0 5 3
+info: Epoch start = 38586010, turn = 0, subTurn = 0
+info: Processing req at 38586010
+info: nextReqEvent scheduled@38611010
+info: Epoch start = 38636010, turn = 0, subTurn = 1
+info: Processing req at 38636010
+info: no packet
+info: nextReqEvent scheduled@38661010
+info: Timing access to addr 1576000, rank/bank/row 0 0 3
+info: Epoch start = 38686010, turn = 0, subTurn = 2
+info: Processing req at 38686010
+info: no packet
+info: nextReqEvent scheduled@38711010
+info: Timing access to addr 1555968, rank/bank/row 7 5 2
+Number of samples:        500000
+info: Epoch start = 38736010, turn = 0, subTurn = 0
+info: Processing req at 38736010
+info: Timing access to addr 11078528, rank/bank/row 1 0 21
+info: Activate at tick 38736011
+info: Precharging bank 0, rank 1 at tick 38771011, now got 0 active
+info: nextReqEvent scheduled@38761010
+info: Epoch start = 38786010, turn = 0, subTurn = 1
+info: Processing req at 38786010
+info: no packet
+info: nextReqEvent scheduled@38811010
+info: no packet
+info: Epoch start = 38836010, turn = 0, subTurn = 2
+info: Processing req at 38836010
+info: no packet
+info: nextReqEvent scheduled@38861010
+info: no packet
+info: Epoch start = 38886010, turn = 0, subTurn = 0
+info: Processing req at 38886010
+info: Timing access to addr 11078592, rank/bank/row 1 0 21
+info: Activate at tick 38886011
+info: Precharging bank 0, rank 1 at tick 38921011, now got 0 active
+info: nextReqEvent scheduled@38911010
+info: no packet
+info: Epoch start = 38936010, turn = 0, subTurn = 1
+info: Processing req at 38936010
+info: no packet
+info: nextReqEvent scheduled@38961010
+info: Timing access to addr 1802048, rank/bank/row 3 3 3
+info: Epoch start = 38986010, turn = 0, subTurn = 2
+info: Processing req at 38986010
+info: no packet
+info: nextReqEvent scheduled@39011010
+info: no packet
+info: Epoch start = 39036010, turn = 0, subTurn = 0
+info: Processing req at 39036010
+info: Timing access to addr 11078656, rank/bank/row 1 0 21
+info: Activate at tick 39036011
+info: Precharging bank 0, rank 1 at tick 39071011, now got 0 active
+info: nextReqEvent scheduled@39061010
+info: no packet
+info: Epoch start = 39086010, turn = 0, subTurn = 1
+info: Processing req at 39086010
+info: no packet
+info: nextReqEvent scheduled@39111010
+info: Timing access to addr 1229632, rank/bank/row 2 6 2
+info: Epoch start = 39136010, turn = 0, subTurn = 2
+info: Processing req at 39136010
+info: nextReqEvent scheduled@39161010
+info: Epoch start = 39186010, turn = 0, subTurn = 0
+info: Processing req at 39186010
+info: Timing access to addr 960, rank/bank/row 0 0 0
+info: Activate at tick 39186011
+info: Precharging bank 0, rank 0 at tick 39221011, now got 0 active
+info: nextReqEvent scheduled@39211010
+info: no packet
+info: Epoch start = 39236010, turn = 0, subTurn = 1
+info: Processing req at 39236010
+info: no packet
+info: nextReqEvent scheduled@39261010
+info: Timing access to addr 947328, rank/bank/row 6 3 1
+info: Epoch start = 39286010, turn = 0, subTurn = 2
+info: Processing req at 39286010
+info: no packet
+info: nextReqEvent scheduled@39311010
+info: Timing access to addr 1224512, rank/bank/row 2 5 2
+info: Epoch start = 39336010, turn = 0, subTurn = 0
+info: Processing req at 39336010
+info: no packet
+info: nextReqEvent scheduled@39361010
+info: no packet
+info: Epoch start = 39386010, turn = 0, subTurn = 1
+info: Processing req at 39386010
+info: no packet
+info: nextReqEvent scheduled@39411010
+info: Timing access to addr 1563200, rank/bank/row 7 6 2
+info: Epoch start = 39436010, turn = 0, subTurn = 2
+info: Processing req at 39436010
+info: no packet
+info: nextReqEvent scheduled@39461010
+info: Timing access to addr 1556032, rank/bank/row 7 5 2
+random seed:              0
+info: Epoch start = 39486010, turn = 0, subTurn = 0
+info: Processing req at 39486010
+info: nextReqEvent scheduled@39511010
+info: Epoch start = 39536010, turn = 0, subTurn = 1
+info: Processing req at 39536010
+info: no packet
+info: nextReqEvent scheduled@39561010
+info: Timing access to addr 1557440, rank/bank/row 7 6 2
+info: Epoch start = 39586010, turn = 0, subTurn = 2
+info: Processing req at 39586010
+info: Timing access to addr 5241600, rank/bank/row 7 7 9
+info: Activate at tick 39586010
+info: Precharging bank 7, rank 7 at tick 39621010, now got 0 active
+info: nextReqEvent scheduled@39611010
+info: no packet
+info: Epoch start = 39636010, turn = 0, subTurn = 0
+info: Processing req at 39636010
+info: Timing access to addr 2627328, rank/bank/row 0 0 5
+info: Activate at tick 39636011
+info: Precharging bank 0, rank 0 at tick 39671011, now got 0 active
+info: nextReqEvent scheduled@39661010
+info: no packet
+info: Epoch start = 39686010, turn = 0, subTurn = 1
+info: Processing req at 39686010
+info: no packet
+info: nextReqEvent scheduled@39711010
+info: Timing access to addr 947392, rank/bank/row 6 3 1
+info: Epoch start = 39736010, turn = 0, subTurn = 2
+info: Processing req at 39736010
+info: nextReqEvent scheduled@39761010
+info: Epoch start = 39786010, turn = 0, subTurn = 0
+info: Processing req at 39786010
+info: Activate at tick 39786010
+info: Precharging bank 0, rank 0 at tick 39821010, now got 0 active
+info: nextReqEvent scheduled@39811010
+info: Epoch start = 39836010, turn = 0, subTurn = 1
+info: Processing req at 39836010
+info: no packet
+info: nextReqEvent scheduled@39861010
+info: Timing access to addr 1564416, rank/bank/row 7 6 2
+info: Epoch start = 39886010, turn = 0, subTurn = 2
+info: Processing req at 39886010
+info: Timing access to addr 5241664, rank/bank/row 7 7 9
+info: Activate at tick 39886010
+info: Precharging bank 7, rank 7 at tick 39921010, now got 0 active
+info: nextReqEvent scheduled@39911010
+info: no packet
+info: Epoch start = 39936010, turn = 0, subTurn = 0
+info: Processing req at 39936010
+info: no packet
+info: nextReqEvent scheduled@39961010
+info: Timing access to addr 1565952, rank/bank/row 7 7 2
+info: Epoch start = 39986010, turn = 0, subTurn = 1
+info: Processing req at 39986010
+info: no packet
+info: nextReqEvent scheduled@40011010
+info: Timing access to addr 1563520, rank/bank/row 7 6 2
+info: Epoch start = 40036010, turn = 0, subTurn = 2
+info: Processing req at 40036010
+info: no packet
+info: nextReqEvent scheduled@40061010
+info: no packet
+info: Epoch start = 40086010, turn = 0, subTurn = 0
+info: Processing req at 40086010
+info: Timing access to addr 11078720, rank/bank/row 1 0 21
+info: Activate at tick 40086011
+info: Precharging bank 0, rank 1 at tick 40121011, now got 0 active
+info: nextReqEvent scheduled@40111010
+info: Timing access to addr 1565056, rank/bank/row 7 7 2
+info: Epoch start = 40136010, turn = 0, subTurn = 1
+info: Processing req at 40136010
+info: nextReqEvent scheduled@40161010
+info: Epoch start = 40186010, turn = 0, subTurn = 2
+info: Processing req at 40186010
+info: nextReqEvent scheduled@40211010
+info: no packet
+info: Epoch start = 40236010, turn = 0, subTurn = 0
+info: Processing req at 40236010
+info: Timing access to addr 11078784, rank/bank/row 1 0 21
+info: Activate at tick 40236011
+info: Precharging bank 0, rank 1 at tick 40271011, now got 0 active
+info: nextReqEvent scheduled@40261010
+histogram(s) saved to:    [not saved]
+info: Epoch start = 40286010, turn = 0, subTurn = 1
+info: Processing req at 40286010
+info: Epoch start = 40336010, turn = 0, subTurn = 2
+info: Processing req at 40336010
+info: nextReqEvent scheduled@40361010
+info: Timing access to addr 1201216, rank/bank/row 2 2 2
+info: Epoch start = 40386010, turn = 0, subTurn = 0
+info: Processing req at 40386010
+info: Timing access to addr 11078848, rank/bank/row 1 0 21
+info: Activate at tick 40386011
+info: Precharging bank 0, rank 1 at tick 40421011, now got 0 active
+info: nextReqEvent scheduled@40411010
+info: Epoch start = 40436010, turn = 0, subTurn = 1
+info: Processing req at 40436010
+info: nextReqEvent scheduled@40461010
+info: Timing access to addr 947456, rank/bank/row 6 3 1
+info: Epoch start = 40486010, turn = 0, subTurn = 2
+info: Processing req at 40486010
+info: nextReqEvent scheduled@40511010
+info: Epoch start = 40536010, turn = 0, subTurn = 0
+info: Processing req at 40536010
+info: Epoch start = 40586010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@40611010
+info: Epoch start = 40636010, turn = 0, subTurn = 2
+info: Processing req at 40636010
+info: nextReqEvent scheduled@40661010
+info: Epoch start = 40686010, turn = 0, subTurn = 0
+info: Processing req at 40686010
+info: Epoch start = 40736010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@40761010
+info: no packet
+info: Epoch start = 40786010, turn = 0, subTurn = 2
+info: Processing req at 40786010
+info: no packet
+info: nextReqEvent scheduled@40811010
+info: Timing access to addr 1201408, rank/bank/row 2 2 2
+info: Epoch start = 40836010, turn = 0, subTurn = 0
+info: Processing req at 40836010
+info: nextReqEvent scheduled@40861010
+info: Epoch start = 40886010, turn = 0, subTurn = 1
+info: Processing req at 40886010
+info: no packet
+info: nextReqEvent scheduled@40911010
+info: no packet
+info: Epoch start = 40936010, turn = 0, subTurn = 2
+info: Processing req at 40936010
+info: Timing access to addr 5241728, rank/bank/row 7 7 9
+info: Activate at tick 40936011
+info: Precharging bank 7, rank 7 at tick 40971011, now got 0 active
+info: nextReqEvent scheduled@40961010
+info: Timing access to addr 1201536, rank/bank/row 2 2 2
+info: Epoch start = 40986010, turn = 0, subTurn = 0
+info: Processing req at 40986010
+info: Activate at tick 40986011
+info: Precharging bank 0, rank 0 at tick 41021011, now got 0 active
+info: nextReqEvent scheduled@41011010
+info: Epoch start = 41036010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@41061010
+info: no packet
+info: Epoch start = 41086010, turn = 0, subTurn = 2
+info: Processing req at 41086010
+info: no packet
+info: nextReqEvent scheduled@41111010
+info: Timing access to addr 1201600, rank/bank/row 2 2 2
+info: Epoch start = 41136010, turn = 0, subTurn = 0
+info: Processing req at 41136010
+info: Timing access to addr 2627520, rank/bank/row 0 0 5
+info: Activate at tick 41136011
+info: Precharging bank 0, rank 0 at tick 41171011, now got 0 active
+info: nextReqEvent scheduled@41161010
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+info: Epoch start = 41186010, turn = 0, subTurn = 1
+info: Processing req at 41186010
+info: nextReqEvent scheduled@41211010
+info: Epoch start = 41236010, turn = 0, subTurn = 2
+info: Processing req at 41236010
+info: no packet
+info: nextReqEvent scheduled@41261010
+info: Timing access to addr 1201472, rank/bank/row 2 2 2
+
+info: Epoch start = 41286010, turn = 0, subTurn = 0
+info: Processing req at 41286010
+info: Timing access to addr 11078912, rank/bank/row 1 0 21
+info: Activate at tick 41286011
+info: Precharging bank 0, rank 1 at tick 41321011, now got 0 active
+info: nextReqEvent scheduled@41311010
+info: Epoch start = 41336010, turn = 0, subTurn = 1
+info: Processing req at 41336010
+info: no packet
+info: nextReqEvent scheduled@41361010
+info: Timing access to addr 1798336, rank/bank/row 3 3 3
+info: Epoch start = 41386010, turn = 0, subTurn = 2
+info: Processing req at 41386010
+info: no packet
+info: nextReqEvent scheduled@41411010
+info: Timing access to addr 1201664, rank/bank/row 2 2 2
+info: Epoch start = 41436010, turn = 0, subTurn = 0
+info: Processing req at 41436010
+info: Activate at tick 41436011
+info: Precharging bank 0, rank 1 at tick 41471011, now got 0 active
+info: nextReqEvent scheduled@41461010
+info: Epoch start = 41486010, turn = 0, subTurn = 1
+info: Processing req at 41486010
+info: no packet
+info: nextReqEvent scheduled@41511010
+info: Timing access to addr 1247360, rank/bank/row 3 0 2
+info: Epoch start = 41536010, turn = 0, subTurn = 2
+info: Processing req at 41536010
+info: no packet
+info: nextReqEvent scheduled@41561010
+info: no packet
+info: Epoch start = 41586010, turn = 0, subTurn = 0
+info: Processing req at 41586010
+info: Timing access to addr 11079040, rank/bank/row 1 0 21
+info: Activate at tick 41586011
+info: Precharging bank 0, rank 1 at tick 41621011, now got 0 active
+info: nextReqEvent scheduled@41611010
+info: no packet
+info: Epoch start = 41636010, turn = 0, subTurn = 1
+info: Processing req at 41636010
+info: no packet
+info: nextReqEvent scheduled@41661010
+info: Timing access to addr 1248192, rank/bank/row 3 0 2
+info: Epoch start = 41686010, turn = 0, subTurn = 2
+info: Processing req at 41686010
+info: no packet
+info: nextReqEvent scheduled@41711010
+info: Timing access to addr 2316800, rank/bank/row 3 2 4
+info: Epoch start = 41736010, turn = 0, subTurn = 0
+info: Processing req at 41736010
+info: no packet
+info: nextReqEvent scheduled@41761010
+info: no packet
+info: Epoch start = 41786010, turn = 0, subTurn = 1
+info: Processing req at 41786010
+info: no packet
+info: nextReqEvent scheduled@41811010
+info: Timing access to addr 947520, rank/bank/row 6 3 1
+info: Epoch start = 41836010, turn = 0, subTurn = 2
+info: Processing req at 41836010
+info: no packet
+info: nextReqEvent scheduled@41861010
+info: Timing access to addr 2316736, rank/bank/row 3 2 4
+info: Epoch start = 41886010, turn = 0, subTurn = 0
+info: Processing req at 41886010
+info: no packet
+info: nextReqEvent scheduled@41911010
+info: no packet
+info: Epoch start = 41936010, turn = 0, subTurn = 1
+info: Processing req at 41936010
+info: no packet
+info: nextReqEvent scheduled@41961010
+info: Timing access to addr 2477184, rank/bank/row 5 6 4
+info: Epoch start = 41986010, turn = 0, subTurn = 2
+info: Processing req at 41986010
+info: nextReqEvent scheduled@42011010
+info: Epoch start = 42036010, turn = 0, subTurn = 0
+info: Processing req at 42036010
+info: Epoch start = 42086010, turn = 0, subTurn = 1
+info: Processing req at 42086010
+info: no packet
+info: nextReqEvent scheduled@42111010
+info: no packet
+info: Epoch start = 42136010, turn = 0, subTurn = 2
+info: Processing req at 42136010
+info: Timing access to addr 5241792, rank/bank/row 7 7 9
+info: Activate at tick 42136011
+info: Precharging bank 7, rank 7 at tick 42171011, now got 0 active
+info: nextReqEvent scheduled@42161010
+info: Timing access to addr 939584, rank/bank/row 6 2 1
+info: Epoch start = 42186010, turn = 0, subTurn = 0
+info: Processing req at 42186010
+info: Activate at tick 42186011
+info: Precharging bank 0, rank 0 at tick 42221011, now got 0 active
+info: nextReqEvent scheduled@42211010
+info: Epoch start = 42236010, turn = 0, subTurn = 1
+info: Epoch start = 42286010, turn = 0, subTurn = 2
+info: Processing req at 42286010
+info: Activate at tick 42286011
+info: Precharging bank 7, rank 7 at tick 42321011, now got 0 active
+info: nextReqEvent scheduled@42311010
+info: Epoch start = 42336010, turn = 0, subTurn = 0
+info: Processing req at 42336010
+info: nextReqEvent scheduled@42361010
+info: Timing access to addr 1218304, rank/bank/row 2 4 2
+info: Epoch start = 42386010, turn = 0, subTurn = 1
+info: Processing req at 42386010
+info: no packet
+info: nextReqEvent scheduled@42411010
+info: no packet
+info: Epoch start = 42436010, turn = 0, subTurn = 2
+info: Processing req at 42436010
+info: no packet
+info: nextReqEvent scheduled@42461010
+info: Timing access to addr 1201856, rank/bank/row 2 2 2
+info: Epoch start = 42486010, turn = 0, subTurn = 0
+info: Processing req at 42486010
+info: Timing access to addr 11079104, rank/bank/row 1 0 21
+info: Activate at tick 42486011
+info: Precharging bank 0, rank 1 at tick 42521011, now got 0 active
+info: nextReqEvent scheduled@42511010
+info: Timing access to addr 931968, rank/bank/row 6 1 1
+info: Epoch start = 42536010, turn = 0, subTurn = 1
+info: Processing req at 42536010
+info: nextReqEvent scheduled@42561010
+info: Epoch start = 42586010, turn = 0, subTurn = 2
+info: Processing req at 42586010
+info: no packet
+info: nextReqEvent scheduled@42611010
+info: Timing access to addr 1199872, rank/bank/row 2 2 2
+info: Epoch start = 42636010, turn = 0, subTurn = 0
+info: Processing req at 42636010
+info: Timing access to addr 11079168, rank/bank/row 1 0 21
+info: Activate at tick 42636011
+info: Precharging bank 0, rank 1 at tick 42671011, now got 0 active
+info: nextReqEvent scheduled@42661010
+info: Timing access to addr 932032, rank/bank/row 6 1 1
+info: Epoch start = 42686010, turn = 0, subTurn = 1
+info: Processing req at 42686010
+info: nextReqEvent scheduled@42711010
+info: Epoch start = 42736010, turn = 0, subTurn = 2
+info: Processing req at 42736010
+info: no packet
+info: nextReqEvent scheduled@42761010
+info: Timing access to addr 1202624, rank/bank/row 2 2 2
+info: Epoch start = 42786010, turn = 0, subTurn = 0
+info: Processing req at 42786010
+info: Activate at tick 42786011
+info: Precharging bank 0, rank 1 at tick 42821011, now got 0 active
+info: nextReqEvent scheduled@42811010
+info: Epoch start = 42836010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@42861010
+info: Epoch start = 42886010, turn = 0, subTurn = 2
+info: Processing req at 42886010
+info: nextReqEvent scheduled@42911010
+info: Epoch start = 42936010, turn = 0, subTurn = 0
+info: Processing req at 42936010
+info: Epoch start = 42986010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@43011010
+info: Epoch start = 43036010, turn = 0, subTurn = 2
+info: Processing req at 43036010
+info: nextReqEvent scheduled@43061010
+info: Epoch start = 43086010, turn = 0, subTurn = 0
+info: Processing req at 43086010
+info: Epoch start = 43136010, turn = 0, subTurn = 1
+info: Epoch start = 43186010, turn = 0, subTurn = 2
+info: Processing req at 43186010
+info: no packet
+info: nextReqEvent scheduled@43211010
+info: no packet
+info: Epoch start = 43236010, turn = 0, subTurn = 0
+info: Processing req at 43236010
+info: no packet
+info: nextReqEvent scheduled@43261010
+info: Timing access to addr 932096, rank/bank/row 6 1 1
+info: Epoch start = 43286010, turn = 0, subTurn = 1
+info: Processing req at 43286010
+info: no packet
+info: nextReqEvent scheduled@43311010
+info: no packet
+info: Epoch start = 43336010, turn = 0, subTurn = 2
+info: Processing req at 43336010
+info: Timing access to addr 5241920, rank/bank/row 7 7 9
+info: Activate at tick 43336011
+info: Precharging bank 7, rank 7 at tick 43371011, now got 0 active
+info: nextReqEvent scheduled@43361010
+info: no packet
+info: Epoch start = 43386010, turn = 0, subTurn = 0
+info: Processing req at 43386010
+info: Timing access to addr 2627648, rank/bank/row 0 0 5
+info: Activate at tick 43386011
+info: Precharging bank 0, rank 0 at tick 43421011, now got 0 active
+info: nextReqEvent scheduled@43411010
+info: Timing access to addr 928640, rank/bank/row 6 1 1
+info: Epoch start = 43436010, turn = 0, subTurn = 1
+info: Processing req at 43436010
+info: nextReqEvent scheduled@43461010
+info: Epoch start = 43486010, turn = 0, subTurn = 2
+info: Processing req at 43486010
+info: nextReqEvent scheduled@43511010
+info: no packet
+info: Epoch start = 43536010, turn = 0, subTurn = 0
+info: Processing req at 43536010
+info: Timing access to addr 2627712, rank/bank/row 0 0 5
+info: Activate at tick 43536010
+info: Precharging bank 0, rank 0 at tick 43571010, now got 0 active
+info: nextReqEvent scheduled@43561010
+info: Epoch start = 43586010, turn = 0, subTurn = 1
+info: Processing req at 43586010
+info: Epoch start = 43636010, turn = 0, subTurn = 2
+info: Processing req at 43636010
+info: nextReqEvent scheduled@43661010
+info: no packet
+info: Epoch start = 43686010, turn = 0, subTurn = 0
+info: Processing req at 43686010
+info: Timing access to addr 11079296, rank/bank/row 1 0 21
+info: Activate at tick 43686011
+info: Precharging bank 0, rank 1 at tick 43721011, now got 0 active
+info: nextReqEvent scheduled@43711010
+info: Epoch start = 43736010, turn = 0, subTurn = 1
+info: Processing req at 43736010
+info: nextReqEvent scheduled@43761010
+info: no packet
+info: Epoch start = 43786010, turn = 0, subTurn = 2
+info: Processing req at 43786010
+info: no packet
+info: nextReqEvent scheduled@43811010
+info: Timing access to addr 1226944, rank/bank/row 2 5 2
+info: Epoch start = 43836010, turn = 0, subTurn = 0
+info: Processing req at 43836010
+info: Timing access to addr 11079360, rank/bank/row 1 0 21
+info: Activate at tick 43836011
+info: Precharging bank 0, rank 1 at tick 43871011, now got 0 active
+info: nextReqEvent scheduled@43861010
+info: Timing access to addr 1284224, rank/bank/row 3 4 2
+info: Epoch start = 43886010, turn = 0, subTurn = 1
+info: Processing req at 43886010
+info: nextReqEvent scheduled@43911010
+info: no packet
+info: Epoch start = 43936010, turn = 0, subTurn = 2
+info: Processing req at 43936010
+info: no packet
+info: nextReqEvent scheduled@43961010
+info: Timing access to addr 1198080, rank/bank/row 2 2 2
+info: Epoch start = 43986010, turn = 0, subTurn = 0
+info: Processing req at 43986010
+info: Timing access to addr 11079424, rank/bank/row 1 0 21
+info: Activate at tick 43986011
+info: Precharging bank 0, rank 1 at tick 44021011, now got 0 active
+info: nextReqEvent scheduled@44011010
+info: Timing access to addr 1284352, rank/bank/row 3 4 2
+info: Epoch start = 44036010, turn = 0, subTurn = 1
+info: Processing req at 44036010
+info: no packet
+info: nextReqEvent scheduled@44061010
+info: no packet
+info: Epoch start = 44086010, turn = 0, subTurn = 2
+info: Processing req at 44086010
+info: no packet
+info: nextReqEvent scheduled@44111010
+info: Timing access to addr 999552, rank/bank/row 7 2 1
+info: Epoch start = 44136010, turn = 0, subTurn = 0
+info: Processing req at 44136010
+info: nextReqEvent scheduled@44161010
+info: Epoch start = 44186010, turn = 0, subTurn = 1
+info: Processing req at 44186010
+info: nextReqEvent scheduled@44211010
+info: Epoch start = 44236010, turn = 0, subTurn = 2
+info: Processing req at 44236010
+info: nextReqEvent scheduled@44261010
+info: Epoch start = 44286010, turn = 0, subTurn = 0
+info: Processing req at 44286010
+info: Epoch start = 44336010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@44361010
+info: Epoch start = 44386010, turn = 0, subTurn = 2
+info: Processing req at 44386010
+info: nextReqEvent scheduled@44411010
+info: Epoch start = 44436010, turn = 0, subTurn = 0
+info: Processing req at 44436010
+info: nextReqEvent scheduled@44461010
+info: Epoch start = 44486010, turn = 0, subTurn = 1
+info: Processing req at 44486010
+info: nextReqEvent scheduled@44511010
+info: Timing access to addr 2477696, rank/bank/row 5 6 4
+info: Epoch start = 44536010, turn = 0, subTurn = 2
+info: Processing req at 44536010
+info: no packet
+info: nextReqEvent scheduled@44561010
+info: no packet
+info: Epoch start = 44586010, turn = 0, subTurn = 0
+info: Processing req at 44586010
+info: no packet
+info: nextReqEvent scheduled@44611010
+info: no packet
+info: Epoch start = 44636010, turn = 0, subTurn = 1
+info: Processing req at 44636010
+info: no packet
+info: nextReqEvent scheduled@44661010
+info: Timing access to addr 2477376, rank/bank/row 5 6 4
+info: Epoch start = 44686010, turn = 0, subTurn = 2
+info: Processing req at 44686010
+info: no packet
+info: nextReqEvent scheduled@44711010
+info: no packet
+info: Epoch start = 44736010, turn = 0, subTurn = 0
+info: Processing req at 44736010
+info: Timing access to addr 2627776, rank/bank/row 0 0 5
+info: Activate at tick 44736011
+info: Precharging bank 0, rank 0 at tick 44771011, now got 0 active
+info: nextReqEvent scheduled@44761010
+info: no packet
+info: Epoch start = 44786010, turn = 0, subTurn = 1
+info: Processing req at 44786010
+info: no packet
+info: nextReqEvent scheduled@44811010
+info: Timing access to addr 2477248, rank/bank/row 5 6 4
+info: Epoch start = 44836010, turn = 0, subTurn = 2
+info: Processing req at 44836010
+info: Timing access to addr 5241984, rank/bank/row 7 7 9
+info: Activate at tick 44836010
+info: Precharging bank 7, rank 7 at tick 44871010, now got 0 active
+info: nextReqEvent scheduled@44861010
+info: Timing access to addr 999744, rank/bank/row 7 2 1
+info: Epoch start = 44886010, turn = 0, subTurn = 0
+info: Processing req at 44886010
+info: nextReqEvent scheduled@44911010
+info: no packet
+info: Epoch start = 44936010, turn = 0, subTurn = 1
+info: Processing req at 44936010
+info: no packet
+info: nextReqEvent scheduled@44961010
+info: Timing access to addr 2477312, rank/bank/row 5 6 4
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 7073, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 8153, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 9953, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 11153, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 11993, Bank: 0
+info: Epoch start = 44986010, turn = 0, subTurn = 2
+info: Processing req at 44986010
+info: Timing access to addr 5242048, rank/bank/row 7 7 9
+info: Activate at tick 44986010
+info: Precharging bank 7, rank 7 at tick 45021010, now got 0 active
+info: nextReqEvent scheduled@45011010
+info: Epoch start = 45036010, turn = 0, subTurn = 0
+info: Processing req at 45036010
+info: Epoch start = 45086010, turn = 0, subTurn = 1
+info: Processing req at 45086010
+info: nextReqEvent scheduled@45111010
+info: Timing access to addr 2477568, rank/bank/row 5 6 4
+info: Epoch start = 45136010, turn = 0, subTurn = 2
+info: Processing req at 45136010
+info: no packet
+info: nextReqEvent scheduled@45161010
+info: Timing access to addr 999872, rank/bank/row 7 2 1
+info: Epoch start = 45186010, turn = 0, subTurn = 0
+info: Processing req at 45186010
+info: nextReqEvent scheduled@45211010
+info: no packet
+info: Epoch start = 45236010, turn = 0, subTurn = 1
+info: Processing req at 45236010
+info: no packet
+info: nextReqEvent scheduled@45261010
+info: Timing access to addr 2477504, rank/bank/row 5 6 4
+info: Epoch start = 45286010, turn = 0, subTurn = 2
+info: Processing req at 45286010
+info: no packet
+info: nextReqEvent scheduled@45311010
+info: Timing access to addr 999936, rank/bank/row 7 2 1
+info: Epoch start = 45336010, turn = 0, subTurn = 0
+info: Processing req at 45336010
+info: Activate at tick 45336011
+info: Precharging bank 0, rank 1 at tick 45371011, now got 0 active
+info: nextReqEvent scheduled@45361010
+info: Epoch start = 45386010, turn = 0, subTurn = 1
+info: Processing req at 45386010
+info: nextReqEvent scheduled@45411010
+info: Timing access to addr 2477632, rank/bank/row 5 6 4
+info: Epoch start = 45436010, turn = 0, subTurn = 2
+info: Processing req at 45436010
+info: no packet
+info: nextReqEvent scheduled@45461010
+info: no packet
+info: Epoch start = 45486010, turn = 0, subTurn = 0
+info: Processing req at 45486010
+info: Timing access to addr 11079552, rank/bank/row 1 0 21
+info: Activate at tick 45486011
+info: Precharging bank 0, rank 1 at tick 45521011, now got 0 active
+info: nextReqEvent scheduled@45511010
+info: Timing access to addr 928896, rank/bank/row 6 1 1
+info: Epoch start = 45536010, turn = 0, subTurn = 1
+info: Processing req at 45536010
+info: no packet
+info: nextReqEvent scheduled@45561010
+info: Timing access to addr 1248256, rank/bank/row 3 0 2
+info: Epoch start = 45586010, turn = 0, subTurn = 2
+info: Processing req at 45586010
+info: no packet
+info: nextReqEvent scheduled@45611010
+info: no packet
+info: Epoch start = 45636010, turn = 0, subTurn = 0
+info: Processing req at 45636010
+info: Timing access to addr 11079616, rank/bank/row 1 0 21
+info: Activate at tick 45636011
+info: Precharging bank 0, rank 1 at tick 45671011, now got 0 active
+info: nextReqEvent scheduled@45661010
+info: Epoch start = 45686010, turn = 0, subTurn = 1
+info: Processing req at 45686010
+info: nextReqEvent scheduled@45711010
+info: Epoch start = 45736010, turn = 0, subTurn = 2
+info: Processing req at 45736010
+info: Epoch start = 45786010, turn = 0, subTurn = 0
+info: Epoch start = 45836010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@45861010
+info: Epoch start = 45886010, turn = 0, subTurn = 2
+info: Processing req at 45886010
+info: no packet
+info: nextReqEvent scheduled@45911010
+info: Timing access to addr 1198144, rank/bank/row 2 2 2
+info: Epoch start = 45936010, turn = 0, subTurn = 0
+info: Processing req at 45936010
+info: no packet
+info: nextReqEvent scheduled@45961010
+info: Timing access to addr 928960, rank/bank/row 6 1 1
+info: Epoch start = 45986010, turn = 0, subTurn = 1
+info: Processing req at 45986010
+info: nextReqEvent scheduled@46011010
+info: Epoch start = 46036010, turn = 0, subTurn = 2
+info: Processing req at 46036010
+info: nextReqEvent scheduled@46061010
+info: Epoch start = 46086010, turn = 0, subTurn = 0
+info: Processing req at 46086010
+info: nextReqEvent scheduled@46111010
+info: Epoch start = 46136010, turn = 0, subTurn = 1
+info: Processing req at 46136010
+info: no packet
+info: nextReqEvent scheduled@46161010
+info: no packet
+info: Epoch start = 46186010, turn = 0, subTurn = 2
+info: Processing req at 46186010
+info: Timing access to addr 5242112, rank/bank/row 7 7 9
+info: Activate at tick 46186011
+info: Precharging bank 7, rank 7 at tick 46221011, now got 0 active
+info: nextReqEvent scheduled@46211010
+info: Timing access to addr 1001856, rank/bank/row 7 2 1
+info: Epoch start = 46236010, turn = 0, subTurn = 0
+info: Processing req at 46236010
+info: Timing access to addr 2627904, rank/bank/row 0 0 5
+info: Activate at tick 46236011
+info: Precharging bank 0, rank 0 at tick 46271011, now got 0 active
+info: nextReqEvent scheduled@46261010
+info: Timing access to addr 929408, rank/bank/row 6 1 1
+info: Epoch start = 46286010, turn = 0, subTurn = 1
+info: Processing req at 46286010
+info: nextReqEvent scheduled@46311010
+info: Timing access to addr 920640, rank/bank/row 6 0 1
+info: Epoch start = 46336010, turn = 0, subTurn = 2
+info: Processing req at 46336010
+info: Timing access to addr 5242176, rank/bank/row 7 7 9
+info: Activate at tick 46336011
+info: Precharging bank 7, rank 7 at tick 46371011, now got 0 active
+info: nextReqEvent scheduled@46361010
+info: Timing access to addr 1001920, rank/bank/row 7 2 1
+info: Epoch start = 46386010, turn = 0, subTurn = 0
+info: Processing req at 46386010
+info: Activate at tick 46386010
+info: Precharging bank 0, rank 0 at tick 46421010, now got 0 active
+info: nextReqEvent scheduled@46411010
+info: Epoch start = 46436010, turn = 0, subTurn = 1
+info: Processing req at 46436010
+info: no packet
+info: nextReqEvent scheduled@46461010
+info: Timing access to addr 920704, rank/bank/row 6 0 1
+info: Epoch start = 46486010, turn = 0, subTurn = 2
+info: Processing req at 46486010
+info: nextReqEvent scheduled@46511010
+info: Epoch start = 46536010, turn = 0, subTurn = 0
+info: Processing req at 46536010
+info: Activate at tick 46536011
+info: Precharging bank 0, rank 1 at tick 46571011, now got 0 active
+info: nextReqEvent scheduled@46561010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 8373, Bank: 5
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 9573, Bank: 2
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 11373, Bank: 2
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 12093, Bank: 2
+info: Epoch start = 46586010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@46611010
+info: Epoch start = 46636010, turn = 0, subTurn = 2
+info: Processing req at 46636010
+info: no packet
+info: nextReqEvent scheduled@46661010
+info: no packet
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 8693, Bank: 3
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 10653, Bank: 2
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 11773, Bank: 1
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 12253, Bank: 1
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 13693, Bank: 1
+info: Epoch start = 46686010, turn = 0, subTurn = 0
+info: Processing req at 46686010
+info: Timing access to addr 11079744, rank/bank/row 1 0 21
+info: Activate at tick 46686011
+info: Precharging bank 0, rank 1 at tick 46721011, now got 0 active
+info: nextReqEvent scheduled@46711010
+info: no packet
+info: Epoch start = 46736010, turn = 0, subTurn = 1
+info: Processing req at 46736010
+info: no packet
+info: nextReqEvent scheduled@46761010
+info: Timing access to addr 1247424, rank/bank/row 3 0 2
+info: Epoch start = 46786010, turn = 0, subTurn = 2
+info: Processing req at 46786010
+info: no packet
+info: nextReqEvent scheduled@46811010
+info: no packet
+info: Epoch start = 46836010, turn = 0, subTurn = 0
+info: Processing req at 46836010
+info: Timing access to addr 11079808, rank/bank/row 1 0 21
+info: Activate at tick 46836011
+info: Precharging bank 0, rank 1 at tick 46871011, now got 0 active
+info: nextReqEvent scheduled@46861010
+info: no packet
+info: Epoch start = 46886010, turn = 0, subTurn = 1
+info: Processing req at 46886010
+info: no packet
+info: nextReqEvent scheduled@46911010
+info: Timing access to addr 1249472, rank/bank/row 3 0 2
+info: Epoch start = 46936010, turn = 0, subTurn = 2
+info: Processing req at 46936010
+info: no packet
+info: nextReqEvent scheduled@46961010
+info: Timing access to addr 1201920, rank/bank/row 2 2 2
+info: Epoch start = 46986010, turn = 0, subTurn = 0
+info: Processing req at 46986010
+info: no packet
+info: nextReqEvent scheduled@47011010
+info: no packet
+info: Epoch start = 47036010, turn = 0, subTurn = 1
+info: Processing req at 47036010
+info: no packet
+info: nextReqEvent scheduled@47061010
+info: Timing access to addr 853056, rank/bank/row 5 0 1
+info: Epoch start = 47086010, turn = 0, subTurn = 2
+info: Processing req at 47086010
+info: no packet
+info: nextReqEvent scheduled@47111010
+info: Timing access to addr 1001984, rank/bank/row 7 2 1
+info: Epoch start = 47136010, turn = 0, subTurn = 0
+info: Processing req at 47136010
+info: no packet
+info: nextReqEvent scheduled@47161010
+info: no packet
+info: Epoch start = 47186010, turn = 0, subTurn = 1
+info: Processing req at 47186010
+info: no packet
+info: nextReqEvent scheduled@47211010
+info: Timing access to addr 2477888, rank/bank/row 5 6 4
+info: Epoch start = 47236010, turn = 0, subTurn = 2
+info: Processing req at 47236010
+info: no packet
+info: nextReqEvent scheduled@47261010
+info: no packet
+info: Epoch start = 47286010, turn = 0, subTurn = 0
+info: Processing req at 47286010
+info: no packet
+info: nextReqEvent scheduled@47311010
+info: no packet
+info: Epoch start = 47336010, turn = 0, subTurn = 1
+info: Processing req at 47336010
+info: no packet
+info: nextReqEvent scheduled@47361010
+info: Timing access to addr 2477760, rank/bank/row 5 6 4
+info: Epoch start = 47386010, turn = 0, subTurn = 2
+info: Processing req at 47386010
+info: Timing access to addr 5242240, rank/bank/row 7 7 9
+info: Activate at tick 47386011
+info: Precharging bank 7, rank 7 at tick 47421011, now got 0 active
+info: nextReqEvent scheduled@47411010
+info: no packet
+info: Epoch start = 47436010, turn = 0, subTurn = 0
+info: Processing req at 47436010
+info: Timing access to addr 2627968, rank/bank/row 0 0 5
+info: Activate at tick 47436011
+info: Precharging bank 0, rank 0 at tick 47471011, now got 0 active
+info: nextReqEvent scheduled@47461010
+info: Epoch start = 47486010, turn = 0, subTurn = 1
+info: Processing req at 47486010
+info: nextReqEvent scheduled@47511010
+info: Epoch start = 47536010, turn = 0, subTurn = 2
+info: Processing req at 47536010
+info: nextReqEvent scheduled@47561010
+info: Epoch start = 47586010, turn = 0, subTurn = 0
+info: Processing req at 47586010
+info: Activate at tick 47586011
+info: Precharging bank 0, rank 0 at tick 47621011, now got 0 active
+info: nextReqEvent scheduled@47611010
+info: Epoch start = 47636010, turn = 0, subTurn = 1
+info: Processing req at 47636010
+info: nextReqEvent scheduled@47661010
+info: Epoch start = 47686010, turn = 0, subTurn = 2
+info: Processing req at 47686010
+info: no packet
+info: nextReqEvent scheduled@47711010
+info: no packet
+info: Epoch start = 47736010, turn = 0, subTurn = 0
+info: Processing req at 47736010
+info: Timing access to addr 11079872, rank/bank/row 1 0 21
+info: Activate at tick 47736011
+info: Precharging bank 0, rank 1 at tick 47771011, now got 0 active
+info: nextReqEvent scheduled@47761010
+info: Epoch start = 47786010, turn = 0, subTurn = 1
+info: Processing req at 47786010
+info: nextReqEvent scheduled@47811010
+info: Epoch start = 47836010, turn = 0, subTurn = 2
+info: Processing req at 47836010
+info: no packet
+info: nextReqEvent scheduled@47861010
+info: no packet
+info: Epoch start = 47886010, turn = 0, subTurn = 0
+info: Processing req at 47886010
+info: Timing access to addr 11079936, rank/bank/row 1 0 21
+info: Activate at tick 47886011
+info: Precharging bank 0, rank 1 at tick 47921011, now got 0 active
+info: nextReqEvent scheduled@47911010
+info: Timing access to addr 929472, rank/bank/row 6 1 1
+info: Epoch start = 47936010, turn = 0, subTurn = 1
+info: Processing req at 47936010
+info: nextReqEvent scheduled@47961010
+info: Epoch start = 47986010, turn = 0, subTurn = 2
+info: Processing req at 47986010
+info: no packet
+info: nextReqEvent scheduled@48011010
+info: no packet
+info: Epoch start = 48036010, turn = 0, subTurn = 0
+info: Processing req at 48036010
+info: Timing access to addr 11080000, rank/bank/row 1 0 21
+info: Activate at tick 48036011
+info: Precharging bank 0, rank 1 at tick 48071011, now got 0 active
+info: nextReqEvent scheduled@48061010
+info: Epoch start = 48086010, turn = 0, subTurn = 1
+info: Processing req at 48086010
+info: Epoch start = 48136010, turn = 0, subTurn = 2
+info: Epoch start = 48186010, turn = 0, subTurn = 0
+info: Processing req at 48186010
+info: nextReqEvent scheduled@48211010
+info: Epoch start = 48236010, turn = 0, subTurn = 1
+info: Processing req at 48236010
+info: Epoch start = 48286010, turn = 0, subTurn = 2
+info: Epoch start = 48336010, turn = 0, subTurn = 0
+info: Epoch start = 48386010, turn = 0, subTurn = 1
+info: Epoch start = 48436010, turn = 0, subTurn = 2
+info: Epoch start = 48486010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@48511010
+info: Epoch start = 48536010, turn = 0, subTurn = 1
+info: Processing req at 48536010
+info: no packet
+info: nextReqEvent scheduled@48561010
+info: no packet
+info: Epoch start = 48586010, turn = 0, subTurn = 2
+info: Processing req at 48586010
+info: Timing access to addr 5242304, rank/bank/row 7 7 9
+info: Activate at tick 48586011
+info: Precharging bank 7, rank 7 at tick 48621011, now got 0 active
+info: nextReqEvent scheduled@48611010
+info: no packet
+info: Epoch start = 48636010, turn = 0, subTurn = 0
+info: Processing req at 48636010
+info: Timing access to addr 2628096, rank/bank/row 0 0 5
+info: Activate at tick 48636011
+info: Precharging bank 0, rank 0 at tick 48671011, now got 0 active
+info: nextReqEvent scheduled@48661010
+info: Timing access to addr 1284416, rank/bank/row 3 4 2
+info: Epoch start = 48686010, turn = 0, subTurn = 1
+info: Processing req at 48686010
+info: nextReqEvent scheduled@48711010
+info: Epoch start = 48736010, turn = 0, subTurn = 2
+info: Processing req at 48736010
+info: Timing access to addr 5242368, rank/bank/row 7 7 9
+info: Activate at tick 48736011
+info: Precharging bank 7, rank 7 at tick 48771011, now got 0 active
+info: nextReqEvent scheduled@48761010
+info: Timing access to addr 1002048, rank/bank/row 7 2 1
+info: Epoch start = 48786010, turn = 0, subTurn = 0
+info: Processing req at 48786010
+info: nextReqEvent scheduled@48811010
+info: Epoch start = 48836010, turn = 0, subTurn = 1
+info: Processing req at 48836010
+info: nextReqEvent scheduled@48861010
+info: Epoch start = 48886010, turn = 0, subTurn = 2
+info: Processing req at 48886010
+info: nextReqEvent scheduled@48911010
+info: Timing access to addr 1198208, rank/bank/row 2 2 2
+info: Epoch start = 48936010, turn = 0, subTurn = 0
+info: Processing req at 48936010
+info: Timing access to addr 11080064, rank/bank/row 1 0 21
+info: Activate at tick 48936010
+info: Precharging bank 0, rank 1 at tick 48971010, now got 0 active
+info: nextReqEvent scheduled@48961010
+info: Epoch start = 48986010, turn = 0, subTurn = 1
+info: Processing req at 48986010
+info: nextReqEvent scheduled@49011010
+info: Epoch start = 49036010, turn = 0, subTurn = 2
+info: Processing req at 49036010
+info: nextReqEvent scheduled@49061010
+info: Epoch start = 49086010, turn = 0, subTurn = 0
+info: Processing req at 49086010
+info: Activate at tick 49086011
+info: Precharging bank 0, rank 1 at tick 49121011, now got 0 active
+info: nextReqEvent scheduled@49111010
+info: Epoch start = 49136010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@49161010
+info: Epoch start = 49186010, turn = 0, subTurn = 2
+info: Processing req at 49186010
+info: no packet
+info: nextReqEvent scheduled@49211010
+info: Timing access to addr 1201984, rank/bank/row 2 2 2
+info: Epoch start = 49236010, turn = 0, subTurn = 0
+info: Processing req at 49236010
+info: Activate at tick 49236011
+info: Precharging bank 0, rank 1 at tick 49271011, now got 0 active
+info: nextReqEvent scheduled@49261010
+info: Epoch start = 49286010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@49311010
+info: Timing access to addr 1800832, rank/bank/row 3 3 3
+info: Epoch start = 49336010, turn = 0, subTurn = 2
+info: Processing req at 49336010
+info: nextReqEvent scheduled@49361010
+info: Epoch start = 49386010, turn = 0, subTurn = 0
+info: Processing req at 49386010
+info: nextReqEvent scheduled@49411010
+info: Epoch start = 49436010, turn = 0, subTurn = 1
+info: Processing req at 49436010
+info: nextReqEvent scheduled@49461010
+info: Epoch start = 49486010, turn = 0, subTurn = 2
+info: Processing req at 49486010
+info: nextReqEvent scheduled@49511010
+info: no packet
+info: Epoch start = 49536010, turn = 0, subTurn = 0
+info: Processing req at 49536010
+info: no packet
+info: nextReqEvent scheduled@49561010
+info: Timing access to addr 1179264, rank/bank/row 1 7 2
+info: Epoch start = 49586010, turn = 0, subTurn = 1
+info: Processing req at 49586010
+info: nextReqEvent scheduled@49611010
+info: Epoch start = 49636010, turn = 0, subTurn = 2
+info: Processing req at 49636010
+info: nextReqEvent scheduled@49661010
+info: Epoch start = 49686010, turn = 0, subTurn = 0
+info: Processing req at 49686010
+info: nextReqEvent scheduled@49711010
+Exiting core 0 @ tick 49705000 because a thread reached the max instruction count
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 14873, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 15233, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 15733, Bank: 1
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 13173, Bank: 2
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 15793, Bank: 7
+info: Entering event queue @ 49705000.  Starting simulation...
+info: Timing access to addr 929088, rank/bank/row 6 1 1
+info: Epoch start = 49736010, turn = 0, subTurn = 1
+info: Processing req at 49736010
+info: no packet
+info: nextReqEvent scheduled@49761010
+info: Timing access to addr 922688, rank/bank/row 6 0 1
+info: Epoch start = 49786010, turn = 0, subTurn = 2
+info: Processing req at 49786010
+info: Timing access to addr 5242432, rank/bank/row 7 7 9
+info: Activate at tick 49786011
+info: Precharging bank 7, rank 7 at tick 49821011, now got 0 active
+info: nextReqEvent scheduled@49811010
+info: no packet
+info: Epoch start = 49836010, turn = 0, subTurn = 0
+info: Processing req at 49836010
+info: Timing access to addr 2628160, rank/bank/row 0 0 5
+info: Activate at tick 49836011
+info: Precharging bank 0, rank 0 at tick 49871011, now got 0 active
+info: nextReqEvent scheduled@49861010
+info: no packet
+info: Epoch start = 49886010, turn = 0, subTurn = 1
+info: Processing req at 49886010
+info: no packet
+info: nextReqEvent scheduled@49911010
+info: Timing access to addr 922752, rank/bank/row 6 0 1
+info: Epoch start = 49936010, turn = 0, subTurn = 2
+info: Processing req at 49936010
+info: nextReqEvent scheduled@49961010
+info: Epoch start = 49986010, turn = 0, subTurn = 0
+info: Processing req at 49986010
+info: Activate at tick 49986010
+info: Precharging bank 0, rank 0 at tick 50021010, now got 0 active
+info: nextReqEvent scheduled@50011010
+info: Epoch start = 50036010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@50061010
+info: Epoch start = 50086010, turn = 0, subTurn = 2
+info: Processing req at 50086010
+info: Timing access to addr 5242496, rank/bank/row 7 7 9
+info: Activate at tick 50086011
+info: Precharging bank 7, rank 7 at tick 50121011, now got 0 active
+info: nextReqEvent scheduled@50111010
+info: Epoch start = 50136010, turn = 0, subTurn = 0
+info: Processing req at 50136010
+info: nextReqEvent scheduled@50161010
+info: Epoch start = 50186010, turn = 0, subTurn = 1
+info: Processing req at 50186010
+info: nextReqEvent scheduled@50211010
+info: Epoch start = 50236010, turn = 0, subTurn = 2
+info: Processing req at 50236010
+info: nextReqEvent scheduled@50261010
+info: Epoch start = 50286010, turn = 0, subTurn = 0
+info: Processing req at 50286010
+info: Activate at tick 50286011
+info: Precharging bank 0, rank 1 at tick 50321011, now got 0 active
+info: nextReqEvent scheduled@50311010
+info: Epoch start = 50336010, turn = 0, subTurn = 1
+info: Processing req at 50336010
+info: no packet
+info: nextReqEvent scheduled@50361010
+info: no packet
+info: Epoch start = 50386010, turn = 0, subTurn = 2
+info: Processing req at 50386010
+info: Timing access to addr 2617664, rank/bank/row 7 7 4
+info: Activate at tick 50386011
+info: Precharging bank 7, rank 7 at tick 50421011, now got 0 active
+info: nextReqEvent scheduled@50411010
+info: no packet
+info: Epoch start = 50436010, turn = 0, subTurn = 0
+info: Processing req at 50436010
+info: Timing access to addr 11080320, rank/bank/row 1 0 21
+info: Activate at tick 50436011
+info: Precharging bank 0, rank 1 at tick 50471011, now got 0 active
+info: nextReqEvent scheduled@50461010
+info: Timing access to addr 929600, rank/bank/row 6 1 1
+info: Epoch start = 50486010, turn = 0, subTurn = 1
+info: Processing req at 50486010
+info: no packet
+info: nextReqEvent scheduled@50511010
+info: Timing access to addr 923008, rank/bank/row 6 0 1
+info: Epoch start = 50536010, turn = 0, subTurn = 2
+info: Processing req at 50536010
+info: no packet
+info: nextReqEvent scheduled@50561010
+info: no packet
+info: Epoch start = 50586010, turn = 0, subTurn = 0
+info: Processing req at 50586010
+info: Timing access to addr 11080384, rank/bank/row 1 0 21
+info: Activate at tick 50586011
+info: Precharging bank 0, rank 1 at tick 50621011, now got 0 active
+info: nextReqEvent scheduled@50611010
+info: Timing access to addr 2309568, rank/bank/row 3 1 4
+info: Epoch start = 50636010, turn = 0, subTurn = 1
+info: Processing req at 50636010
+info: nextReqEvent scheduled@50661010
+info: Epoch start = 50686010, turn = 0, subTurn = 2
+info: Processing req at 50686010
+info: nextReqEvent scheduled@50711010
+info: Epoch start = 50736010, turn = 0, subTurn = 0
+info: Processing req at 50736010
+info: nextReqEvent scheduled@50761010
+info: Epoch start = 50786010, turn = 0, subTurn = 1
+info: Processing req at 50786010
+info: Epoch start = 50836010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@50861010
+info: no packet
+info: Epoch start = 50886010, turn = 0, subTurn = 0
+info: Processing req at 50886010
+info: no packet
+info: nextReqEvent scheduled@50911010
+info: Timing access to addr 930496, rank/bank/row 6 1 1
+info: Epoch start = 50936010, turn = 0, subTurn = 1
+info: Processing req at 50936010
+info: nextReqEvent scheduled@50961010
+info: Epoch start = 50986010, turn = 0, subTurn = 2
+info: Processing req at 50986010
+info: nextReqEvent scheduled@51011010
+info: Epoch start = 51036010, turn = 0, subTurn = 0
+info: Processing req at 51036010
+info: nextReqEvent scheduled@51061010
+info: Epoch start = 51086010, turn = 0, subTurn = 1
+info: Processing req at 51086010
+info: nextReqEvent scheduled@51111010
+info: no packet
+info: Epoch start = 51136010, turn = 0, subTurn = 2
+info: Processing req at 51136010
+info: Timing access to addr 5242560, rank/bank/row 7 7 9
+info: Activate at tick 51136011
+info: Precharging bank 7, rank 7 at tick 51171011, now got 0 active
+info: nextReqEvent scheduled@51161010
+info: no packet
+info: Epoch start = 51186010, turn = 0, subTurn = 0
+info: Processing req at 51186010
+info: Timing access to addr 2628288, rank/bank/row 0 0 5
+info: Activate at tick 51186011
+info: Precharging bank 0, rank 0 at tick 51221011, now got 0 active
+info: nextReqEvent scheduled@51211010
+info: Epoch start = 51236010, turn = 0, subTurn = 1
+info: Processing req at 51236010
+info: Epoch start = 51286010, turn = 0, subTurn = 2
+info: Processing req at 51286010
+info: nextReqEvent scheduled@51311010
+info: no packet
+info: Epoch start = 51336010, turn = 0, subTurn = 0
+info: Processing req at 51336010
+info: Timing access to addr 2628352, rank/bank/row 0 0 5
+info: Activate at tick 51336011
+info: Precharging bank 0, rank 0 at tick 51371011, now got 0 active
+info: nextReqEvent scheduled@51361010
+info: Epoch start = 51386010, turn = 0, subTurn = 1
+info: Processing req at 51386010
+info: Epoch start = 51436010, turn = 0, subTurn = 2
+info: Processing req at 51436010
+info: nextReqEvent scheduled@51461010
+info: no packet
+info: Epoch start = 51486010, turn = 0, subTurn = 0
+info: Processing req at 51486010
+info: Timing access to addr 11080448, rank/bank/row 1 0 21
+info: Activate at tick 51486011
+info: Precharging bank 0, rank 1 at tick 51521011, now got 0 active
+info: nextReqEvent scheduled@51511010
+info: Epoch start = 51536010, turn = 0, subTurn = 1
+info: Processing req at 51536010
+info: Epoch start = 51586010, turn = 0, subTurn = 2
+info: Processing req at 51586010
+info: nextReqEvent scheduled@51611010
+info: no packet
+info: Epoch start = 51636010, turn = 0, subTurn = 0
+info: Processing req at 51636010
+info: Timing access to addr 11080512, rank/bank/row 1 0 21
+info: Activate at tick 51636011
+info: Precharging bank 0, rank 1 at tick 51671011, now got 0 active
+info: nextReqEvent scheduled@51661010
+info: Epoch start = 51686010, turn = 0, subTurn = 1
+info: Processing req at 51686010
+info: Epoch start = 51736010, turn = 0, subTurn = 2
+info: Processing req at 51736010
+info: nextReqEvent scheduled@51761010
+info: no packet
+info: Epoch start = 51786010, turn = 0, subTurn = 0
+info: Processing req at 51786010
+info: Timing access to addr 11080576, rank/bank/row 1 0 21
+info: Activate at tick 51786011
+info: Precharging bank 0, rank 1 at tick 51821011, now got 0 active
+info: nextReqEvent scheduled@51811010
+info: Timing access to addr 888576, rank/bank/row 5 4 1
+info: Epoch start = 51836010, turn = 0, subTurn = 1
+info: Processing req at 51836010
+info: nextReqEvent scheduled@51861010
+info: Epoch start = 51886010, turn = 0, subTurn = 2
+info: Processing req at 51886010
+info: nextReqEvent scheduled@51911010
+info: no packet
+info: Epoch start = 51936010, turn = 0, subTurn = 0
+info: Processing req at 51936010
+info: no packet
+info: nextReqEvent scheduled@51961010
+info: Timing access to addr 2309440, rank/bank/row 3 1 4
+info: Epoch start = 51986010, turn = 0, subTurn = 1
+info: Processing req at 51986010
+info: nextReqEvent scheduled@52011010
+info: Epoch start = 52036010, turn = 0, subTurn = 2
+info: Processing req at 52036010
+info: nextReqEvent scheduled@52061010
+info: no packet
+info: Epoch start = 52086010, turn = 0, subTurn = 0
+info: Processing req at 52086010
+info: no packet
+info: nextReqEvent scheduled@52111010
+info: Timing access to addr 888640, rank/bank/row 5 4 1
+info: Epoch start = 52136010, turn = 0, subTurn = 1
+info: Processing req at 52136010
+info: nextReqEvent scheduled@52161010
+info: Epoch start = 52186010, turn = 0, subTurn = 2
+info: Processing req at 52186010
+info: nextReqEvent scheduled@52211010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 16793, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 16753, Bank: 7
+info: Epoch start = 52236010, turn = 0, subTurn = 0
+info: Processing req at 52236010
+info: nextReqEvent scheduled@52261010
+info: Epoch start = 52286010, turn = 0, subTurn = 1
+info: Processing req at 52286010
+info: no packet
+info: nextReqEvent scheduled@52311010
+info: no packet
+info: Epoch start = 52336010, turn = 0, subTurn = 2
+info: Processing req at 52336010
+info: no packet
+info: nextReqEvent scheduled@52361010
+info: no packet
+info: Epoch start = 52386010, turn = 0, subTurn = 0
+info: Processing req at 52386010
+info: no packet
+info: nextReqEvent scheduled@52411010
+info: Timing access to addr 2309696, rank/bank/row 3 1 4
+info: Epoch start = 52436010, turn = 0, subTurn = 1
+info: Processing req at 52436010
+info: no packet
+info: nextReqEvent scheduled@52461010
+info: no packet
+info: Epoch start = 52486010, turn = 0, subTurn = 2
+info: Processing req at 52486010
+info: Timing access to addr 5242624, rank/bank/row 7 7 9
+info: Activate at tick 52486011
+info: Precharging bank 7, rank 7 at tick 52521011, now got 0 active
+info: nextReqEvent scheduled@52511010
+info: no packet
+info: Epoch start = 52536010, turn = 0, subTurn = 0
+info: Processing req at 52536010
+info: Timing access to addr 2628416, rank/bank/row 0 0 5
+info: Activate at tick 52536011
+info: Precharging bank 0, rank 0 at tick 52571011, now got 0 active
+info: nextReqEvent scheduled@52561010
+info: Epoch start = 52586010, turn = 0, subTurn = 1
+info: Processing req at 52586010
+info: Epoch start = 52636010, turn = 0, subTurn = 2
+info: Processing req at 52636010
+info: Activate at tick 52636011
+info: Precharging bank 7, rank 7 at tick 52671011, now got 0 active
+info: nextReqEvent scheduled@52661010
+info: Epoch start = 52686010, turn = 0, subTurn = 0
+info: Processing req at 52686010
+info: nextReqEvent scheduled@52711010
+info: Epoch start = 52736010, turn = 0, subTurn = 1
+info: Processing req at 52736010
+info: nextReqEvent scheduled@52761010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 17153, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 18113, Bank: 0
+info: Epoch start = 52786010, turn = 0, subTurn = 2
+info: Processing req at 52786010
+info: nextReqEvent scheduled@52811010
+info: no packet
+info: Epoch start = 52836010, turn = 0, subTurn = 0
+info: Processing req at 52836010
+info: no packet
+info: nextReqEvent scheduled@52861010
+info: Timing access to addr 2309888, rank/bank/row 3 1 4
+info: Epoch start = 52886010, turn = 0, subTurn = 1
+info: Processing req at 52886010
+info: no packet
+info: nextReqEvent scheduled@52911010
+info: no packet
+info: Epoch start = 52936010, turn = 0, subTurn = 2
+info: Processing req at 52936010
+info: no packet
+info: nextReqEvent scheduled@52961010
+info: no packet
+info: Epoch start = 52986010, turn = 0, subTurn = 0
+info: Processing req at 52986010
+info: no packet
+info: nextReqEvent scheduled@53011010
+info: Timing access to addr 888704, rank/bank/row 5 4 1
+info: Epoch start = 53036010, turn = 0, subTurn = 1
+info: Processing req at 53036010
+info: no packet
+info: nextReqEvent scheduled@53061010
+info: no packet
+info: Epoch start = 53086010, turn = 0, subTurn = 2
+info: Processing req at 53086010
+info: no packet
+info: nextReqEvent scheduled@53111010
+info: no packet
+info: Epoch start = 53136010, turn = 0, subTurn = 0
+info: Processing req at 53136010
+info: Timing access to addr 11080640, rank/bank/row 1 0 21
+info: Activate at tick 53136011
+info: Precharging bank 0, rank 1 at tick 53171011, now got 0 active
+info: nextReqEvent scheduled@53161010
+info: Epoch start = 53186010, turn = 0, subTurn = 1
+info: Processing req at 53186010
+info: Epoch start = 53236010, turn = 0, subTurn = 2
+info: Processing req at 53236010
+info: nextReqEvent scheduled@53261010
+info: no packet
+info: Epoch start = 53286010, turn = 0, subTurn = 0
+info: Processing req at 53286010
+info: Timing access to addr 11080704, rank/bank/row 1 0 21
+info: Activate at tick 53286011
+info: Precharging bank 0, rank 1 at tick 53321011, now got 0 active
+info: nextReqEvent scheduled@53311010
+info: Timing access to addr 888768, rank/bank/row 5 4 1
+info: Epoch start = 53336010, turn = 0, subTurn = 1
+info: Processing req at 53336010
+info: nextReqEvent scheduled@53361010
+info: Epoch start = 53386010, turn = 0, subTurn = 2
+info: Processing req at 53386010
+info: no packet
+info: nextReqEvent scheduled@53411010
+info: no packet
+info: Epoch start = 53436010, turn = 0, subTurn = 0
+info: Processing req at 53436010
+info: Timing access to addr 11080768, rank/bank/row 1 0 21
+info: Activate at tick 53436011
+info: Precharging bank 0, rank 1 at tick 53471011, now got 0 active
+info: nextReqEvent scheduled@53461010
+info: Epoch start = 53486010, turn = 0, subTurn = 1
+info: Processing req at 53486010
+info: Epoch start = 53536010, turn = 0, subTurn = 2
+info: Epoch start = 53586010, turn = 0, subTurn = 0
+info: Processing req at 53586010
+info: no packet
+info: nextReqEvent scheduled@53611010
+info: Timing access to addr 2309504, rank/bank/row 3 1 4
+info: Epoch start = 53636010, turn = 0, subTurn = 1
+info: Processing req at 53636010
+info: nextReqEvent scheduled@53661010
+info: Epoch start = 53686010, turn = 0, subTurn = 2
+info: Processing req at 53686010
+info: nextReqEvent scheduled@53711010
+info: Epoch start = 53736010, turn = 0, subTurn = 0
+info: Processing req at 53736010
+info: nextReqEvent scheduled@53761010
+info: Epoch start = 53786010, turn = 0, subTurn = 1
+info: Processing req at 53786010
+info: Epoch start = 53836010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@53861010
+info: Epoch start = 53886010, turn = 0, subTurn = 0
+info: Processing req at 53886010
+info: no packet
+info: nextReqEvent scheduled@53911010
+info: Timing access to addr 887936, rank/bank/row 5 4 1
+info: Epoch start = 53936010, turn = 0, subTurn = 1
+info: Processing req at 53936010
+info: no packet
+info: nextReqEvent scheduled@53961010
+info: Timing access to addr 853376, rank/bank/row 5 0 1
+info: Epoch start = 53986010, turn = 0, subTurn = 2
+info: Processing req at 53986010
+info: Timing access to addr 5242752, rank/bank/row 7 7 9
+info: Activate at tick 53986011
+info: Precharging bank 7, rank 7 at tick 54021011, now got 0 active
+info: nextReqEvent scheduled@54011010
+info: no packet
+info: Epoch start = 54036010, turn = 0, subTurn = 0
+info: Processing req at 54036010
+info: Timing access to addr 2628480, rank/bank/row 0 0 5
+info: Activate at tick 54036011
+info: Precharging bank 0, rank 0 at tick 54071011, now got 0 active
+info: nextReqEvent scheduled@54061010
+info: no packet
+info: Epoch start = 54086010, turn = 0, subTurn = 1
+info: Processing req at 54086010
+info: no packet
+info: nextReqEvent scheduled@54111010
+info: Timing access to addr 2023168, rank/bank/row 6 6 3
+info: Epoch start = 54136010, turn = 0, subTurn = 2
+info: Processing req at 54136010
+info: nextReqEvent scheduled@54161010
+info: Epoch start = 54186010, turn = 0, subTurn = 0
+info: Processing req at 54186010
+info: Activate at tick 54186010
+info: Precharging bank 0, rank 0 at tick 54221010, now got 0 active
+info: nextReqEvent scheduled@54211010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 17413, Bank: 1
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 19093, Bank: 1
+info: Epoch start = 54236010, turn = 0, subTurn = 1
+info: Epoch start = 54286010, turn = 0, subTurn = 2
+info: Processing req at 54286010
+info: nextReqEvent scheduled@54311010
+info: Epoch start = 54336010, turn = 0, subTurn = 0
+info: Processing req at 54336010
+info: Timing access to addr 11080832, rank/bank/row 1 0 21
+info: Activate at tick 54336011
+info: Precharging bank 0, rank 1 at tick 54371011, now got 0 active
+info: nextReqEvent scheduled@54361010
+info: no packet
+info: Epoch start = 54386010, turn = 0, subTurn = 1
+info: Processing req at 54386010
+info: no packet
+info: nextReqEvent scheduled@54411010
+info: Timing access to addr 945216, rank/bank/row 6 3 1
+info: Epoch start = 54436010, turn = 0, subTurn = 2
+info: Processing req at 54436010
+info: no packet
+info: nextReqEvent scheduled@54461010
+info: no packet
+info: Epoch start = 54486010, turn = 0, subTurn = 0
+info: Processing req at 54486010
+info: Timing access to addr 11080896, rank/bank/row 1 0 21
+info: Activate at tick 54486011
+info: Precharging bank 0, rank 1 at tick 54521011, now got 0 active
+info: nextReqEvent scheduled@54511010
+info: no packet
+info: Epoch start = 54536010, turn = 0, subTurn = 1
+info: Processing req at 54536010
+info: no packet
+info: nextReqEvent scheduled@54561010
+info: Timing access to addr 1796096, rank/bank/row 3 3 3
+info: Epoch start = 54586010, turn = 0, subTurn = 2
+info: Processing req at 54586010
+info: no packet
+info: nextReqEvent scheduled@54611010
+info: no packet
+info: Epoch start = 54636010, turn = 0, subTurn = 0
+info: Processing req at 54636010
+info: Timing access to addr 11080960, rank/bank/row 1 0 21
+info: Activate at tick 54636011
+info: Precharging bank 0, rank 1 at tick 54671011, now got 0 active
+info: nextReqEvent scheduled@54661010
+info: Epoch start = 54686010, turn = 0, subTurn = 1
+info: Processing req at 54686010
+info: nextReqEvent scheduled@54711010
+info: Epoch start = 54736010, turn = 0, subTurn = 2
+info: Processing req at 54736010
+info: nextReqEvent scheduled@54761010
+info: Epoch start = 54786010, turn = 0, subTurn = 0
+info: Processing req at 54786010
+info: nextReqEvent scheduled@54811010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 16693, Bank: 1
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 20213, Bank: 6
+info: Epoch start = 54836010, turn = 0, subTurn = 1
+info: Processing req at 54836010
+info: nextReqEvent scheduled@54861010
+info: Epoch start = 54886010, turn = 0, subTurn = 2
+info: Processing req at 54886010
+info: Epoch start = 54936010, turn = 0, subTurn = 0
+info: Epoch start = 54986010, turn = 0, subTurn = 1
+info: Epoch start = 55036010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@55061010
+info: Epoch start = 55086010, turn = 0, subTurn = 0
+info: Epoch start = 55136010, turn = 0, subTurn = 1
+info: Processing req at 55136010
+info: no packet
+info: nextReqEvent scheduled@55161010
+info: no packet
+info: Epoch start = 55186010, turn = 0, subTurn = 2
+info: Processing req at 55186010
+info: Timing access to addr 5242816, rank/bank/row 7 7 9
+info: Activate at tick 55186011
+info: Precharging bank 7, rank 7 at tick 55221011, now got 0 active
+info: nextReqEvent scheduled@55211010
+info: no packet
+info: Epoch start = 55236010, turn = 0, subTurn = 0
+info: Processing req at 55236010
+info: Timing access to addr 2628608, rank/bank/row 0 0 5
+info: Activate at tick 55236011
+info: Precharging bank 0, rank 0 at tick 55271011, now got 0 active
+info: nextReqEvent scheduled@55261010
+info: Epoch start = 55286010, turn = 0, subTurn = 1
+info: Processing req at 55286010
+info: nextReqEvent scheduled@55311010
+info: Epoch start = 55336010, turn = 0, subTurn = 2
+info: Processing req at 55336010
+info: nextReqEvent scheduled@55361010
+info: Epoch start = 55386010, turn = 0, subTurn = 0
+info: Processing req at 55386010
+info: Activate at tick 55386010
+info: Precharging bank 0, rank 0 at tick 55421010, now got 0 active
+info: nextReqEvent scheduled@55411010
+info: Epoch start = 55436010, turn = 0, subTurn = 1
+info: Epoch start = 55486010, turn = 0, subTurn = 2
+info: Processing req at 55486010
+info: nextReqEvent scheduled@55511010
+info: Epoch start = 55536010, turn = 0, subTurn = 0
+info: Processing req at 55536010
+info: Activate at tick 55536011
+info: Precharging bank 0, rank 1 at tick 55571011, now got 0 active
+info: nextReqEvent scheduled@55561010
+info: Epoch start = 55586010, turn = 0, subTurn = 1
+info: Epoch start = 55636010, turn = 0, subTurn = 2
+info: Processing req at 55636010
+info: nextReqEvent scheduled@55661010
+info: Epoch start = 55686010, turn = 0, subTurn = 0
+info: Processing req at 55686010
+info: Activate at tick 55686011
+info: Precharging bank 0, rank 1 at tick 55721011, now got 0 active
+info: nextReqEvent scheduled@55711010
+info: Epoch start = 55736010, turn = 0, subTurn = 1
+info: Epoch start = 55786010, turn = 0, subTurn = 2
+info: Processing req at 55786010
+info: nextReqEvent scheduled@55811010
+info: Epoch start = 55836010, turn = 0, subTurn = 0
+info: Processing req at 55836010
+info: Activate at tick 55836011
+info: Precharging bank 0, rank 1 at tick 55871011, now got 0 active
+info: nextReqEvent scheduled@55861010
+info: Epoch start = 55886010, turn = 0, subTurn = 1
+info: Epoch start = 55936010, turn = 0, subTurn = 2
+info: Epoch start = 55986010, turn = 0, subTurn = 0
+info: Epoch start = 56036010, turn = 0, subTurn = 1
+info: Epoch start = 56086010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@56111010
+info: Epoch start = 56136010, turn = 0, subTurn = 0
+info: Processing req at 56136010
+info: nextReqEvent scheduled@56161010
+info: Epoch start = 56186010, turn = 0, subTurn = 1
+info: Processing req at 56186010
+info: nextReqEvent scheduled@56211010
+info: Epoch start = 56236010, turn = 0, subTurn = 2
+info: Processing req at 56236010
+info: nextReqEvent scheduled@56261010
+info: Epoch start = 56286010, turn = 0, subTurn = 0
+info: Processing req at 56286010
+info: nextReqEvent scheduled@56311010
+info: no packet
+info: Epoch start = 56336010, turn = 0, subTurn = 1
+info: Processing req at 56336010
+info: no packet
+info: nextReqEvent scheduled@56361010
+info: no packet
+info: Epoch start = 56386010, turn = 0, subTurn = 2
+info: Processing req at 56386010
+info: no packet
+info: nextReqEvent scheduled@56411010
+info: no packet
+info: Epoch start = 56436010, turn = 0, subTurn = 0
+info: Processing req at 56436010
+info: Timing access to addr 2628736, rank/bank/row 0 0 5
+info: Activate at tick 56436011
+info: Precharging bank 0, rank 0 at tick 56471011, now got 0 active
+info: nextReqEvent scheduled@56461010
+info: Timing access to addr 930560, rank/bank/row 6 1 1
+info: Epoch start = 56486010, turn = 0, subTurn = 1
+info: Processing req at 56486010
+info: no packet
+info: nextReqEvent scheduled@56511010
+info: no packet
+info: Epoch start = 56536010, turn = 0, subTurn = 2
+info: Processing req at 56536010
+info: no packet
+info: nextReqEvent scheduled@56561010
+info: no packet
+info: Epoch start = 56586010, turn = 0, subTurn = 0
+info: Processing req at 56586010
+info: Timing access to addr 5242944, rank/bank/row 0 0 10
+info: Activate at tick 56586010
+info: Precharging bank 0, rank 0 at tick 56621010, now got 0 active
+info: nextReqEvent scheduled@56611010
+info: Timing access to addr 929664, rank/bank/row 6 1 1
+info: Epoch start = 56636010, turn = 0, subTurn = 1
+info: Processing req at 56636010
+info: no packet
+info: nextReqEvent scheduled@56661010
+info: no packet
+info: Epoch start = 56686010, turn = 0, subTurn = 2
+info: Processing req at 56686010
+info: no packet
+info: nextReqEvent scheduled@56711010
+info: no packet
+info: Epoch start = 56736010, turn = 0, subTurn = 0
+info: Processing req at 56736010
+info: Timing access to addr 2628672, rank/bank/row 0 0 5
+info: Activate at tick 56736010
+info: Precharging bank 0, rank 0 at tick 56771010, now got 0 active
+info: nextReqEvent scheduled@56761010
+info: Timing access to addr 929728, rank/bank/row 6 1 1
+info: Epoch start = 56786010, turn = 0, subTurn = 1
+info: Processing req at 56786010
+info: no packet
+info: nextReqEvent scheduled@56811010
+info: Timing access to addr 1800896, rank/bank/row 3 3 3
+info: Epoch start = 56836010, turn = 0, subTurn = 2
+info: Processing req at 56836010
+info: no packet
+info: nextReqEvent scheduled@56861010
+info: no packet
+info: Epoch start = 56886010, turn = 0, subTurn = 0
+info: Processing req at 56886010
+info: Timing access to addr 5243008, rank/bank/row 0 0 10
+info: Activate at tick 56886010
+info: Precharging bank 0, rank 0 at tick 56921010, now got 0 active
+info: nextReqEvent scheduled@56911010
+info: Timing access to addr 1760108736, rank/bank/row 1 1 3357
+info: Epoch start = 56936010, turn = 0, subTurn = 1
+info: Processing req at 56936010
+info: no packet
+info: nextReqEvent scheduled@56961010
+info: no packet
+info: Epoch start = 56986010, turn = 0, subTurn = 2
+info: Processing req at 56986010
+info: no packet
+info: nextReqEvent scheduled@57011010
+info: no packet
+info: Epoch start = 57036010, turn = 0, subTurn = 0
+info: Processing req at 57036010
+info: Timing access to addr 11081216, rank/bank/row 1 0 21
+info: Activate at tick 57036011
+info: Precharging bank 0, rank 1 at tick 57071011, now got 0 active
+info: nextReqEvent scheduled@57061010
+info: Timing access to addr 1284480, rank/bank/row 3 4 2
+info: Epoch start = 57086010, turn = 0, subTurn = 1
+info: Processing req at 57086010
+info: no packet
+info: nextReqEvent scheduled@57111010
+info: no packet
+info: Epoch start = 57136010, turn = 0, subTurn = 2
+info: Processing req at 57136010
+info: Timing access to addr 2617728, rank/bank/row 7 7 4
+info: Activate at tick 57136011
+info: Precharging bank 7, rank 7 at tick 57171011, now got 0 active
+info: nextReqEvent scheduled@57161010
+info: no packet
+info: Epoch start = 57186010, turn = 0, subTurn = 0
+info: Processing req at 57186010
+info: Timing access to addr 11081280, rank/bank/row 1 0 21
+info: Activate at tick 57186011
+info: Precharging bank 0, rank 1 at tick 57221011, now got 0 active
+info: nextReqEvent scheduled@57211010
+info: Timing access to addr 929152, rank/bank/row 6 1 1
+info: Epoch start = 57236010, turn = 0, subTurn = 1
+info: Processing req at 57236010
+info: nextReqEvent scheduled@57261010
+info: Epoch start = 57286010, turn = 0, subTurn = 2
+info: Processing req at 57286010
+info: no packet
+info: nextReqEvent scheduled@57311010
+info: no packet
+info: Epoch start = 57336010, turn = 0, subTurn = 0
+info: Processing req at 57336010
+info: Timing access to addr 11081344, rank/bank/row 1 0 21
+info: Activate at tick 57336011
+info: Precharging bank 0, rank 1 at tick 57371011, now got 0 active
+info: nextReqEvent scheduled@57361010
+info: Epoch start = 57386010, turn = 0, subTurn = 1
+info: Processing req at 57386010
+info: Epoch start = 57436010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@57461010
+info: Epoch start = 57486010, turn = 0, subTurn = 0
+info: Processing req at 57486010
+info: no packet
+info: nextReqEvent scheduled@57511010
+info: Timing access to addr 930304, rank/bank/row 6 1 1
+info: Epoch start = 57536010, turn = 0, subTurn = 1
+info: Processing req at 57536010
+info: no packet
+info: nextReqEvent scheduled@57561010
+info: no packet
+info: Epoch start = 57586010, turn = 0, subTurn = 2
+info: Processing req at 57586010
+info: no packet
+info: nextReqEvent scheduled@57611010
+info: no packet
+info: Epoch start = 57636010, turn = 0, subTurn = 0
+info: Processing req at 57636010
+info: no packet
+info: nextReqEvent scheduled@57661010
+info: Timing access to addr 2042048, rank/bank/row 7 1 3
+info: Epoch start = 57686010, turn = 0, subTurn = 1
+info: Processing req at 57686010
+info: no packet
+info: nextReqEvent scheduled@57711010
+info: no packet
+info: Epoch start = 57736010, turn = 0, subTurn = 2
+info: Processing req at 57736010
+info: no packet
+info: nextReqEvent scheduled@57761010
+info: no packet
+info: Epoch start = 57786010, turn = 0, subTurn = 0
+info: Processing req at 57786010
+info: no packet
+info: nextReqEvent scheduled@57811010
+info: Timing access to addr 2040000, rank/bank/row 7 1 3
+info: Epoch start = 57836010, turn = 0, subTurn = 1
+info: Processing req at 57836010
+info: no packet
+info: nextReqEvent scheduled@57861010
+info: no packet
+info: Epoch start = 57886010, turn = 0, subTurn = 2
+info: Processing req at 57886010
+info: no packet
+info: nextReqEvent scheduled@57911010
+info: no packet
+info: Epoch start = 57936010, turn = 0, subTurn = 0
+info: Processing req at 57936010
+info: Timing access to addr 2628800, rank/bank/row 0 0 5
+info: Activate at tick 57936011
+info: Precharging bank 0, rank 0 at tick 57971011, now got 0 active
+info: nextReqEvent scheduled@57961010
+info: Timing access to addr 930368, rank/bank/row 6 1 1
+info: Epoch start = 57986010, turn = 0, subTurn = 1
+info: Processing req at 57986010
+info: no packet
+info: nextReqEvent scheduled@58011010
+info: no packet
+info: Epoch start = 58036010, turn = 0, subTurn = 2
+info: Processing req at 58036010
+info: no packet
+info: nextReqEvent scheduled@58061010
+info: no packet
+info: Epoch start = 58086010, turn = 0, subTurn = 0
+info: Processing req at 58086010
+info: Timing access to addr 5243072, rank/bank/row 0 0 10
+info: Activate at tick 58086010
+info: Precharging bank 0, rank 0 at tick 58121010, now got 0 active
+info: nextReqEvent scheduled@58111010
+info: Timing access to addr 1760108800, rank/bank/row 1 1 3357
+info: Epoch start = 58136010, turn = 0, subTurn = 1
+info: Processing req at 58136010
+info: nextReqEvent scheduled@58161010
+info: Epoch start = 58186010, turn = 0, subTurn = 2
+info: Processing req at 58186010
+info: nextReqEvent scheduled@58211010
+info: Epoch start = 58236010, turn = 0, subTurn = 0
+info: Processing req at 58236010
+info: Timing access to addr 2628864, rank/bank/row 0 0 5
+info: Activate at tick 58236010
+info: Precharging bank 0, rank 0 at tick 58271010, now got 0 active
+info: nextReqEvent scheduled@58261010
+info: Epoch start = 58286010, turn = 0, subTurn = 1
+info: Processing req at 58286010
+info: Epoch start = 58336010, turn = 0, subTurn = 2
+info: Processing req at 58336010
+info: nextReqEvent scheduled@58361010
+info: no packet
+info: Epoch start = 58386010, turn = 0, subTurn = 0
+info: Processing req at 58386010
+info: Timing access to addr 11081408, rank/bank/row 1 0 21
+info: Activate at tick 58386011
+info: Precharging bank 0, rank 1 at tick 58421011, now got 0 active
+info: nextReqEvent scheduled@58411010
+info: Epoch start = 58436010, turn = 0, subTurn = 1
+info: Processing req at 58436010
+info: Epoch start = 58486010, turn = 0, subTurn = 2
+info: Processing req at 58486010
+info: nextReqEvent scheduled@58511010
+info: Epoch start = 58536010, turn = 0, subTurn = 0
+info: Processing req at 58536010
+info: Activate at tick 58536011
+info: Precharging bank 0, rank 1 at tick 58571011, now got 0 active
+info: nextReqEvent scheduled@58561010
+info: Epoch start = 58586010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@58611010
+info: Epoch start = 58636010, turn = 0, subTurn = 2
+info: Processing req at 58636010
+info: no packet
+info: nextReqEvent scheduled@58661010
+info: no packet
+info: Epoch start = 58686010, turn = 0, subTurn = 0
+info: Processing req at 58686010
+info: Timing access to addr 11081536, rank/bank/row 1 0 21
+info: Activate at tick 58686011
+info: Precharging bank 0, rank 1 at tick 58721011, now got 0 active
+info: nextReqEvent scheduled@58711010
+info: Epoch start = 58736010, turn = 0, subTurn = 1
+info: Processing req at 58736010
+info: Epoch start = 58786010, turn = 0, subTurn = 2
+info: Epoch start = 58836010, turn = 0, subTurn = 0
+info: Epoch start = 58886010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@58911010
+info: Epoch start = 58936010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@58961010
+info: Epoch start = 58986010, turn = 0, subTurn = 0
+info: Processing req at 58986010
+info: nextReqEvent scheduled@59011010
+info: Epoch start = 59036010, turn = 0, subTurn = 1
+info: Processing req at 59036010
+info: Epoch start = 59086010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@59111010
+info: Epoch start = 59136010, turn = 0, subTurn = 0
+info: Processing req at 59136010
+info: no packet
+info: nextReqEvent scheduled@59161010
+info: Timing access to addr 929216, rank/bank/row 6 1 1
+info: Epoch start = 59186010, turn = 0, subTurn = 1
+info: Processing req at 59186010
+info: no packet
+info: nextReqEvent scheduled@59211010
+info: no packet
+info: Epoch start = 59236010, turn = 0, subTurn = 2
+info: Processing req at 59236010
+info: no packet
+info: nextReqEvent scheduled@59261010
+info: no packet
+info: Epoch start = 59286010, turn = 0, subTurn = 0
+info: Processing req at 59286010
+info: Timing access to addr 2628928, rank/bank/row 0 0 5
+info: Activate at tick 59286011
+info: Precharging bank 0, rank 0 at tick 59321011, now got 0 active
+info: nextReqEvent scheduled@59311010
+info: Timing access to addr 930624, rank/bank/row 6 1 1
+info: Epoch start = 59336010, turn = 0, subTurn = 1
+info: Processing req at 59336010
+info: nextReqEvent scheduled@59361010
+info: no packet
+info: Epoch start = 59386010, turn = 0, subTurn = 2
+info: Processing req at 59386010
+info: no packet
+info: nextReqEvent scheduled@59411010
+info: no packet
+info: Epoch start = 59436010, turn = 0, subTurn = 0
+info: Processing req at 59436010
+info: Timing access to addr 5243136, rank/bank/row 0 0 10
+info: Activate at tick 59436010
+info: Precharging bank 0, rank 0 at tick 59471010, now got 0 active
+info: nextReqEvent scheduled@59461010
+info: Timing access to addr 1239936, rank/bank/row 2 7 2
+info: Epoch start = 59486010, turn = 0, subTurn = 1
+info: Processing req at 59486010
+info: no packet
+info: nextReqEvent scheduled@59511010
+info: no packet
+info: Epoch start = 59536010, turn = 0, subTurn = 2
+info: Processing req at 59536010
+info: no packet
+info: nextReqEvent scheduled@59561010
+info: no packet
+info: Epoch start = 59586010, turn = 0, subTurn = 0
+info: Processing req at 59586010
+info: Timing access to addr 5243200, rank/bank/row 0 0 10
+info: Activate at tick 59586010
+info: Precharging bank 0, rank 0 at tick 59621010, now got 0 active
+info: nextReqEvent scheduled@59611010
+info: Epoch start = 59636010, turn = 0, subTurn = 1
+info: Processing req at 59636010
+info: nextReqEvent scheduled@59661010
+info: no packet
+info: Epoch start = 59686010, turn = 0, subTurn = 2
+info: Processing req at 59686010
+info: no packet
+info: nextReqEvent scheduled@59711010
+info: no packet
+info: Epoch start = 59736010, turn = 0, subTurn = 0
+info: Processing req at 59736010
+info: Timing access to addr 11081600, rank/bank/row 1 0 21
+info: Activate at tick 59736011
+info: Precharging bank 0, rank 1 at tick 59771011, now got 0 active
+info: nextReqEvent scheduled@59761010
+info: Timing access to addr 929280, rank/bank/row 6 1 1
+info: Epoch start = 59786010, turn = 0, subTurn = 1
+info: Processing req at 59786010
+info: no packet
+info: nextReqEvent scheduled@59811010
+info: no packet
+info: Epoch start = 59836010, turn = 0, subTurn = 2
+info: Processing req at 59836010
+info: no packet
+info: nextReqEvent scheduled@59861010
+info: no packet
+info: Epoch start = 59886010, turn = 0, subTurn = 0
+info: Processing req at 59886010
+info: Timing access to addr 11081664, rank/bank/row 1 0 21
+info: Activate at tick 59886011
+info: Precharging bank 0, rank 1 at tick 59921011, now got 0 active
+info: nextReqEvent scheduled@59911010
+info: Timing access to addr 1283840, rank/bank/row 3 4 2
+info: Epoch start = 59936010, turn = 0, subTurn = 1
+info: Processing req at 59936010
+info: no packet
+info: nextReqEvent scheduled@59961010
+info: no packet
+info: Epoch start = 59986010, turn = 0, subTurn = 2
+info: Processing req at 59986010
+info: no packet
+info: nextReqEvent scheduled@60011010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 23053, Bank: 1
+info: no packet
+info: Epoch start = 60036010, turn = 0, subTurn = 0
+info: Processing req at 60036010
+info: Timing access to addr 11081728, rank/bank/row 1 0 21
+info: Activate at tick 60036011
+info: Precharging bank 0, rank 1 at tick 60071011, now got 0 active
+info: nextReqEvent scheduled@60061010
+info: Timing access to addr 929792, rank/bank/row 6 1 1
+info: Epoch start = 60086010, turn = 0, subTurn = 1
+info: Processing req at 60086010
+info: nextReqEvent scheduled@60111010
+info: Epoch start = 60136010, turn = 0, subTurn = 2
+info: Processing req at 60136010
+info: nextReqEvent scheduled@60161010
+info: Epoch start = 60186010, turn = 0, subTurn = 0
+info: Processing req at 60186010
+info: nextReqEvent scheduled@60211010
+info: Epoch start = 60236010, turn = 0, subTurn = 1
+info: Processing req at 60236010
+info: nextReqEvent scheduled@60261010
+info: Epoch start = 60286010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@60311010
+info: Epoch start = 60336010, turn = 0, subTurn = 0
+info: Processing req at 60336010
+info: nextReqEvent scheduled@60361010
+info: Epoch start = 60386010, turn = 0, subTurn = 1
+info: Processing req at 60386010
+info: Epoch start = 60436010, turn = 0, subTurn = 2
+info: Epoch start = 60486010, turn = 0, subTurn = 0
+info: Epoch start = 60536010, turn = 0, subTurn = 1
+info: Processing req at 60536010
+info: no packet
+info: nextReqEvent scheduled@60561010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 20633, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 23753, Bank: 0
+info: no packet
+info: Epoch start = 60586010, turn = 0, subTurn = 2
+info: Processing req at 60586010
+info: no packet
+info: nextReqEvent scheduled@60611010
+info: no packet
+info: Epoch start = 60636010, turn = 0, subTurn = 0
+info: Processing req at 60636010
+info: no packet
+info: nextReqEvent scheduled@60661010
+info: Timing access to addr 1283904, rank/bank/row 3 4 2
+info: Epoch start = 60686010, turn = 0, subTurn = 1
+info: Processing req at 60686010
+info: no packet
+info: nextReqEvent scheduled@60711010
+info: no packet
+info: Epoch start = 60736010, turn = 0, subTurn = 2
+info: Processing req at 60736010
+info: no packet
+info: nextReqEvent scheduled@60761010
+info: no packet
+info: Epoch start = 60786010, turn = 0, subTurn = 0
+info: Processing req at 60786010
+info: no packet
+info: nextReqEvent scheduled@60811010
+info: Timing access to addr 2304448, rank/bank/row 3 1 4
+info: Epoch start = 60836010, turn = 0, subTurn = 1
+info: Processing req at 60836010
+info: no packet
+info: nextReqEvent scheduled@60861010
+info: no packet
+info: Epoch start = 60886010, turn = 0, subTurn = 2
+info: Processing req at 60886010
+info: no packet
+info: nextReqEvent scheduled@60911010
+info: Timing access to addr 1815232, rank/bank/row 3 5 3
+info: Epoch start = 60936010, turn = 0, subTurn = 0
+info: Processing req at 60936010
+info: Timing access to addr 2628992, rank/bank/row 0 0 5
+info: Activate at tick 60936010
+info: Precharging bank 0, rank 0 at tick 60971010, now got 0 active
+info: nextReqEvent scheduled@60961010
+info: Timing access to addr 1283968, rank/bank/row 3 4 2
+info: Epoch start = 60986010, turn = 0, subTurn = 1
+info: Processing req at 60986010
+info: no packet
+info: nextReqEvent scheduled@61011010
+info: no packet
+info: Epoch start = 61036010, turn = 0, subTurn = 2
+info: Processing req at 61036010
+info: no packet
+info: nextReqEvent scheduled@61061010
+info: no packet
+info: Epoch start = 61086010, turn = 0, subTurn = 0
+info: Processing req at 61086010
+info: Timing access to addr 2629056, rank/bank/row 0 0 5
+info: Activate at tick 61086010
+info: Precharging bank 0, rank 0 at tick 61121010, now got 0 active
+info: nextReqEvent scheduled@61111010
+info: Timing access to addr 1284032, rank/bank/row 3 4 2
+info: Epoch start = 61136010, turn = 0, subTurn = 1
+info: Processing req at 61136010
+info: nextReqEvent scheduled@61161010
+info: Epoch start = 61186010, turn = 0, subTurn = 2
+info: Processing req at 61186010
+info: no packet
+info: nextReqEvent scheduled@61211010
+info: no packet
+info: Epoch start = 61236010, turn = 0, subTurn = 0
+info: Processing req at 61236010
+info: Timing access to addr 5243264, rank/bank/row 0 0 10
+info: Activate at tick 61236010
+info: Precharging bank 0, rank 0 at tick 61271010, now got 0 active
+info: nextReqEvent scheduled@61261010
+info: no packet
+info: Epoch start = 61286010, turn = 0, subTurn = 1
+info: Processing req at 61286010
+info: no packet
+info: nextReqEvent scheduled@61311010
+info: no packet
+info: Epoch start = 61336010, turn = 0, subTurn = 2
+info: Processing req at 61336010
+info: no packet
+info: nextReqEvent scheduled@61361010
+info: Timing access to addr 2315136, rank/bank/row 3 2 4
+info: Epoch start = 61386010, turn = 0, subTurn = 0
+info: Processing req at 61386010
+info: Timing access to addr 5243328, rank/bank/row 0 0 10
+info: Activate at tick 61386010
+info: Precharging bank 0, rank 0 at tick 61421010, now got 0 active
+info: nextReqEvent scheduled@61411010
+info: no packet
+info: Epoch start = 61436010, turn = 0, subTurn = 1
+info: Processing req at 61436010
+info: no packet
+info: nextReqEvent scheduled@61461010
+info: Timing access to addr 1184832, rank/bank/row 2 0 2
+info: Epoch start = 61486010, turn = 0, subTurn = 2
+info: Processing req at 61486010
+info: no packet
+info: nextReqEvent scheduled@61511010
+info: no packet
+info: Epoch start = 61536010, turn = 0, subTurn = 0
+info: Processing req at 61536010
+info: no packet
+info: nextReqEvent scheduled@61561010
+info: no packet
+info: Epoch start = 61586010, turn = 0, subTurn = 1
+info: Processing req at 61586010
+info: no packet
+info: nextReqEvent scheduled@61611010
+info: Timing access to addr 2083456, rank/bank/row 7 6 3
+info: Epoch start = 61636010, turn = 0, subTurn = 2
+info: Processing req at 61636010
+info: no packet
+info: nextReqEvent scheduled@61661010
+info: no packet
+info: Epoch start = 61686010, turn = 0, subTurn = 0
+info: Processing req at 61686010
+info: no packet
+info: nextReqEvent scheduled@61711010
+info: no packet
+info: Epoch start = 61736010, turn = 0, subTurn = 1
+info: Processing req at 61736010
+info: no packet
+info: nextReqEvent scheduled@61761010
+info: Timing access to addr 1184256, rank/bank/row 2 0 2
+info: Epoch start = 61786010, turn = 0, subTurn = 2
+info: Processing req at 61786010
+info: no packet
+info: nextReqEvent scheduled@61811010
+info: no packet
+info: Epoch start = 61836010, turn = 0, subTurn = 0
+info: Processing req at 61836010
+info: Timing access to addr 11081792, rank/bank/row 1 0 21
+info: Activate at tick 61836010
+info: Precharging bank 0, rank 1 at tick 61871010, now got 0 active
+info: nextReqEvent scheduled@61861010
+info: no packet
+info: Epoch start = 61886010, turn = 0, subTurn = 1
+info: Processing req at 61886010
+info: no packet
+info: nextReqEvent scheduled@61911010
+info: Timing access to addr 1187264, rank/bank/row 2 0 2
+info: Epoch start = 61936010, turn = 0, subTurn = 2
+info: Processing req at 61936010
+info: no packet
+info: nextReqEvent scheduled@61961010
+info: no packet
+info: Epoch start = 61986010, turn = 0, subTurn = 0
+info: Processing req at 61986010
+info: Timing access to addr 11081856, rank/bank/row 1 0 21
+info: Activate at tick 61986011
+info: Precharging bank 0, rank 1 at tick 62021011, now got 0 active
+info: nextReqEvent scheduled@62011010
+info: Epoch start = 62036010, turn = 0, subTurn = 1
+info: Processing req at 62036010
+info: nextReqEvent scheduled@62061010
+info: Epoch start = 62086010, turn = 0, subTurn = 2
+info: Processing req at 62086010
+info: nextReqEvent scheduled@62111010
+info: Epoch start = 62136010, turn = 0, subTurn = 0
+info: Processing req at 62136010
+info: Activate at tick 62136011
+info: Precharging bank 0, rank 1 at tick 62171011, now got 0 active
+info: nextReqEvent scheduled@62161010
+info: no packet
+info: Epoch start = 62186010, turn = 0, subTurn = 1
+info: Processing req at 62186010
+info: no packet
+info: nextReqEvent scheduled@62211010
+info: no packet
+info: Epoch start = 62236010, turn = 0, subTurn = 2
+info: Processing req at 62236010
+info: no packet
+info: nextReqEvent scheduled@62261010
+info: no packet
+info: Epoch start = 62286010, turn = 0, subTurn = 0
+info: Processing req at 62286010
+info: no packet
+info: nextReqEvent scheduled@62311010
+info: no packet
+info: Epoch start = 62336010, turn = 0, subTurn = 1
+info: Processing req at 62336010
+info: no packet
+info: nextReqEvent scheduled@62361010
+info: no packet
+info: Epoch start = 62386010, turn = 0, subTurn = 2
+info: Processing req at 62386010
+info: no packet
+info: nextReqEvent scheduled@62411010
+info: no packet
+info: Epoch start = 62436010, turn = 0, subTurn = 0
+info: Processing req at 62436010
+info: no packet
+info: nextReqEvent scheduled@62461010
+info: no packet
+info: Epoch start = 62486010, turn = 0, subTurn = 1
+info: Processing req at 62486010
+info: no packet
+info: nextReqEvent scheduled@62511010
+info: Timing access to addr 1185024, rank/bank/row 2 0 2
+info: Epoch start = 62536010, turn = 0, subTurn = 2
+info: Processing req at 62536010
+info: nextReqEvent scheduled@62561010
+info: Epoch start = 62586010, turn = 0, subTurn = 0
+info: Processing req at 62586010
+info: nextReqEvent scheduled@62611010
+info: Epoch start = 62636010, turn = 0, subTurn = 1
+info: Processing req at 62636010
+info: no packet
+info: nextReqEvent scheduled@62661010
+info: Timing access to addr 1184896, rank/bank/row 2 0 2
+info: Epoch start = 62686010, turn = 0, subTurn = 2
+info: Processing req at 62686010
+info: no packet
+info: nextReqEvent scheduled@62711010
+info: no packet
+info: Epoch start = 62736010, turn = 0, subTurn = 0
+info: Processing req at 62736010
+info: Timing access to addr 2629120, rank/bank/row 0 0 5
+info: Activate at tick 62736011
+info: Precharging bank 0, rank 0 at tick 62771011, now got 0 active
+info: nextReqEvent scheduled@62761010
+info: no packet
+info: Epoch start = 62786010, turn = 0, subTurn = 1
+info: Processing req at 62786010
+info: no packet
+info: nextReqEvent scheduled@62811010
+info: Timing access to addr 1184384, rank/bank/row 2 0 2
+info: Epoch start = 62836010, turn = 0, subTurn = 2
+info: Processing req at 62836010
+info: no packet
+info: nextReqEvent scheduled@62861010
+info: no packet
+info: Epoch start = 62886010, turn = 0, subTurn = 0
+info: Processing req at 62886010
+info: Timing access to addr 5243392, rank/bank/row 0 0 10
+info: Activate at tick 62886010
+info: Precharging bank 0, rank 0 at tick 62921010, now got 0 active
+info: nextReqEvent scheduled@62911010
+info: no packet
+info: Epoch start = 62936010, turn = 0, subTurn = 1
+info: Processing req at 62936010
+info: no packet
+info: nextReqEvent scheduled@62961010
+info: Timing access to addr 1186816, rank/bank/row 2 0 2
+info: Epoch start = 62986010, turn = 0, subTurn = 2
+info: Processing req at 62986010
+info: nextReqEvent scheduled@63011010
+info: Epoch start = 63036010, turn = 0, subTurn = 0
+info: Processing req at 63036010
+info: Activate at tick 63036010
+info: Precharging bank 0, rank 0 at tick 63071010, now got 0 active
+info: nextReqEvent scheduled@63061010
+info: Epoch start = 63086010, turn = 0, subTurn = 1
+info: Processing req at 63086010
+info: nextReqEvent scheduled@63111010
+info: Epoch start = 63136010, turn = 0, subTurn = 2
+info: Processing req at 63136010
+info: nextReqEvent scheduled@63161010
+info: Epoch start = 63186010, turn = 0, subTurn = 0
+info: Processing req at 63186010
+info: Activate at tick 63186011
+info: Precharging bank 0, rank 1 at tick 63221011, now got 0 active
+info: nextReqEvent scheduled@63211010
+info: Epoch start = 63236010, turn = 0, subTurn = 1
+info: Processing req at 63236010
+info: no packet
+info: nextReqEvent scheduled@63261010
+info: Timing access to addr 1185216, rank/bank/row 2 0 2
+info: Epoch start = 63286010, turn = 0, subTurn = 2
+info: Processing req at 63286010
+info: no packet
+info: nextReqEvent scheduled@63311010
+info: no packet
+info: Epoch start = 63336010, turn = 0, subTurn = 0
+info: Processing req at 63336010
+info: Timing access to addr 11082048, rank/bank/row 1 0 21
+info: Activate at tick 63336011
+info: Precharging bank 0, rank 1 at tick 63371011, now got 0 active
+info: nextReqEvent scheduled@63361010
+info: Timing access to addr 1188544, rank/bank/row 2 1 2
+info: Epoch start = 63386010, turn = 0, subTurn = 1
+info: Processing req at 63386010
+info: no packet
+info: nextReqEvent scheduled@63411010
+info: Timing access to addr 1187008, rank/bank/row 2 0 2
+info: Epoch start = 63436010, turn = 0, subTurn = 2
+info: Processing req at 63436010
+info: no packet
+info: nextReqEvent scheduled@63461010
+info: no packet
+info: Epoch start = 63486010, turn = 0, subTurn = 0
+info: Processing req at 63486010
+info: Timing access to addr 11082112, rank/bank/row 1 0 21
+info: Activate at tick 63486011
+info: Precharging bank 0, rank 1 at tick 63521011, now got 0 active
+info: nextReqEvent scheduled@63511010
+info: Timing access to addr 1188608, rank/bank/row 2 1 2
+info: Epoch start = 63536010, turn = 0, subTurn = 1
+info: Processing req at 63536010
+info: no packet
+info: nextReqEvent scheduled@63561010
+info: Timing access to addr 1185472, rank/bank/row 2 0 2
+info: Epoch start = 63586010, turn = 0, subTurn = 2
+info: Processing req at 63586010
+info: no packet
+info: nextReqEvent scheduled@63611010
+info: no packet
+info: Epoch start = 63636010, turn = 0, subTurn = 0
+info: Processing req at 63636010
+info: no packet
+info: nextReqEvent scheduled@63661010
+info: Timing access to addr 1188864, rank/bank/row 2 1 2
+info: Epoch start = 63686010, turn = 0, subTurn = 1
+info: Processing req at 63686010
+info: no packet
+info: nextReqEvent scheduled@63711010
+info: no packet
+info: Epoch start = 63736010, turn = 0, subTurn = 2
+info: Processing req at 63736010
+info: no packet
+info: nextReqEvent scheduled@63761010
+info: Timing access to addr 2315072, rank/bank/row 3 2 4
+info: Epoch start = 63786010, turn = 0, subTurn = 0
+info: Processing req at 63786010
+info: nextReqEvent scheduled@63811010
+info: Epoch start = 63836010, turn = 0, subTurn = 1
+info: Processing req at 63836010
+info: nextReqEvent scheduled@63861010
+info: Epoch start = 63886010, turn = 0, subTurn = 2
+info: Processing req at 63886010
+info: nextReqEvent scheduled@63911010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 23893, Bank: 1
+info: Epoch start = 63936010, turn = 0, subTurn = 0
+info: Processing req at 63936010
+info: nextReqEvent scheduled@63961010
+info: Epoch start = 63986010, turn = 0, subTurn = 1
+info: Processing req at 63986010
+info: no packet
+info: nextReqEvent scheduled@64011010
+info: no packet
+info: Epoch start = 64036010, turn = 0, subTurn = 2
+info: Processing req at 64036010
+info: no packet
+info: nextReqEvent scheduled@64061010
+info: no packet
+info: Epoch start = 64086010, turn = 0, subTurn = 0
+info: Processing req at 64086010
+info: Timing access to addr 2629248, rank/bank/row 0 0 5
+info: Activate at tick 64086011
+info: Precharging bank 0, rank 0 at tick 64121011, now got 0 active
+info: nextReqEvent scheduled@64111010
+info: Timing access to addr 1190976, rank/bank/row 2 1 2
+info: Epoch start = 64136010, turn = 0, subTurn = 1
+info: Processing req at 64136010
+info: nextReqEvent scheduled@64161010
+info: Epoch start = 64186010, turn = 0, subTurn = 2
+info: Processing req at 64186010
+info: no packet
+info: nextReqEvent scheduled@64211010
+info: no packet
+info: Epoch start = 64236010, turn = 0, subTurn = 0
+info: Processing req at 64236010
+info: Timing access to addr 5243456, rank/bank/row 0 0 10
+info: Activate at tick 64236010
+info: Precharging bank 0, rank 0 at tick 64271010, now got 0 active
+info: nextReqEvent scheduled@64261010
+info: Timing access to addr 1191040, rank/bank/row 2 1 2
+info: Epoch start = 64286010, turn = 0, subTurn = 1
+info: Processing req at 64286010
+info: no packet
+info: nextReqEvent scheduled@64311010
+info: Timing access to addr 1185536, rank/bank/row 2 0 2
+info: Epoch start = 64336010, turn = 0, subTurn = 2
+info: Processing req at 64336010
+info: nextReqEvent scheduled@64361010
+info: Epoch start = 64386010, turn = 0, subTurn = 0
+info: Processing req at 64386010
+info: Activate at tick 64386010
+info: Precharging bank 0, rank 0 at tick 64421010, now got 0 active
+info: nextReqEvent scheduled@64411010
+info: Epoch start = 64436010, turn = 0, subTurn = 1
+info: Processing req at 64436010
+info: nextReqEvent scheduled@64461010
+info: Epoch start = 64486010, turn = 0, subTurn = 2
+info: Processing req at 64486010
+info: nextReqEvent scheduled@64511010
+info: Epoch start = 64536010, turn = 0, subTurn = 0
+info: Processing req at 64536010
+info: Activate at tick 64536011
+info: Precharging bank 0, rank 1 at tick 64571011, now got 0 active
+info: nextReqEvent scheduled@64561010
+info: Epoch start = 64586010, turn = 0, subTurn = 1
+info: Processing req at 64586010
+info: nextReqEvent scheduled@64611010
+info: Epoch start = 64636010, turn = 0, subTurn = 2
+info: Processing req at 64636010
+info: Timing access to addr 2617792, rank/bank/row 7 7 4
+info: Activate at tick 64636011
+info: Precharging bank 7, rank 7 at tick 64671011, now got 0 active
+info: nextReqEvent scheduled@64661010
+info: Epoch start = 64686010, turn = 0, subTurn = 0
+info: Processing req at 64686010
+info: Activate at tick 64686011
+info: Precharging bank 0, rank 1 at tick 64721011, now got 0 active
+info: nextReqEvent scheduled@64711010
+info: Epoch start = 64736010, turn = 0, subTurn = 1
+info: Processing req at 64736010
+info: nextReqEvent scheduled@64761010
+info: Timing access to addr 1185728, rank/bank/row 2 0 2
+info: Epoch start = 64786010, turn = 0, subTurn = 2
+info: Processing req at 64786010
+info: no packet
+info: nextReqEvent scheduled@64811010
+info: no packet
+info: Epoch start = 64836010, turn = 0, subTurn = 0
+info: Processing req at 64836010
+info: Timing access to addr 11082304, rank/bank/row 1 0 21
+info: Activate at tick 64836011
+info: Precharging bank 0, rank 1 at tick 64871011, now got 0 active
+info: nextReqEvent scheduled@64861010
+info: no packet
+info: Epoch start = 64886010, turn = 0, subTurn = 1
+info: Processing req at 64886010
+info: no packet
+info: nextReqEvent scheduled@64911010
+info: Timing access to addr 1185792, rank/bank/row 2 0 2
+info: Epoch start = 64936010, turn = 0, subTurn = 2
+info: Processing req at 64936010
+info: nextReqEvent scheduled@64961010
+info: Epoch start = 64986010, turn = 0, subTurn = 0
+info: Processing req at 64986010
+info: nextReqEvent scheduled@65011010
+info: no packet
+info: Epoch start = 65036010, turn = 0, subTurn = 1
+info: Processing req at 65036010
+info: no packet
+info: nextReqEvent scheduled@65061010
+info: Timing access to addr 1992960, rank/bank/row 6 3 3
+info: Epoch start = 65086010, turn = 0, subTurn = 2
+info: Processing req at 65086010
+info: nextReqEvent scheduled@65111010
+info: Epoch start = 65136010, turn = 0, subTurn = 0
+info: Processing req at 65136010
+info: nextReqEvent scheduled@65161010
+info: Epoch start = 65186010, turn = 0, subTurn = 1
+info: Processing req at 65186010
+info: nextReqEvent scheduled@65211010
+info: Epoch start = 65236010, turn = 0, subTurn = 2
+info: Processing req at 65236010
+info: Epoch start = 65286010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@65311010
+info: Epoch start = 65336010, turn = 0, subTurn = 1
+info: Processing req at 65336010
+info: no packet
+info: nextReqEvent scheduled@65361010
+info: Timing access to addr 1185920, rank/bank/row 2 0 2
+info: Epoch start = 65386010, turn = 0, subTurn = 2
+info: Processing req at 65386010
+info: no packet
+info: nextReqEvent scheduled@65411010
+info: no packet
+info: Epoch start = 65436010, turn = 0, subTurn = 0
+info: Processing req at 65436010
+info: Timing access to addr 2629312, rank/bank/row 0 0 5
+info: Activate at tick 65436011
+info: Precharging bank 0, rank 0 at tick 65471011, now got 0 active
+info: nextReqEvent scheduled@65461010
+info: Timing access to addr 1189056, rank/bank/row 2 1 2
+info: Epoch start = 65486010, turn = 0, subTurn = 1
+info: Processing req at 65486010
+info: no packet
+info: nextReqEvent scheduled@65511010
+info: Timing access to addr 1185984, rank/bank/row 2 0 2
+info: Epoch start = 65536010, turn = 0, subTurn = 2
+info: Processing req at 65536010
+info: no packet
+info: nextReqEvent scheduled@65561010
+info: no packet
+info: Epoch start = 65586010, turn = 0, subTurn = 0
+info: Processing req at 65586010
+info: Timing access to addr 2629376, rank/bank/row 0 0 5
+info: Activate at tick 65586010
+info: Precharging bank 0, rank 0 at tick 65621010, now got 0 active
+info: nextReqEvent scheduled@65611010
+info: Timing access to addr 1189120, rank/bank/row 2 1 2
+info: Epoch start = 65636010, turn = 0, subTurn = 1
+info: Processing req at 65636010
+info: nextReqEvent scheduled@65661010
+info: Epoch start = 65686010, turn = 0, subTurn = 2
+info: Processing req at 65686010
+info: nextReqEvent scheduled@65711010
+info: no packet
+info: Epoch start = 65736010, turn = 0, subTurn = 0
+info: Processing req at 65736010
+info: Timing access to addr 5243584, rank/bank/row 0 0 10
+info: Activate at tick 65736010
+info: Precharging bank 0, rank 0 at tick 65771010, now got 0 active
+info: nextReqEvent scheduled@65761010
+info: Timing access to addr 1189184, rank/bank/row 2 1 2
+info: Epoch start = 65786010, turn = 0, subTurn = 1
+info: Processing req at 65786010
+info: nextReqEvent scheduled@65811010
+info: Epoch start = 65836010, turn = 0, subTurn = 2
+info: Processing req at 65836010
+info: no packet
+info: nextReqEvent scheduled@65861010
+info: no packet
+info: Epoch start = 65886010, turn = 0, subTurn = 0
+info: Processing req at 65886010
+info: Timing access to addr 11082368, rank/bank/row 1 0 21
+info: Activate at tick 65886011
+info: Precharging bank 0, rank 1 at tick 65921011, now got 0 active
+info: nextReqEvent scheduled@65911010
+info: Epoch start = 65936010, turn = 0, subTurn = 1
+info: Processing req at 65936010
+info: Epoch start = 65986010, turn = 0, subTurn = 2
+info: Processing req at 65986010
+info: nextReqEvent scheduled@66011010
+info: no packet
+info: Epoch start = 66036010, turn = 0, subTurn = 0
+info: Processing req at 66036010
+info: Timing access to addr 11082432, rank/bank/row 1 0 21
+info: Activate at tick 66036011
+info: Precharging bank 0, rank 1 at tick 66071011, now got 0 active
+info: nextReqEvent scheduled@66061010
+info: Timing access to addr 1189312, rank/bank/row 2 1 2
+info: Epoch start = 66086010, turn = 0, subTurn = 1
+info: Processing req at 66086010
+info: no packet
+info: nextReqEvent scheduled@66111010
+info: no packet
+info: Epoch start = 66136010, turn = 0, subTurn = 2
+info: Processing req at 66136010
+info: Timing access to addr 2617856, rank/bank/row 7 7 4
+info: Activate at tick 66136011
+info: Precharging bank 7, rank 7 at tick 66171011, now got 0 active
+info: nextReqEvent scheduled@66161010
+info: no packet
+info: Epoch start = 66186010, turn = 0, subTurn = 0
+info: Processing req at 66186010
+info: Timing access to addr 11082496, rank/bank/row 1 0 21
+info: Activate at tick 66186010
+info: Precharging bank 0, rank 1 at tick 66221010, now got 0 active
+info: nextReqEvent scheduled@66211010
+info: Timing access to addr 1189376, rank/bank/row 2 1 2
+info: Epoch start = 66236010, turn = 0, subTurn = 1
+info: Processing req at 66236010
+info: nextReqEvent scheduled@66261010
+info: Epoch start = 66286010, turn = 0, subTurn = 2
+info: Processing req at 66286010
+info: Activate at tick 66286010
+info: Precharging bank 1, rank 1 at tick 66321010, now got 0 active
+info: nextReqEvent scheduled@66311010
+info: Epoch start = 66336010, turn = 0, subTurn = 0
+info: Processing req at 66336010
+info: nextReqEvent scheduled@66361010
+info: Epoch start = 66386010, turn = 0, subTurn = 1
+info: Processing req at 66386010
+info: Epoch start = 66436010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@66461010
+info: Epoch start = 66486010, turn = 0, subTurn = 0
+info: Processing req at 66486010
+info: no packet
+info: nextReqEvent scheduled@66511010
+info: Timing access to addr 1189504, rank/bank/row 2 1 2
+info: Epoch start = 66536010, turn = 0, subTurn = 1
+info: Processing req at 66536010
+info: no packet
+info: nextReqEvent scheduled@66561010
+info: Timing access to addr 1182592, rank/bank/row 2 0 2
+info: Epoch start = 66586010, turn = 0, subTurn = 2
+info: Processing req at 66586010
+info: nextReqEvent scheduled@66611010
+info: Epoch start = 66636010, turn = 0, subTurn = 0
+info: Processing req at 66636010
+info: nextReqEvent scheduled@66661010
+info: Epoch start = 66686010, turn = 0, subTurn = 1
+info: Processing req at 66686010
+info: nextReqEvent scheduled@66711010
+info: Timing access to addr 1824064, rank/bank/row 3 6 3
+info: Epoch start = 66736010, turn = 0, subTurn = 2
+info: Processing req at 66736010
+info: no packet
+info: nextReqEvent scheduled@66761010
+info: no packet
+info: Epoch start = 66786010, turn = 0, subTurn = 0
+info: Processing req at 66786010
+info: Timing access to addr 2629440, rank/bank/row 0 0 5
+info: Activate at tick 66786011
+info: Precharging bank 0, rank 0 at tick 66821011, now got 0 active
+info: nextReqEvent scheduled@66811010
+info: Timing access to addr 1191104, rank/bank/row 2 1 2
+info: Epoch start = 66836010, turn = 0, subTurn = 1
+info: Processing req at 66836010
+info: no packet
+info: nextReqEvent scheduled@66861010
+info: Timing access to addr 1537216, rank/bank/row 7 3 2
+info: Epoch start = 66886010, turn = 0, subTurn = 2
+info: Processing req at 66886010
+info: no packet
+info: nextReqEvent scheduled@66911010
+info: no packet
+info: Epoch start = 66936010, turn = 0, subTurn = 0
+info: Processing req at 66936010
+info: Timing access to addr 5243648, rank/bank/row 0 0 10
+info: Activate at tick 66936010
+info: Precharging bank 0, rank 0 at tick 66971010, now got 0 active
+info: nextReqEvent scheduled@66961010
+info: Epoch start = 66986010, turn = 0, subTurn = 1
+info: Processing req at 66986010
+info: nextReqEvent scheduled@67011010
+info: Epoch start = 67036010, turn = 0, subTurn = 2
+info: Processing req at 67036010
+info: nextReqEvent scheduled@67061010
+info: Epoch start = 67086010, turn = 0, subTurn = 0
+info: Processing req at 67086010
+info: Activate at tick 67086010
+info: Precharging bank 0, rank 0 at tick 67121010, now got 0 active
+info: nextReqEvent scheduled@67111010
+info: Epoch start = 67136010, turn = 0, subTurn = 1
+info: Epoch start = 67186010, turn = 0, subTurn = 2
+info: Processing req at 67186010
+info: nextReqEvent scheduled@67211010
+info: Epoch start = 67236010, turn = 0, subTurn = 0
+info: Processing req at 67236010
+info: Activate at tick 67236011
+info: Precharging bank 0, rank 1 at tick 67271011, now got 0 active
+info: nextReqEvent scheduled@67261010
+info: Epoch start = 67286010, turn = 0, subTurn = 1
+info: Epoch start = 67336010, turn = 0, subTurn = 2
+info: Processing req at 67336010
+info: nextReqEvent scheduled@67361010
+info: Epoch start = 67386010, turn = 0, subTurn = 0
+info: Processing req at 67386010
+info: Activate at tick 67386011
+info: Precharging bank 0, rank 1 at tick 67421011, now got 0 active
+info: nextReqEvent scheduled@67411010
+info: Epoch start = 67436010, turn = 0, subTurn = 1
+info: Epoch start = 67486010, turn = 0, subTurn = 2
+info: Processing req at 67486010
+info: no packet
+info: nextReqEvent scheduled@67511010
+info: no packet
+info: Epoch start = 67536010, turn = 0, subTurn = 0
+info: Processing req at 67536010
+info: Timing access to addr 11082688, rank/bank/row 1 0 21
+info: Activate at tick 67536011
+info: Precharging bank 0, rank 1 at tick 67571011, now got 0 active
+info: nextReqEvent scheduled@67561010
+info: Epoch start = 67586010, turn = 0, subTurn = 1
+info: Processing req at 67586010
+info: Epoch start = 67636010, turn = 0, subTurn = 2
+info: Epoch start = 67686010, turn = 0, subTurn = 0
+info: Epoch start = 67736010, turn = 0, subTurn = 1
+info: Epoch start = 67786010, turn = 0, subTurn = 2
+info: Processing req at 67786010
+info: no packet
+info: nextReqEvent scheduled@67811010
+info: no packet
+info: Epoch start = 67836010, turn = 0, subTurn = 0
+info: Processing req at 67836010
+info: no packet
+info: nextReqEvent scheduled@67861010
+info: Timing access to addr 1188672, rank/bank/row 2 1 2
+info: Epoch start = 67886010, turn = 0, subTurn = 1
+info: Processing req at 67886010
+info: nextReqEvent scheduled@67911010
+info: Epoch start = 67936010, turn = 0, subTurn = 2
+info: Processing req at 67936010
+info: nextReqEvent scheduled@67961010
+info: Epoch start = 67986010, turn = 0, subTurn = 0
+info: Processing req at 67986010
+info: nextReqEvent scheduled@68011010
+info: Epoch start = 68036010, turn = 0, subTurn = 1
+info: Processing req at 68036010
+info: no packet
+info: nextReqEvent scheduled@68061010
+info: no packet
+info: Epoch start = 68086010, turn = 0, subTurn = 2
+info: Processing req at 68086010
+info: no packet
+info: nextReqEvent scheduled@68111010
+info: no packet
+info: Epoch start = 68136010, turn = 0, subTurn = 0
+info: Processing req at 68136010
+info: Timing access to addr 2629568, rank/bank/row 0 0 5
+info: Activate at tick 68136011
+info: Precharging bank 0, rank 0 at tick 68171011, now got 0 active
+info: nextReqEvent scheduled@68161010
+info: Timing access to addr 930880, rank/bank/row 6 1 1
+info: Epoch start = 68186010, turn = 0, subTurn = 1
+info: Processing req at 68186010
+info: no packet
+info: nextReqEvent scheduled@68211010
+info: no packet
+info: Epoch start = 68236010, turn = 0, subTurn = 2
+info: Processing req at 68236010
+info: no packet
+info: nextReqEvent scheduled@68261010
+info: no packet
+info: Epoch start = 68286010, turn = 0, subTurn = 0
+info: Processing req at 68286010
+info: Timing access to addr 5243776, rank/bank/row 0 0 10
+info: Activate at tick 68286010
+info: Precharging bank 0, rank 0 at tick 68321010, now got 0 active
+info: nextReqEvent scheduled@68311010
+info: no packet
+info: Epoch start = 68336010, turn = 0, subTurn = 1
+info: Processing req at 68336010
+info: no packet
+info: nextReqEvent scheduled@68361010
+info: no packet
+info: Epoch start = 68386010, turn = 0, subTurn = 2
+info: Processing req at 68386010
+info: no packet
+info: nextReqEvent scheduled@68411010
+info: no packet
+info: Epoch start = 68436010, turn = 0, subTurn = 0
+info: Processing req at 68436010
+info: no packet
+info: nextReqEvent scheduled@68461010
+info: no packet
+info: Epoch start = 68486010, turn = 0, subTurn = 1
+info: Processing req at 68486010
+info: no packet
+info: nextReqEvent scheduled@68511010
+info: no packet
+info: Epoch start = 68536010, turn = 0, subTurn = 2
+info: Processing req at 68536010
+info: no packet
+info: nextReqEvent scheduled@68561010
+info: no packet
+info: Epoch start = 68586010, turn = 0, subTurn = 0
+info: Processing req at 68586010
+info: no packet
+info: nextReqEvent scheduled@68611010
+info: Timing access to addr 1188160, rank/bank/row 2 1 2
+info: Epoch start = 68636010, turn = 0, subTurn = 1
+info: Processing req at 68636010
+info: no packet
+info: nextReqEvent scheduled@68661010
+info: no packet
+info: Epoch start = 68686010, turn = 0, subTurn = 2
+info: Processing req at 68686010
+info: no packet
+info: nextReqEvent scheduled@68711010
+info: no packet
+info: Epoch start = 68736010, turn = 0, subTurn = 0
+info: Processing req at 68736010
+info: Timing access to addr 2629504, rank/bank/row 0 0 5
+info: Activate at tick 68736010
+info: Precharging bank 0, rank 0 at tick 68771010, now got 0 active
+info: nextReqEvent scheduled@68761010
+info: Timing access to addr 930944, rank/bank/row 6 1 1
+info: Epoch start = 68786010, turn = 0, subTurn = 1
+info: Processing req at 68786010
+info: no packet
+info: nextReqEvent scheduled@68811010
+info: no packet
+info: Epoch start = 68836010, turn = 0, subTurn = 2
+info: Processing req at 68836010
+info: no packet
+info: nextReqEvent scheduled@68861010
+info: no packet
+info: Epoch start = 68886010, turn = 0, subTurn = 0
+info: Processing req at 68886010
+info: Timing access to addr 5243840, rank/bank/row 0 0 10
+info: Activate at tick 68886010
+info: Precharging bank 0, rank 0 at tick 68921010, now got 0 active
+info: nextReqEvent scheduled@68911010
+info: Timing access to addr 1189568, rank/bank/row 2 1 2
+info: Epoch start = 68936010, turn = 0, subTurn = 1
+info: Processing req at 68936010
+info: no packet
+info: nextReqEvent scheduled@68961010
+info: no packet
+info: Epoch start = 68986010, turn = 0, subTurn = 2
+info: Processing req at 68986010
+info: no packet
+info: nextReqEvent scheduled@69011010
+info: no packet
+info: Epoch start = 69036010, turn = 0, subTurn = 0
+info: Processing req at 69036010
+info: Timing access to addr 11082752, rank/bank/row 1 0 21
+info: Activate at tick 69036011
+info: Precharging bank 0, rank 1 at tick 69071011, now got 0 active
+info: nextReqEvent scheduled@69061010
+info: Timing access to addr 931008, rank/bank/row 6 1 1
+info: Epoch start = 69086010, turn = 0, subTurn = 1
+info: Processing req at 69086010
+info: no packet
+info: nextReqEvent scheduled@69111010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 29833, Bank: 7
+info: no packet
+info: Epoch start = 69136010, turn = 0, subTurn = 2
+info: Processing req at 69136010
+info: no packet
+info: nextReqEvent scheduled@69161010
+info: no packet
+info: Epoch start = 69186010, turn = 0, subTurn = 0
+info: Processing req at 69186010
+info: Timing access to addr 11082816, rank/bank/row 1 0 21
+info: Activate at tick 69186010
+info: Precharging bank 0, rank 1 at tick 69221010, now got 0 active
+info: nextReqEvent scheduled@69211010
+info: Timing access to addr 1760108864, rank/bank/row 1 1 3357
+info: Epoch start = 69236010, turn = 0, subTurn = 1
+info: Processing req at 69236010
+info: no packet
+info: nextReqEvent scheduled@69261010
+info: no packet
+info: Epoch start = 69286010, turn = 0, subTurn = 2
+info: Processing req at 69286010
+info: no packet
+info: nextReqEvent scheduled@69311010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 26513, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 27713, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 29633, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 32153, Bank: 0
+info: no packet
+info: Epoch start = 69336010, turn = 0, subTurn = 0
+info: Processing req at 69336010
+info: no packet
+info: nextReqEvent scheduled@69361010
+info: Timing access to addr 1284608, rank/bank/row 3 4 2
+info: Epoch start = 69386010, turn = 0, subTurn = 1
+info: Processing req at 69386010
+info: no packet
+info: nextReqEvent scheduled@69411010
+info: no packet
+info: Epoch start = 69436010, turn = 0, subTurn = 2
+info: Processing req at 69436010
+info: no packet
+info: nextReqEvent scheduled@69461010
+info: no packet
+info: Epoch start = 69486010, turn = 0, subTurn = 0
+info: Processing req at 69486010
+info: no packet
+info: nextReqEvent scheduled@69511010
+info: no packet
+info: Epoch start = 69536010, turn = 0, subTurn = 1
+info: Processing req at 69536010
+info: no packet
+info: nextReqEvent scheduled@69561010
+info: no packet
+info: Epoch start = 69586010, turn = 0, subTurn = 2
+info: Processing req at 69586010
+info: no packet
+info: nextReqEvent scheduled@69611010
+info: no packet
+info: Epoch start = 69636010, turn = 0, subTurn = 0
+info: Processing req at 69636010
+info: Timing access to addr 11082880, rank/bank/row 1 0 21
+info: Activate at tick 69636010
+info: Precharging bank 0, rank 1 at tick 69671010, now got 0 active
+info: nextReqEvent scheduled@69661010
+info: Timing access to addr 1760108928, rank/bank/row 1 1 3357
+info: Epoch start = 69686010, turn = 0, subTurn = 1
+info: Processing req at 69686010
+info: no packet
+info: nextReqEvent scheduled@69711010
+info: no packet
+info: Epoch start = 69736010, turn = 0, subTurn = 2
+info: Processing req at 69736010
+info: no packet
+info: nextReqEvent scheduled@69761010
+info: Timing access to addr 1793728, rank/bank/row 3 2 3
+info: Epoch start = 69786010, turn = 0, subTurn = 0
+info: Processing req at 69786010
+info: nextReqEvent scheduled@69811010
+info: Epoch start = 69836010, turn = 0, subTurn = 1
+info: Processing req at 69836010
+info: Epoch start = 69886010, turn = 0, subTurn = 2
+info: nextReqEvent scheduled@69911010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 29093, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 30013, Bank: 1
+info: Epoch start = 69936010, turn = 0, subTurn = 0
+info: Processing req at 69936010
+info: no packet
+info: nextReqEvent scheduled@69961010
+info: Timing access to addr 926400, rank/bank/row 6 1 1
+info: Epoch start = 69986010, turn = 0, subTurn = 1
+info: Processing req at 69986010
+info: no packet
+info: nextReqEvent scheduled@70011010
+info: no packet
+info: Epoch start = 70036010, turn = 0, subTurn = 2
+info: Processing req at 70036010
+info: no packet
+info: nextReqEvent scheduled@70061010
+info: no packet
+info: Epoch start = 70086010, turn = 0, subTurn = 0
+info: Processing req at 70086010
+info: no packet
+info: nextReqEvent scheduled@70111010
+info: Timing access to addr 1179456, rank/bank/row 1 7 2
+info: Epoch start = 70136010, turn = 0, subTurn = 1
+info: Processing req at 70136010
+info: no packet
+info: nextReqEvent scheduled@70161010
+info: no packet
+info: Epoch start = 70186010, turn = 0, subTurn = 2
+info: Processing req at 70186010
+info: Timing access to addr 2629632, rank/bank/row 0 1 5
+info: Activate at tick 70186011
+info: Precharging bank 1, rank 0 at tick 70221011, now got 0 active
+info: nextReqEvent scheduled@70211010
+info: no packet
+info: Epoch start = 70236010, turn = 0, subTurn = 0
+info: Processing req at 70236010
+info: Timing access to addr 5243904, rank/bank/row 0 0 10
+info: Activate at tick 70236010
+info: Precharging bank 0, rank 0 at tick 70271010, now got 0 active
+info: nextReqEvent scheduled@70261010
+info: Epoch start = 70286010, turn = 0, subTurn = 1
+info: Processing req at 70286010
+info: nextReqEvent scheduled@70311010
+info: Epoch start = 70336010, turn = 0, subTurn = 2
+info: Processing req at 70336010
+info: Activate at tick 70336010
+info: Precharging bank 1, rank 0 at tick 70371010, now got 0 active
+info: nextReqEvent scheduled@70361010
+info: Epoch start = 70386010, turn = 0, subTurn = 0
+info: Epoch start = 70436010, turn = 0, subTurn = 1
+info: Processing req at 70436010
+info: no packet
+info: nextReqEvent scheduled@70461010
+info: no packet
+info: Epoch start = 70486010, turn = 0, subTurn = 2
+info: Processing req at 70486010
+info: no packet
+info: nextReqEvent scheduled@70511010
+info: no packet
+info: Epoch start = 70536010, turn = 0, subTurn = 0
+info: Processing req at 70536010
+info: Timing access to addr 11082944, rank/bank/row 1 0 21
+info: Activate at tick 70536011
+info: Precharging bank 0, rank 1 at tick 70571011, now got 0 active
+info: nextReqEvent scheduled@70561010
+info: Epoch start = 70586010, turn = 0, subTurn = 1
+info: Processing req at 70586010
+info: nextReqEvent scheduled@70611010
+info: Epoch start = 70636010, turn = 0, subTurn = 2
+info: Processing req at 70636010
+info: no packet
+info: nextReqEvent scheduled@70661010
+info: no packet
+info: Epoch start = 70686010, turn = 0, subTurn = 0
+info: Processing req at 70686010
+info: Timing access to addr 11083008, rank/bank/row 1 0 21
+info: Activate at tick 70686011
+info: Precharging bank 0, rank 1 at tick 70721011, now got 0 active
+info: nextReqEvent scheduled@70711010
+info: Epoch start = 70736010, turn = 0, subTurn = 1
+info: Processing req at 70736010
+info: Epoch start = 70786010, turn = 0, subTurn = 2
+info: Processing req at 70786010
+info: nextReqEvent scheduled@70811010
+info: Timing access to addr 1793664, rank/bank/row 3 2 3
+info: Epoch start = 70836010, turn = 0, subTurn = 0
+info: Processing req at 70836010
+info: Timing access to addr 11083072, rank/bank/row 1 0 21
+info: Activate at tick 70836011
+info: Precharging bank 0, rank 1 at tick 70871011, now got 0 active
+info: nextReqEvent scheduled@70861010
+info: Timing access to addr 862464, rank/bank/row 5 1 1
+info: Epoch start = 70886010, turn = 0, subTurn = 1
+info: Processing req at 70886010
+info: no packet
+info: nextReqEvent scheduled@70911010
+info: Timing access to addr 1079680, rank/bank/row 0 3 2
+info: Epoch start = 70936010, turn = 0, subTurn = 2
+info: Processing req at 70936010
+info: nextReqEvent scheduled@70961010
+info: Epoch start = 70986010, turn = 0, subTurn = 0
+info: Processing req at 70986010
+info: nextReqEvent scheduled@71011010
+info: no packet
+info: Epoch start = 71036010, turn = 0, subTurn = 1
+info: Processing req at 71036010
+info: no packet
+info: nextReqEvent scheduled@71061010
+info: Timing access to addr 1821056, rank/bank/row 3 6 3
+info: Epoch start = 71086010, turn = 0, subTurn = 2
+info: Processing req at 71086010
+info: no packet
+info: nextReqEvent scheduled@71111010
+info: Timing access to addr 2211712, rank/bank/row 1 5 4
+info: Epoch start = 71136010, turn = 0, subTurn = 0
+info: Processing req at 71136010
+info: no packet
+info: nextReqEvent scheduled@71161010
+info: no packet
+info: Epoch start = 71186010, turn = 0, subTurn = 1
+info: Processing req at 71186010
+info: no packet
+info: nextReqEvent scheduled@71211010
+info: Timing access to addr 1079744, rank/bank/row 0 3 2
+info: Epoch start = 71236010, turn = 0, subTurn = 2
+info: Processing req at 71236010
+info: nextReqEvent scheduled@71261010
+info: Epoch start = 71286010, turn = 0, subTurn = 0
+info: Processing req at 71286010
+info: Epoch start = 71336010, turn = 0, subTurn = 1
+info: Processing req at 71336010
+info: no packet
+info: nextReqEvent scheduled@71361010
+info: no packet
+info: Epoch start = 71386010, turn = 0, subTurn = 2
+info: Processing req at 71386010
+info: Timing access to addr 2629760, rank/bank/row 0 1 5
+info: Activate at tick 71386011
+info: Precharging bank 1, rank 0 at tick 71421011, now got 0 active
+info: nextReqEvent scheduled@71411010
+info: Timing access to addr 1090432, rank/bank/row 0 5 2
+info: Epoch start = 71436010, turn = 0, subTurn = 0
+info: Processing req at 71436010
+info: Activate at tick 71436010
+info: Precharging bank 0, rank 0 at tick 71471010, now got 0 active
+info: nextReqEvent scheduled@71461010
+info: Epoch start = 71486010, turn = 0, subTurn = 1
+info: Processing req at 71486010
+info: nextReqEvent scheduled@71511010
+info: no packet
+info: Epoch start = 71536010, turn = 0, subTurn = 2
+info: Processing req at 71536010
+info: no packet
+info: nextReqEvent scheduled@71561010
+info: Timing access to addr 1090496, rank/bank/row 0 5 2
+info: Epoch start = 71586010, turn = 0, subTurn = 0
+info: Processing req at 71586010
+info: Timing access to addr 5244032, rank/bank/row 0 0 10
+info: Activate at tick 71586010
+info: Precharging bank 0, rank 0 at tick 71621010, now got 0 active
+info: nextReqEvent scheduled@71611010
+info: Epoch start = 71636010, turn = 0, subTurn = 1
+info: Processing req at 71636010
+info: nextReqEvent scheduled@71661010
+info: no packet
+info: Epoch start = 71686010, turn = 0, subTurn = 2
+info: Processing req at 71686010
+info: no packet
+info: nextReqEvent scheduled@71711010
+info: Timing access to addr 1090560, rank/bank/row 0 5 2
+info: Epoch start = 71736010, turn = 0, subTurn = 0
+info: Processing req at 71736010
+info: Timing access to addr 11083136, rank/bank/row 1 0 21
+info: Activate at tick 71736011
+info: Precharging bank 0, rank 1 at tick 71771011, now got 0 active
+info: nextReqEvent scheduled@71761010
+info: Epoch start = 71786010, turn = 0, subTurn = 1
+info: Processing req at 71786010
+info: nextReqEvent scheduled@71811010
+info: Timing access to addr 1824128, rank/bank/row 3 6 3
+info: Epoch start = 71836010, turn = 0, subTurn = 2
+info: Processing req at 71836010
+info: no packet
+info: nextReqEvent scheduled@71861010
+info: Timing access to addr 1090624, rank/bank/row 0 5 2
+info: Epoch start = 71886010, turn = 0, subTurn = 0
+info: Processing req at 71886010
+info: Activate at tick 71886011
+info: Precharging bank 0, rank 1 at tick 71921011, now got 0 active
+info: nextReqEvent scheduled@71911010
+info: Epoch start = 71936010, turn = 0, subTurn = 1
+info: Processing req at 71936010
+info: nextReqEvent scheduled@71961010
+info: Timing access to addr 1824512, rank/bank/row 3 6 3
+info: Epoch start = 71986010, turn = 0, subTurn = 2
+info: Processing req at 71986010
+info: no packet
+info: nextReqEvent scheduled@72011010
+info: Timing access to addr 1090688, rank/bank/row 0 5 2
+info: Epoch start = 72036010, turn = 0, subTurn = 0
+info: Processing req at 72036010
+info: Timing access to addr 11083264, rank/bank/row 1 0 21
+info: Activate at tick 72036011
+info: Precharging bank 0, rank 1 at tick 72071011, now got 0 active
+info: nextReqEvent scheduled@72061010
+info: Epoch start = 72086010, turn = 0, subTurn = 1
+info: Processing req at 72086010
+info: nextReqEvent scheduled@72111010
+info: Epoch start = 72136010, turn = 0, subTurn = 2
+info: Processing req at 72136010
+info: nextReqEvent scheduled@72161010
+info: Epoch start = 72186010, turn = 0, subTurn = 0
+info: Processing req at 72186010
+info: Epoch start = 72236010, turn = 0, subTurn = 1
+info: Epoch start = 72286010, turn = 0, subTurn = 2
+info: Epoch start = 72336010, turn = 0, subTurn = 0
+info: Epoch start = 72386010, turn = 0, subTurn = 1
+info: Epoch start = 72436010, turn = 0, subTurn = 2
+info: Epoch start = 72486010, turn = 0, subTurn = 0
+info: Processing req at 72486010
+info: no packet
+info: nextReqEvent scheduled@72511010
+info: Timing access to addr 1834688, rank/bank/row 3 7 3
+info: Epoch start = 72536010, turn = 0, subTurn = 1
+info: Processing req at 72536010
+info: no packet
+info: nextReqEvent scheduled@72561010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 31933, Bank: 1
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 32773, Bank: 1
+info: no packet
+info: Epoch start = 72586010, turn = 0, subTurn = 2
+info: Processing req at 72586010
+info: Timing access to addr 2629824, rank/bank/row 0 1 5
+info: Activate at tick 72586011
+info: Precharging bank 1, rank 0 at tick 72621011, now got 0 active
+info: nextReqEvent scheduled@72611010
+info: no packet
+info: Epoch start = 72636010, turn = 0, subTurn = 0
+info: Processing req at 72636010
+info: Timing access to addr 5244096, rank/bank/row 0 0 10
+info: Activate at tick 72636010
+info: Precharging bank 0, rank 0 at tick 72671010, now got 0 active
+info: nextReqEvent scheduled@72661010
+info: Timing access to addr 1827072, rank/bank/row 3 7 3
+info: Epoch start = 72686010, turn = 0, subTurn = 1
+info: Processing req at 72686010
+info: nextReqEvent scheduled@72711010
+info: Epoch start = 72736010, turn = 0, subTurn = 2
+info: Processing req at 72736010
+info: Activate at tick 72736010
+info: Precharging bank 1, rank 0 at tick 72771010, now got 0 active
+info: nextReqEvent scheduled@72761010
+info: Epoch start = 72786010, turn = 0, subTurn = 0
+info: nextReqEvent scheduled@72811010
+info: Epoch start = 72836010, turn = 0, subTurn = 1
+info: Processing req at 72836010
+info: nextReqEvent scheduled@72861010
+info: Epoch start = 72886010, turn = 0, subTurn = 2
+info: Processing req at 72886010
+info: nextReqEvent scheduled@72911010
+info: Epoch start = 72936010, turn = 0, subTurn = 0
+info: Processing req at 72936010
+info: Timing access to addr 5244160, rank/bank/row 0 0 10
+info: Activate at tick 72936011
+info: Precharging bank 0, rank 0 at tick 72971011, now got 0 active
+info: nextReqEvent scheduled@72961010
+info: Epoch start = 72986010, turn = 0, subTurn = 1
+info: Processing req at 72986010
+info: Epoch start = 73036010, turn = 0, subTurn = 2
+info: Processing req at 73036010
+info: nextReqEvent scheduled@73061010
+info: Epoch start = 73086010, turn = 0, subTurn = 0
+info: Processing req at 73086010
+info: Activate at tick 73086011
+info: Precharging bank 0, rank 1 at tick 73121011, now got 0 active
+info: nextReqEvent scheduled@73111010
+info: Epoch start = 73136010, turn = 0, subTurn = 1
+info: Epoch start = 73186010, turn = 0, subTurn = 2
+info: Processing req at 73186010
+info: nextReqEvent scheduled@73211010
+info: Epoch start = 73236010, turn = 0, subTurn = 0
+info: Processing req at 73236010
+info: Timing access to addr 11083392, rank/bank/row 1 0 21
+info: Activate at tick 73236011
+info: Precharging bank 0, rank 1 at tick 73271011, now got 0 active
+info: nextReqEvent scheduled@73261010
+info: Epoch start = 73286010, turn = 0, subTurn = 1
+info: Processing req at 73286010
+info: no packet
+info: nextReqEvent scheduled@73311010
+info: no packet
+info: Epoch start = 73336010, turn = 0, subTurn = 2
+info: Processing req at 73336010
+info: Timing access to addr 2617920, rank/bank/row 7 7 4
+info: Activate at tick 73336011
+info: Precharging bank 7, rank 7 at tick 73371011, now got 0 active
+info: nextReqEvent scheduled@73361010
+info: Timing access to addr 1001088, rank/bank/row 7 2 1
+info: Epoch start = 73386010, turn = 0, subTurn = 0
+info: Processing req at 73386010
+info: Activate at tick 73386011
+info: Precharging bank 0, rank 1 at tick 73421011, now got 0 active
+info: nextReqEvent scheduled@73411010
+info: Epoch start = 73436010, turn = 0, subTurn = 1
+info: Epoch start = 73486010, turn = 0, subTurn = 2
+info: Epoch start = 73536010, turn = 0, subTurn = 0
+info: Epoch start = 73586010, turn = 0, subTurn = 1
+info: Epoch start = 73636010, turn = 0, subTurn = 2
+info: Epoch start = 73686010, turn = 0, subTurn = 0
+info: Epoch start = 73736010, turn = 0, subTurn = 1
+info: Epoch start = 73786010, turn = 0, subTurn = 2
+info: Epoch start = 73836010, turn = 0, subTurn = 0
+info: Epoch start = 73886010, turn = 0, subTurn = 1
+info: Processing req at 73886010
+info: no packet
+info: nextReqEvent scheduled@73911010
+info: no packet
+info: Epoch start = 73936010, turn = 0, subTurn = 2
+info: Processing req at 73936010
+info: Timing access to addr 2629952, rank/bank/row 0 1 5
+info: Activate at tick 73936011
+info: Precharging bank 1, rank 0 at tick 73971011, now got 0 active
+info: nextReqEvent scheduled@73961010
+info: Epoch start = 73986010, turn = 0, subTurn = 0
+info: Processing req at 73986010
+info: Activate at tick 73986010
+info: Precharging bank 0, rank 0 at tick 74021010, now got 0 active
+info: nextReqEvent scheduled@74011010
+info: Epoch start = 74036010, turn = 0, subTurn = 1
+info: Processing req at 74036010
+info: nextReqEvent scheduled@74061010
+info: Epoch start = 74086010, turn = 0, subTurn = 2
+info: Processing req at 74086010
+info: Activate at tick 74086010
+info: Precharging bank 1, rank 0 at tick 74121010, now got 0 active
+info: nextReqEvent scheduled@74111010
+info: Epoch start = 74136010, turn = 0, subTurn = 0
+info: Epoch start = 74186010, turn = 0, subTurn = 1
+info: Processing req at 74186010
+info: nextReqEvent scheduled@74211010
+info: Epoch start = 74236010, turn = 0, subTurn = 2
+info: Processing req at 74236010
+info: nextReqEvent scheduled@74261010
+info: Epoch start = 74286010, turn = 0, subTurn = 0
+info: Processing req at 74286010
+info: Activate at tick 74286011
+info: Precharging bank 0, rank 1 at tick 74321011, now got 0 active
+info: nextReqEvent scheduled@74311010
+info: Epoch start = 74336010, turn = 0, subTurn = 1
+info: Epoch start = 74386010, turn = 0, subTurn = 2
+info: Processing req at 74386010
+info: nextReqEvent scheduled@74411010
+info: Epoch start = 74436010, turn = 0, subTurn = 0
+info: Processing req at 74436010
+info: Activate at tick 74436011
+info: Precharging bank 0, rank 1 at tick 74471011, now got 0 active
+info: nextReqEvent scheduled@74461010
+info: Epoch start = 74486010, turn = 0, subTurn = 1
+info: Epoch start = 74536010, turn = 0, subTurn = 2
+info: Processing req at 74536010
+info: nextReqEvent scheduled@74561010
+info: Epoch start = 74586010, turn = 0, subTurn = 0
+info: Processing req at 74586010
+info: Activate at tick 74586011
+info: Precharging bank 0, rank 1 at tick 74621011, now got 0 active
+info: nextReqEvent scheduled@74611010
+info: Epoch start = 74636010, turn = 0, subTurn = 1
+info: Processing req at 74636010
+info: Epoch start = 74686010, turn = 0, subTurn = 2
+info: Epoch start = 74736010, turn = 0, subTurn = 0
+info: Epoch start = 74786010, turn = 0, subTurn = 1
+info: Epoch start = 74836010, turn = 0, subTurn = 2
+info: Epoch start = 74886010, turn = 0, subTurn = 0
+info: Epoch start = 74936010, turn = 0, subTurn = 1
+info: Epoch start = 74986010, turn = 0, subTurn = 2
+info: Epoch start = 75036010, turn = 0, subTurn = 0
+info: Epoch start = 75086010, turn = 0, subTurn = 1
+info: Processing req at 75086010
+info: no packet
+info: nextReqEvent scheduled@75111010
+info: no packet
+info: Epoch start = 75136010, turn = 0, subTurn = 2
+info: Processing req at 75136010
+info: Timing access to addr 2630080, rank/bank/row 0 1 5
+info: Activate at tick 75136011
+info: Precharging bank 1, rank 0 at tick 75171011, now got 0 active
+info: nextReqEvent scheduled@75161010
+info: Epoch start = 75186010, turn = 0, subTurn = 0
+info: Processing req at 75186010
+info: Timing access to addr 5244288, rank/bank/row 0 0 10
+info: Activate at tick 75186010
+info: Precharging bank 0, rank 0 at tick 75221010, now got 0 active
+info: nextReqEvent scheduled@75211010
+info: Timing access to addr 1832128, rank/bank/row 3 7 3
+info: Epoch start = 75236010, turn = 0, subTurn = 1
+info: Processing req at 75236010
+info: no packet
+info: nextReqEvent scheduled@75261010
+info: Timing access to addr 1824768, rank/bank/row 3 6 3
+info: Epoch start = 75286010, turn = 0, subTurn = 2
+info: Processing req at 75286010
+info: nextReqEvent scheduled@75311010
+info: Epoch start = 75336010, turn = 0, subTurn = 0
+info: Processing req at 75336010
+info: Activate at tick 75336010
+info: Precharging bank 0, rank 0 at tick 75371010, now got 0 active
+info: nextReqEvent scheduled@75361010
+info: Epoch start = 75386010, turn = 0, subTurn = 1
+info: Epoch start = 75436010, turn = 0, subTurn = 2
+info: Processing req at 75436010
+info: nextReqEvent scheduled@75461010
+info: Epoch start = 75486010, turn = 0, subTurn = 0
+info: Processing req at 75486010
+info: Activate at tick 75486011
+info: Precharging bank 0, rank 1 at tick 75521011, now got 0 active
+info: nextReqEvent scheduled@75511010
+info: Epoch start = 75536010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@75561010
+info: no packet
+info: Epoch start = 75586010, turn = 0, subTurn = 2
+info: Processing req at 75586010
+info: Timing access to addr 11083776, rank/bank/row 1 1 21
+info: Activate at tick 75586011
+info: Precharging bank 1, rank 1 at tick 75621011, now got 0 active
+info: nextReqEvent scheduled@75611010
+info: no packet
+info: Epoch start = 75636010, turn = 0, subTurn = 0
+info: Processing req at 75636010
+info: no packet
+info: nextReqEvent scheduled@75661010
+info: Timing access to addr 1829568, rank/bank/row 3 7 3
+info: Epoch start = 75686010, turn = 0, subTurn = 1
+info: Processing req at 75686010
+info: no packet
+info: nextReqEvent scheduled@75711010
+info: no packet
+info: Epoch start = 75736010, turn = 0, subTurn = 2
+info: Processing req at 75736010
+info: Timing access to addr 11083840, rank/bank/row 1 1 21
+info: Activate at tick 75736011
+info: Precharging bank 1, rank 1 at tick 75771011, now got 0 active
+info: nextReqEvent scheduled@75761010
+info: Epoch start = 75786010, turn = 0, subTurn = 0
+info: Processing req at 75786010
+info: nextReqEvent scheduled@75811010
+info: Epoch start = 75836010, turn = 0, subTurn = 1
+info: Processing req at 75836010
+info: nextReqEvent scheduled@75861010
+info: Epoch start = 75886010, turn = 0, subTurn = 2
+info: Processing req at 75886010
+info: Epoch start = 75936010, turn = 0, subTurn = 0
+info: Epoch start = 75986010, turn = 0, subTurn = 1
+info: nextReqEvent scheduled@76011010
+info: Epoch start = 76036010, turn = 0, subTurn = 2
+info: Processing req at 76036010
+info: nextReqEvent scheduled@76061010
+info: Epoch start = 76086010, turn = 0, subTurn = 0
+info: Processing req at 76086010
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 34413, Bank: 5
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 34993, Bank: 1
+info: Epoch start = 76136010, turn = 0, subTurn = 1
+info: Processing req at 76136010
+info: no packet
+info: nextReqEvent scheduled@76161010
+info: no packet
+info: Epoch start = 76186010, turn = 0, subTurn = 2
+info: Processing req at 76186010
+info: no packet
+info: nextReqEvent scheduled@76211010
+info: no packet
+info: Epoch start = 76236010, turn = 0, subTurn = 0
+info: Processing req at 76236010
+info: no packet
+info: nextReqEvent scheduled@76261010
+info: Timing access to addr 1831296, rank/bank/row 3 7 3
+info: Epoch start = 76286010, turn = 0, subTurn = 1
+info: Processing req at 76286010
+info: no packet
+info: nextReqEvent scheduled@76311010
+info: no packet
+info: Epoch start = 76336010, turn = 0, subTurn = 2
+info: Processing req at 76336010
+info: no packet
+info: nextReqEvent scheduled@76361010
+info: no packet
+info: Epoch start = 76386010, turn = 0, subTurn = 0
+info: Processing req at 76386010
+info: Timing access to addr 5244416, rank/bank/row 0 0 10
+info: Activate at tick 76386011
+info: Precharging bank 0, rank 0 at tick 76421011, now got 0 active
+info: nextReqEvent scheduled@76411010
+info: Timing access to addr 1827584, rank/bank/row 3 7 3
+info: Epoch start = 76436010, turn = 0, subTurn = 1
+info: Processing req at 76436010
+info: no packet
+info: nextReqEvent scheduled@76461010
+info: no packet
+info: Epoch start = 76486010, turn = 0, subTurn = 2
+info: Processing req at 76486010
+info: Timing access to addr 2630144, rank/bank/row 0 1 5
+info: Activate at tick 76486010
+info: Precharging bank 1, rank 0 at tick 76521010, now got 0 active
+info: nextReqEvent scheduled@76511010
+info: Epoch start = 76536010, turn = 0, subTurn = 0
+info: Processing req at 76536010
+info: nextReqEvent scheduled@76561010
+Exiting core 1 @ tick 76566500 because a thread reached the max instruction count
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 35393, Bank: 0
+WARNING: Command issued while in power-down mode.
+Command: 0, Timestamp: 34933, Bank: 7
+Exiting @ tick 76566500 because a thread reached the max instruction count
