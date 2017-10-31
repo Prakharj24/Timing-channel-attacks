@@ -375,8 +375,8 @@ class DDR3_1600_8x8(DRAMCtrl):
     tXP = '0.001ns'
 
     # self refresh exit time
-    # tXS = '270ns'
-    tXS = '0.001ns'
+    tXS = '270ns'
+    # tXS = '0.001ns'
 
     # Current values from datasheet Die Rev E,J
     IDD0 = '55mA'

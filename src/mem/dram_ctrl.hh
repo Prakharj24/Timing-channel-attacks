@@ -1072,7 +1072,7 @@ class DRAMCtrl : public AbstractMemory
     Tick epochStart;
     int turn, subTurn;
     Tick prev_act; // to keep track of previous act tick.
-    const Tick RAS_period = 25000;
+    const Tick RAS_period = 50000;
     void scheduleNext();
     bool inBankGroup(DRAMPacket * dram_pkt, int core);
     void updateEpochStart();
