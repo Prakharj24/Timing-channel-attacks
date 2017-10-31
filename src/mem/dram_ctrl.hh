@@ -1067,6 +1067,17 @@ class DRAMCtrl : public AbstractMemory
         return cmd.timeStamp < cmd_next.timeStamp;
     };
 
+    // variable initialised for BTA
+
+    Tick epochStart;
+    int turn, subTurn;
+    Tick prev_act; // to keep track of previous act tick.
+    const Tick RAS_period = 25000;
+    void scheduleNext();
+    bool inBankGroup(DRAMPacket * dram_pkt, int core);
+    void updateEpochStart();
+    EventWrapper<DRAMCtrl, &DRAMCtrl::updateEpochStart> updateEpoch;
+
   public:
 
     void regStats() override;

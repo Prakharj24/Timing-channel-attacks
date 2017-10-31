@@ -1,0 +1,31 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct 31 2017 16:43:00
+gem5 started Oct 31 2017 16:49:30
+gem5 executing on cse-HP-ProDesk-600-G3-SFF, pid 12862
+command line: ./build/X86/gem5.opt ./configs/example/se.py -n 1 --caches --l2cache --mem-size=4GB --mem-channels=1 --mem-ranks=1 --cpu-type=DerivO3CPU -F 250000 -I 250000 --bench hmmer
+
+executable= /home/prakhar/SPEC2006_X86/binaries/hmmer 
+inputs_dir = /home/prakhar/SPEC2006_X86/data/hmmer/ref/input 
+outputs_dir = /home/prakhar/SPEC2006_X86/data/hmmer/ref/output 
+Global frequency set at 1000000000000 ticks per second
+Switch at instruction count:250000
+hmmcalibrate -- calibrate HMM search statistics
+HMMER 2.3 (May 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /home/prakhar/SPEC2006_X86/data/hmmer/ref/input/retro.hmm
+Length distribution mean: 500
+Length distribution s.d.: 350
+Number of samples:        500000
+random seed:              0
+histogram(s) saved to:    [not saved]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Switched CPUS @ tick 312552500
+switching cpus
+**** REAL SIMULATION ****
+Exiting core 0 @ tick 434298000 because a thread reached the max instruction count
+Exiting @ tick 434298000 because a thread reached the max instruction count

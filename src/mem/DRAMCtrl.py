@@ -96,9 +96,9 @@ class DRAMCtrl(AbstractMemory):
                                            "switching to reads")
 
     # scheduler, address map and page policy
-    mem_sched_policy = Param.MemSched('frfcfs', "Memory scheduling policy")
+    mem_sched_policy = Param.MemSched('fcfs', "Memory scheduling policy")
     addr_mapping = Param.AddrMap('RoRaBaCoCh', "Address mapping policy")
-    page_policy = Param.PageManage('open_adaptive', "Page management policy")
+    page_policy = Param.PageManage('close', "Page management policy")
 
     # enforce a limit on the number of accesses per row
     max_accesses_per_row = Param.Unsigned(16, "Max accesses per row before "
@@ -371,10 +371,12 @@ class DDR3_1600_8x8(DRAMCtrl):
     tREFI = '7.8us'
 
     # active powerdown and precharge powerdown exit time
-    tXP = '6ns'
+    # tXP = '6ns'
+    tXP = '0.001ns'
 
     # self refresh exit time
-    tXS = '270ns'
+    # tXS = '270ns'
+    tXS = '0.001ns'
 
     # Current values from datasheet Die Rev E,J
     IDD0 = '55mA'

@@ -94,7 +94,8 @@ DRAMCtrl::DRAMCtrl(const DRAMCtrlParams* p) :
     frontendLatency(p->static_frontend_latency),
     backendLatency(p->static_backend_latency),
     busBusyUntil(0), prevArrival(0),
-    nextReqTime(0), activeRank(0), timeStampOffset(0)
+    nextReqTime(0), activeRank(0), timeStampOffset(0),
+    epochStart(0), turn(0), subTurn(0), prev_act(0), updateEpoch(this)
 {
     // sanity check the ranks since we rely on bit slicing for the
     // address decoding
@@ -486,7 +487,8 @@ DRAMCtrl::addToReadQueue(PacketPtr pkt, unsigned int pktCount)
     // queue, do so now
     if (!nextReqEvent.scheduled()) {
         DPRINTF(DRAM, "Request scheduled immediately\n");
-        schedule(nextReqEvent, curTick());
+        // schedule(nextReqEvent, curTick());
+        scheduleNext();
     }
 }
 
@@ -553,7 +555,8 @@ DRAMCtrl::addToWriteQueue(PacketPtr pkt, unsigned int pktCount)
     // queue, do so now
     if (!nextReqEvent.scheduled()) {
         DPRINTF(DRAM, "Request scheduled immediately\n");
-        schedule(nextReqEvent, curTick());
+        // schedule(nextReqEvent, curTick());
+        scheduleNext();
     }
 }
 
@@ -576,6 +579,7 @@ DRAMCtrl::printQs() const {
 bool
 DRAMCtrl::recvTimingReq(PacketPtr pkt)
 {
+    updateEpochStart();
     // This is where we enter from the outside world
     DPRINTF(DRAM, "recvTimingReq: request %s addr %lld size %d\n",
             pkt->cmdString(), pkt->getAddr(), pkt->getSize());
@@ -736,13 +740,16 @@ DRAMCtrl::chooseNext(std::deque<DRAMPacket*>& queue, Tick extra_col_delay)
     // methods know that this is the place to look. For example, with
     // FCFS, this method does nothing
     assert(!queue.empty());
-
+    uint32_t core_id;
     // bool to indicate if a packet to an available rank is found
     bool found_packet = false;
     if (queue.size() == 1) {
         DRAMPacket* dram_pkt = queue.front();
+        core_id = dram_pkt->pkt->req->hasContextId()? dram_pkt->pkt->req->contextId() : rand()%2;
         // available rank corresponds to state refresh idle
-        if (ranks[dram_pkt->rank]->isAvailable()) {
+        if (ranks[dram_pkt->rank]->isAvailable() &&
+            core_id == turn &&
+            inBankGroup(dram_pkt, core_id)) {
             found_packet = true;
             DPRINTF(DRAM, "Single request, going to a free rank\n");
         } else {
@@ -755,7 +762,10 @@ DRAMCtrl::chooseNext(std::deque<DRAMPacket*>& queue, Tick extra_col_delay)
         // check if there is a packet going to a free rank
         for (auto i = queue.begin(); i != queue.end() ; ++i) {
             DRAMPacket* dram_pkt = *i;
-            if (ranks[dram_pkt->rank]->isAvailable()) {
+            core_id = dram_pkt->pkt->req->hasContextId()? dram_pkt->pkt->req->contextId() : rand()%2;
+            if (ranks[dram_pkt->rank]->isAvailable() &&
+                core_id == turn &&
+                inBankGroup(dram_pkt, core_id)) {
                 queue.erase(i);
                 queue.push_front(dram_pkt);
                 found_packet = true;
@@ -766,6 +776,8 @@ DRAMCtrl::chooseNext(std::deque<DRAMPacket*>& queue, Tick extra_col_delay)
         found_packet = reorderQueue(queue, extra_col_delay);
     } else
         panic("No scheduling policy chosen\n");
+    // if(!found_packet)
+        //inform("no packet");    
     return found_packet;
 }
 
@@ -909,6 +921,7 @@ DRAMCtrl::activateBank(Rank& rank_ref, Bank& bank_ref,
     assert(rank_ref.actTicks.size() == activationLimit);
 
     DPRINTF(DRAM, "Activate at tick %d\n", act_tick);
+    //inform("Activate at tick %d", act_tick);
 
     // update the open row
     assert(bank_ref.openRow == Bank::NO_ROW);
@@ -1027,6 +1040,10 @@ DRAMCtrl::prechargeBank(Rank& rank_ref, Bank& bank, Tick pre_at, bool trace)
     DPRINTF(DRAM, "Precharging bank %d, rank %d at tick %lld, now got "
             "%d active\n", bank.bank, rank_ref.rank, pre_at,
             rank_ref.numBanksActive);
+
+    //inform("Precharging bank %d, rank %d at tick %lld, now got "
+            // "%d active", bank.bank, rank_ref.rank, pre_at,
+            // rank_ref.numBanksActive);
 
     if (trace) {
 
@@ -1266,6 +1283,7 @@ DRAMCtrl::doDRAMAccess(DRAMPacket* dram_pkt)
 void
 DRAMCtrl::processNextReqEvent()
 {
+    //inform("Processing req at %d", curTick());
     int busyRanks = 0;
     for (auto r : ranks) {
         if (!r->isAvailable()) {
@@ -1303,6 +1321,8 @@ DRAMCtrl::processNextReqEvent()
         // if all ranks are refreshing wait for them to finish
         // and stall this state machine without taking any further
         // action, and do not schedule a new nextReqEvent
+        scheduleNext();
+        //inform("rank busy");
         return;
     }
 
@@ -1375,14 +1395,18 @@ DRAMCtrl::processNextReqEvent()
             // bus turnaround delay which will be tCS (different rank) case
             found_read = chooseNext(readQueue,
                              switched_cmd_type ? tCS : 0);
+           
 
             // if no read to an available rank is found then return
             // at this point. There could be writes to the available ranks
             // which are above the required threshold. However, to
             // avoid adding more complexity to the code, return and wait
             // for a refresh event to kick things into action again.
-            if (!found_read)
+            if (!found_read){
+                if(!nextReqEvent.scheduled())
+                    scheduleNext();
                 return;
+            }
 
             DRAMPacket* dram_pkt = readQueue.front();
             assert(dram_pkt->rankRef.isAvailable());
@@ -1441,13 +1465,15 @@ DRAMCtrl::processNextReqEvent()
         // bus turnaround delay
         found_write = chooseNext(writeQueue,
                                  switched_cmd_type ? std::min(tRTW, tCS) : 0);
-
         // if no writes to an available rank are found then return.
         // There could be reads to the available ranks. However, to avoid
         // adding more complexity to the code, return at this point and wait
         // for a refresh event to kick things into action again.
-        if (!found_write)
+        if (!found_write){
+            if(!nextReqEvent.scheduled())
+                    scheduleNext();
             return;
+        }
 
         DRAMPacket* dram_pkt = writeQueue.front();
         assert(dram_pkt->rankRef.isAvailable());
@@ -1507,8 +1533,10 @@ DRAMCtrl::processNextReqEvent()
     }
     // It is possible that a refresh to another rank kicks things back into
     // action before reaching this point.
-    if (!nextReqEvent.scheduled())
-        schedule(nextReqEvent, std::max(nextReqTime, curTick()));
+    if (!nextReqEvent.scheduled()){
+        // schedule(nextReqEvent, std::max(nextReqTime, curTick()));
+        scheduleNext();
+    }
 
     // If there is space available and we have writes waiting then let
     // them retry. This is done here to ensure that the retry does not
@@ -2164,7 +2192,8 @@ DRAMCtrl::Rank::processPowerEvent()
         if (!memory.nextReqEvent.scheduled()) {
             DPRINTF(DRAM, "Scheduling next request after refreshing rank %d\n",
                     rank);
-            schedule(memory.nextReqEvent, curTick());
+            // schedule(memory.nextReqEvent, curTick());
+            memory.scheduleNext();
         }
     } else if (pwrState == PWR_ACT) {
         if (refreshState == REF_PD_EXIT) {
@@ -2647,7 +2676,8 @@ DRAMCtrl::drain()
         // the only queue that is not drained automatically over time
         // is the write queue, thus kick things into action if needed
         if (!writeQueue.empty() && !nextReqEvent.scheduled()) {
-            schedule(nextReqEvent, curTick());
+            // schedule(nextReqEvent, curTick());
+            scheduleNext();
         }
 
         // also need to kick off events to exit self-refresh
@@ -2743,4 +2773,64 @@ DRAMCtrl*
 DRAMCtrlParams::create()
 {
     return new DRAMCtrl(this);
+}
+
+
+void
+DRAMCtrl::scheduleNext(){
+    if(!nextReqEvent.scheduled())
+    schedule(nextReqEvent, epochStart + RAS_period);
+    //inform("nextReqEvent scheduled@%d", epochStart + RAS_period );
+}
+
+
+/* Updates epochStart
+    starts 10 ticks before to avoid uncertain value of turn when nextrequest is called
+    var: Turn, subTurn- according to paper
+*/
+
+void
+DRAMCtrl::updateEpochStart(){
+    if(!updateEpoch.scheduled()){
+
+        epochStart = curTick() + 10;
+        schedule(updateEpoch, curTick() + RAS_period);
+        turn = 1 - turn;
+        if(turn == 0){
+            if(subTurn < 2)
+                subTurn++;
+            else
+                subTurn = 0;
+        }
+    //inform("Epoch start = %d, turn = %d, subTurn = %d", epochStart, turn, subTurn);
+    }
+}
+
+/*To check if the request goes to specific bank group
+*/
+bool
+DRAMCtrl::inBankGroup(DRAMPacket * dram_pkt, int core){
+        int bank = dram_pkt->bank;
+        if(core == 0) {
+            if(subTurn == 0 &&( bank == 0 || bank == 3 || bank == 6)) // grp A
+                return true;
+            else if(subTurn == 1 &&( bank == 2 || bank == 5)) // grp C
+                return true;
+            else if(subTurn == 2 &&( bank == 1 || bank == 4 || bank == 7)) // grp B
+                return true;
+            else
+            return false;
+        }
+        else if(core == 1 ){
+            if(subTurn == 0 &&( bank == 1 || bank == 4 || bank == 7)) // grp B
+                return true;
+            else if(subTurn == 1 &&( bank == 0 || bank == 3 || bank == 6)) // grp A
+                return true;
+            else if(subTurn == 2 &&( bank == 2 || bank == 5)) //grp C
+                return true;
+            else
+            return false;
+        }
+        else 
+            return false;
 }
