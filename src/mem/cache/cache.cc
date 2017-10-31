@@ -1551,6 +1551,7 @@ Cache::writebackBlk(CacheBlk *blk)
         req->setFlags(Request::SECURE);
 
     req->taskId(blk->task_id);
+    req->setContext(blk->core_id);
     blk->task_id= ContextSwitchTaskId::Unknown;
     blk->tickInserted = curTick();
 
@@ -1592,6 +1593,7 @@ Cache::cleanEvictBlk(CacheBlk *blk)
         req->setFlags(Request::SECURE);
 
     req->taskId(blk->task_id);
+    req->setContext(blk->core_id);
     blk->task_id = ContextSwitchTaskId::Unknown;
     blk->tickInserted = curTick();
 

@@ -236,6 +236,7 @@ public:
          Addr addr = pkt->getAddr();
          MasterID master_id = pkt->req->masterId();
          uint32_t task_id = pkt->req->taskId();
+         uint32_t core_id = pkt->req->contextId();
 
          if (!blk->isTouched) {
              tagsInUse++;
@@ -274,6 +275,7 @@ public:
          blk->srcMasterId = master_id;
          blk->task_id = task_id;
          blk->tickInserted = curTick();
+         blk->core_id = core_id;
 
          // We only need to write into one tag and one data block.
          tagAccesses += 1;

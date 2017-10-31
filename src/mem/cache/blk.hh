@@ -81,7 +81,7 @@ class CacheBlk
   public:
     /** Task Id associated with this block */
     uint32_t task_id;
-
+    uint32_t core_id;
     /** Data block tag value. */
     Addr tag;
     /**
